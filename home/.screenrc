@@ -1,0 +1,24 @@
+# GNU screen ~/.screenrc
+
+# no opening message
+startup_message off
+
+# set window caption is always display
+hardstatus alwayslastline "%n %t / %W"
+
+# scroll back buffer lines
+defscrollback 5000
+
+# encode
+defencoding UTF-8
+
+# key map
+escape ^ta
+
+# backspace is backspace
+bindkey -k kb stuff \010
+
+# Multiuser Session
+multiuser on
+acladd thermes,horinouchi
+
