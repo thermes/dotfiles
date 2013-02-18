@@ -33,6 +33,8 @@ fi
 ## set path
 path=(
     $HOME/bin
+    $HOME/.rbenv/bin
+    $HOME/local/bin
     /opt/local/sbin
     /opt/local/bin
     /opt/sbin
