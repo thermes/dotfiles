@@ -1,0 +1,11 @@
+[user]
+	name = HORINOUCHI Masato
+	email = thermes@confei.to
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore_global
+[merge]
+	ff = false
+[pull]
+	rebase = true
