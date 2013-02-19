@@ -61,6 +61,27 @@ path=($p); unset p d
 typeset -U path
 export PATH
 
+## set manpath
+manpath=(
+    $HOME/local/share/man
+    /opt/local/share/man
+    /opt/share/man
+    /usr/local/share/man
+    /usr/share/man
+    $X11HOME/share/man
+    $manpath
+)
+p=()
+for d in $manpath
+  do
+  if [[ -d $d ]]; then
+      p=($p $d)
+  fi
+done
+manpath=($p); unset p d
+typeset -U manpath
+export MANPATH
+
 
 ## environment var
 if [[ -x `which emacs` ]]; then
@@ -143,7 +164,7 @@ esac
 
 ## TERM
 case $TERM in
-    screen)
+    screen*)
 	export LANG=$LANG_JAPANESE
 	;;
     rxvt|kterm|xterm-256color|xterm-color|mlterm)
