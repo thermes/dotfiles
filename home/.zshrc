@@ -164,7 +164,7 @@ esac
 
 ## TERM
 case $TERM in
-    screen)
+    screen*)
 	export LANG=$LANG_JAPANESE
 	;;
     rxvt|kterm|xterm-256color|xterm-color|mlterm)
