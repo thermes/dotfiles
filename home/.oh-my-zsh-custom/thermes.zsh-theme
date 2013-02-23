@@ -1,6 +1,6 @@
 if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
-    PROMPT='%n@%m:%F{yellow}%~%f
-%S%h%s %(!.#.$) '
+    PROMPT='%F{blue}%n@%m%f:%F{yellow}%~%f
+%S%h%s %(?..%F{red})%(!.#.$)%f '
 
     ZSH_THEME_GIT_PROMPT_PREFIX="%F{blue}"
     ZSH_THEME_GIT_PROMPT_SUFFIX="%f"
