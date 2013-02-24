@@ -1,6 +1,6 @@
 ## limit
 unlimit
-limit core 0
+limit coredumpsize 0
 limit -s
 
 ## umask

@@ -1,24 +1,4 @@
-## OS type
-case $OSTYPE in
-    linux*)					# Linux generic
-	export X11HOME=/usr/X11R6
-	export DOMAIN=`hostname -d`
-	;;
-    darwin*)					# MacOS X
-	export X11HOME=/usr/X11
-	export DOMAIN=`hostname | sed 's/^[^.]*.//'`
-	;;
-    freebsd)					# FreeBSD
-	path=(/stand $path)
-	;;
-    *)
-	;;
-esac
-
-## distribution
-if [[ -f /etc/debian_version ]]; then		# Debian GNU/Linux
-fi
-
+# ~/.zshrc - Start up script for zsh
 
 ## environment var
 if [[ -x `which emacs` ]]; then
@@ -53,20 +33,15 @@ case $OSTYPE in
     linux*)					# Linux generic
 	LANG_JAPANESE=ja_JP.UTF-8
 	# LS color
-#	export LS_OPTIONS='--color=auto'
-#	eval `dircolors`
+	export LS_OPTIONS='--color=auto'
+	eval `dircolors`
 	;;
     darwin*)					# MacOS X
 	LANG_JAPANESE=ja_JP.UTF-8
-	if [[ -x '/usr/local/bin/brew' ]]; then
-	    # fpath
-	    fpath=(/usr/local/share/zsh/functions ${fpath})
-
-	    # coreutils
-	    PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+	if [[ -x '/usr/local/bin/ls' ]]; then
 	    # LS color
-#	    export LS_OPTIONS='--color=auto'
-#	    eval `dircolors`
+	    export LS_OPTIONS='--color=auto'
+	    eval `dircolors`
 	else
 	    export LS_OPTIONS='-G'
 	fi
@@ -101,7 +76,7 @@ esac
 
 ## TERM
 case $TERM in
-    screen*)
+    screen)
 	export LANG=$LANG_JAPANESE
 	;;
     rxvt|kterm|xterm-256color|xterm-color|mlterm)
@@ -123,7 +98,39 @@ esac
 
 
 ## shell var
+READNULLCMD=$PAGER
 LISTMAX=0
+
+PS1='%S%h%s %n@%m%(#.#.$) '
+RPS1=' %B%~%b'
+SPROMPT='zsh: replace '\''%R'\'' to '\''%r'\'' ? [Yes/No/Abort/Edit] '
+
+
+## alias
+alias ls='ls -F $LS_OPTIONS'
+alias sl=ls
+alias la='ls -A'
+alias ll='ls -l'
+alias lla='ls -lA'
+alias lsd='ls -ld *(-/DN)'
+alias lsa='ls -ld .*'
+alias pu=pushd
+alias po=popd
+alias di='dirs -v'
+alias hi='history 25'
+alias key='man -k'
+alias l=$PAGER
+alias cp='nocorrect cp -i'    # no spelling correction on cp
+alias mv='nocorrect mv -i'    # no spelling correction on mv
+alias rm='nocorrect rm'       # no spelling correction on rm
+alias mkdir='nocorrect mkdir' # no spelling correction on mkdir
+alias man='nocorrect man'     # no spelling correction on man
+alias -g L="|$PAGER"
+alias -g G='|grep'
+alias -g H='|head'
+alias -g T='|tail'
+alias -g S='|sort'
+
 
 ## setopt
 
@@ -135,11 +142,24 @@ setopt CORRECT_ALL
 setopt LIST_PACKED
 
 # history
+HISTSIZE=1000
+HISTFILE=~/.zhistory
+SAVEHIST=1000
+setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt HIST_NO_STORE
+setopt HIST_IGNORE_SPACE
 
 # glob
 setopt EXTENDED_GLOB
+
+# directory
+setopt AUTO_CD
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS 
+setopt PUSHD_SILENT
 
 # job
 setopt AUTO_RESUME
@@ -189,4 +209,9 @@ if [[ $UID -eq 0 ]]; then
     export EDITOR=vi
     unset HISTFILE
     SAVEHIST=0
+fi
+
+## rbenv
+if [[ -x `which rbenv` ]]; then
+    eval "$(rbenv init -)"
 fi
