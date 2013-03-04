@@ -24,6 +24,7 @@ case $TERM in
 	export LANG=C
 	;;
 esac
+unset LC_CTYPE
 
 # LS_COLOR
 if [ "$DISABLE_LS_COLORS" != "true" ]
