@@ -1,0 +1,406 @@
+;;; .loaddefs.el --- automatically extracted autoloads
+;;
+;;; Code:
+
+
+;;;### (autoloads (color-theme-solarized-light color-theme-solarized-dark
+;;;;;;  color-theme-solarized) "color-theme-solarized/color-theme-solarized"
+;;;;;;  "color-theme-solarized/color-theme-solarized.el" (20797 34373))
+;;; Generated autoloads from color-theme-solarized/color-theme-solarized.el
+
+(autoload 'color-theme-solarized "color-theme-solarized/color-theme-solarized" "\
+Color theme by Ethan Schoonover, created 2011-03-24.
+Ported to Emacs by Greg Pfeil, http://ethanschoonover.com/solarized.
+
+\(fn MODE)" t nil)
+
+(autoload 'color-theme-solarized-dark "color-theme-solarized/color-theme-solarized" "\
+
+
+\(fn)" t nil)
+
+(autoload 'color-theme-solarized-light "color-theme-solarized/color-theme-solarized" "\
+
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "color-theme-solarized/solarized-definitions"
+;;;;;;  "color-theme-solarized/solarized-definitions.el" (20797 34373))
+;;; Generated autoloads from color-theme-solarized/solarized-definitions.el
+
+(when (boundp 'custom-theme-load-path) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
+
+;;;***
+
+;;;### (autoloads (color-theme-initialize color-theme-submit color-theme-install
+;;;;;;  color-theme-compare color-theme-make-snapshot color-theme-analyze-defun
+;;;;;;  color-theme-print color-theme-install-at-point-for-current-frame
+;;;;;;  color-theme-install-at-mouse color-theme-describe color-theme-select)
+;;;;;;  "color-theme/color-theme" "color-theme/color-theme.el" (17529
+;;;;;;  41105))
+;;; Generated autoloads from color-theme/color-theme.el
+
+(autoload 'color-theme-select "color-theme/color-theme" "\
+Displays a special buffer for selecting and installing a color theme.
+With optional prefix ARG, this buffer will include color theme libraries
+as well.  A color theme library is in itself not complete, it must be
+used as part of another color theme to be useful.  Thus, color theme
+libraries are mainly useful for color theme authors.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'color-theme-describe "color-theme/color-theme" "\
+Describe color theme listed at point.
+This shows the documentation of the value of text-property color-theme
+at point.  The text-property color-theme should be a color theme
+function.  See `color-themes'.
+
+\(fn)" t nil)
+
+(autoload 'color-theme-install-at-mouse "color-theme/color-theme" "\
+Install color theme clicked upon using the mouse.
+First argument EVENT is used to set point.  Then
+`color-theme-install-at-point' is called.
+
+\(fn EVENT)" t nil)
+
+(autoload 'color-theme-install-at-point-for-current-frame "color-theme/color-theme" "\
+Install color theme at point for current frame only.
+Binds `color-theme-is-global' to nil and calls
+`color-theme-install-at-point'.
+
+\(fn)" t nil)
+
+(autoload 'color-theme-print "color-theme/color-theme" "\
+Print the current color theme function.
+
+You can contribute this function to <URL:news:gnu.emacs.sources> or
+paste it into your .emacs file and call it.  That should recreate all
+the settings necessary for your color theme.
+
+Example:
+
+    (require 'color-theme)
+    (defun my-color-theme ()
+      \"Color theme by Alex Schroeder, created 2000-05-17.\"
+      (interactive)
+      (color-theme-install
+       '(...
+	 ...
+	 ...)))
+    (my-color-theme)
+
+If you want to use a specific color theme function, you can call the
+color theme function in your .emacs directly.
+
+Example:
+
+    (require 'color-theme)
+    (color-theme-gnome2)
+
+\(fn &optional BUF)" t nil)
+
+(autoload 'color-theme-analyze-defun "color-theme/color-theme" "\
+Once you have a color-theme printed, check for missing faces.
+This is used by maintainers who receive a color-theme submission
+and want to make sure it follows the guidelines by the color-theme
+author.
+
+\(fn)" t nil)
+
+(autoload 'color-theme-make-snapshot "color-theme/color-theme" "\
+Return the definition of the current color-theme.
+The function returned will recreate the color-theme in use at the moment.
+
+\(fn)" nil nil)
+
+(autoload 'color-theme-compare "color-theme/color-theme" "\
+Compare two color themes.
+This will print the differences between installing THEME-A and
+installing THEME-B.  Note that the order is important: If a face is
+defined in THEME-A and not in THEME-B, then this will not show up as a
+difference, because there is no reset before installing THEME-B.  If a
+face is defined in THEME-B and not in THEME-A, then this will show up as
+a difference.
+
+\(fn THEME-A THEME-B)" t nil)
+
+(autoload 'color-theme-install "color-theme/color-theme" "\
+Install a color theme defined by frame parameters, variables and faces.
+
+The theme is installed for all present and future frames; any missing
+faces are created.  See `color-theme-install-faces'.
+
+THEME is a color theme definition.  See below for more information.
+
+If you want to install a color theme from your .emacs, use the output
+generated by `color-theme-print'.  This produces color theme function
+which you can copy to your .emacs.
+
+A color theme definition is a list:
+\([FUNCTION] FRAME-PARAMETERS VARIABLE-SETTINGS FACE-DEFINITIONS)
+
+FUNCTION is the color theme function which called `color-theme-install'.
+This is no longer used.  There was a time when this package supported
+automatic factoring of color themes.  This has been abandoned.
+
+FRAME-PARAMETERS is an alist of frame parameters.  These are installed
+with `color-theme-install-frame-params'.  These are installed last such
+that any changes to the default face can be changed by the frame
+parameters.
+
+VARIABLE-DEFINITIONS is an alist of variable settings.  These are
+installed with `color-theme-install-variables'.
+
+FACE-DEFINITIONS is an alist of face definitions.  These are installed
+with `color-theme-install-faces'.
+
+If `color-theme-is-cumulative' is nil, a color theme will undo face and
+frame-parameter settings of previous color themes.
+
+\(fn THEME)" nil nil)
+
+(autoload 'color-theme-submit "color-theme/color-theme" "\
+Submit your color-theme to the maintainer.
+
+\(fn)" t nil)
+
+(autoload 'color-theme-initialize "color-theme/color-theme" "\
+Initialize the color theme package by loading color-theme-libraries.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (el-get-checksum el-get-make-recipes el-get-cd
+;;;;;;  el-get-self-update el-get-update-all el-get-version) "el-get/el-get"
+;;;;;;  "el-get/el-get.el" (20797 33247))
+;;; Generated autoloads from el-get/el-get.el
+
+(autoload 'el-get-version "el-get/el-get" "\
+Message the current el-get version
+
+\(fn)" t nil)
+
+(autoload 'el-get-update-all "el-get/el-get" "\
+Performs update of all installed packages.
+
+\(fn &optional NO-PROMPT)" t nil)
+
+(autoload 'el-get-self-update "el-get/el-get" "\
+Update el-get itself.  The standard recipe takes care of reloading the code.
+
+\(fn)" t nil)
+
+(autoload 'el-get-cd "el-get/el-get" "\
+Open dired in the package directory.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-make-recipes "el-get/el-get" "\
+Loop over `el-get-sources' and write a recipe file for each
+entry which is not a symbol and is not already a known recipe.
+
+\(fn &optional DIR)" t nil)
+
+(autoload 'el-get-checksum "el-get/el-get" "\
+Compute the checksum of the given package, and put it in the kill-ring
+
+\(fn PACKAGE &optional PACKAGE-STATUS-ALIST)" t nil)
+
+;;;***
+
+;;;### (autoloads (el-get-list-packages) "el-get/el-get-list-packages"
+;;;;;;  "el-get/el-get-list-packages.el" (20797 33247))
+;;; Generated autoloads from el-get/el-get-list-packages.el
+
+(autoload 'el-get-list-packages "el-get/el-get-list-packages" "\
+Display a list of packages.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (magit-status) "magit/magit" "magit/magit.el" (20797
+;;;;;;  36146))
+;;; Generated autoloads from magit/magit.el
+
+(autoload 'magit-status "magit/magit" "\
+Open a Magit status buffer for the Git repository containing DIR.
+If DIR is not within a Git repository, offer to create a Git
+repository in DIR.
+
+Interactively, a prefix argument means to ask the user which Git
+repository to use even if `default-directory' is under Git
+control.  Two prefix arguments means to ignore `magit-repo-dirs'
+when asking for user input.
+
+\(fn DIR)" t nil)
+
+;;;***
+
+;;;### (autoloads (magit-blame-mode) "magit/magit-blame" "magit/magit-blame.el"
+;;;;;;  (20797 36146))
+;;; Generated autoloads from magit/magit-blame.el
+
+(autoload 'magit-blame-mode "magit/magit-blame" "\
+Display blame information inline.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads (turn-on-magit-flow magit-flow-mode) "magit/magit-flow"
+;;;;;;  "magit/magit-flow.el" (20797 36146))
+;;; Generated autoloads from magit/magit-flow.el
+
+(autoload 'magit-flow-mode "magit/magit-flow" "\
+FLOW support for Magit
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'turn-on-magit-flow "magit/magit-flow" "\
+Unconditionally turn on `magit-flow-mode'.
+
+\(fn)" nil nil)
+
+;;;***
+
+;;;### (autoloads (turn-on-magit-stgit magit-stgit-mode) "magit/magit-stgit"
+;;;;;;  "magit/magit-stgit.el" (20797 36146))
+;;; Generated autoloads from magit/magit-stgit.el
+
+(autoload 'magit-stgit-mode "magit/magit-stgit" "\
+StGit support for Magit
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'turn-on-magit-stgit "magit/magit-stgit" "\
+Unconditionally turn on `magit-stgit-mode'.
+
+\(fn)" nil nil)
+
+;;;***
+
+;;;### (autoloads (turn-on-magit-svn magit-svn-mode) "magit/magit-svn"
+;;;;;;  "magit/magit-svn.el" (20797 36146))
+;;; Generated autoloads from magit/magit-svn.el
+
+(autoload 'magit-svn-mode "magit/magit-svn" "\
+SVN support for Magit
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'turn-on-magit-svn "magit/magit-svn" "\
+Unconditionally turn on `magit-svn-mode'.
+
+\(fn)" nil nil)
+
+;;;***
+
+;;;### (autoloads (turn-on-magit-topgit magit-topgit-mode) "magit/magit-topgit"
+;;;;;;  "magit/magit-topgit.el" (20797 36146))
+;;; Generated autoloads from magit/magit-topgit.el
+
+(autoload 'magit-topgit-mode "magit/magit-topgit" "\
+Topgit support for Magit
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'turn-on-magit-topgit "magit/magit-topgit" "\
+Unconditionally turn on `magit-topgit-mode'.
+
+\(fn)" nil nil)
+
+;;;***
+
+;;;### (autoloads (global-magit-wip-save-mode magit-wip-save-mode
+;;;;;;  magit-wip-mode) "magit/magit-wip" "magit/magit-wip.el" (20797
+;;;;;;  36146))
+;;; Generated autoloads from magit/magit-wip.el
+
+(defvar magit-wip-mode nil "\
+Non-nil if Magit-Wip mode is enabled.
+See the command `magit-wip-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `magit-wip-mode'.")
+
+(custom-autoload 'magit-wip-mode "magit/magit-wip" nil)
+
+(autoload 'magit-wip-mode "magit/magit-wip" "\
+In Magit log buffers; give wip refs a special appearance.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'magit-wip-save-mode "magit/magit-wip" "\
+Magit support for committing to a work-in-progress ref.
+
+When this minor mode is turned on and a file is saved inside a writable
+git repository then it is also committed to a special work-in-progress
+ref.
+
+\(fn &optional ARG)" t nil)
+
+(defvar global-magit-wip-save-mode nil "\
+Non-nil if Global-Magit-Wip-Save mode is enabled.
+See the command `global-magit-wip-save-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-magit-wip-save-mode'.")
+
+(custom-autoload 'global-magit-wip-save-mode "magit/magit-wip" nil)
+
+(autoload 'global-magit-wip-save-mode "magit/magit-wip" "\
+Toggle Magit-Wip-Save mode in all buffers.
+With prefix ARG, enable Global-Magit-Wip-Save mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Magit-Wip-Save mode is enabled in all buffers where
+`turn-on-magit-wip-save' would do it.
+See `magit-wip-save-mode' for more information on Magit-Wip-Save mode.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads (rebase-mode) "magit/rebase-mode" "magit/rebase-mode.el"
+;;;;;;  (20797 36146))
+;;; Generated autoloads from magit/rebase-mode.el
+
+(autoload 'rebase-mode "magit/rebase-mode" "\
+Major mode for editing of a Git rebase file.
+
+Rebase files are generated when you run 'git rebase -i' or run
+`magit-interactive-rebase'.  They describe how Git should perform
+the rebase.  See the documentation for git-rebase (e.g., by
+running 'man git-rebase' at the command line) for details.
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("git-rebase-todo" . rebase-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("color-theme-solarized/color-theme-solarized-pkg.el"
+;;;;;;  "color-theme-solarized/solarized-dark-theme.el" "color-theme-solarized/solarized-light-theme.el"
+;;;;;;  "color-theme/color-theme-autoloads.el" "el-get/el-get-autoloads.el"
+;;;;;;  "el-get/el-get-build.el" "el-get/el-get-byte-compile.el"
+;;;;;;  "el-get/el-get-core.el" "el-get/el-get-custom.el" "el-get/el-get-dependencies.el"
+;;;;;;  "el-get/el-get-install.el" "el-get/el-get-methods.el" "el-get/el-get-notify.el"
+;;;;;;  "el-get/el-get-recipes.el" "el-get/el-get-status.el" "magit/50magit.el"
+;;;;;;  "magit/magit-bisect.el" "magit/magit-key-mode.el" "magit/magit-pkg.el")
+;;;;;;  (20797 36149 239521))
+
+;;;***
+
+(provide '.loaddefs)
+;; Local Variables:
+;; version-control: never
+;; no-update-autoloads: t
+;; coding: utf-8
+;; End:
+;;; .loaddefs.el ends here
