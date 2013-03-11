@@ -1,9 +1,10 @@
 (:name ddskk
        :website "http://openlab.ring.gr.jp/skk/ddskk.html"
        :description "A Japanese input method on Emacs."
+       :depends apel
        :type http-tar
        :options ("xzf")
-       :url "http://openlab.ring.gr.jp/skk/maintrunk/ddskk-20130310.tar.gz"
+       :url "http://openlab.ring.gr.jp/skk/maintrunk/ddskk-14.3.tar.gz"
        :autoloads nil
        :features ("skk-setup")
 ;; The "correct" way would be actually installing ddskk into some subdirectory.
