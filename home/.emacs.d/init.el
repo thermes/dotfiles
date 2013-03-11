@@ -1,6 +1,19 @@
 ; -*- mode: emacs-lisp; coding: utf-8 -*-
 ;;; ~/.emacs.d/init.el -- Emacsen initialize file
 
+(require 'package)
+
+; Add package-archives
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/")) ; ついでにmarmaladeも追加
+
+; Initialize
+(package-initialize)
+
+; melpa.el
+(require 'melpa)
+
+
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (unless (require 'el-get nil 'noerror)
@@ -9,16 +22,16 @@
        "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
     (goto-char (point-max))
     (eval-print-last-sexp)))
-
 (el-get 'sync)
+
+
+
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 (require 'info)
 (add-to-list 'Info-additional-directory-list (expand-file-name "~/.emacs.d/info"))
 
-;; INSTALL
-;; (install-elisp "http://svn.coderepos.org/share/lang/elisp/init-loader/init-loader.el")
 (require 'init-loader)
 (init-loader-load)
 
