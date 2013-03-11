@@ -1,3 +1,5 @@
+; -*- mode: emacs-lisp; coding: utf-8 -*-
+
 ;; This variable describes the behavior of the command key.
 (setq ns-command-modifier (quote meta))
 
@@ -16,6 +18,6 @@
 
 
 
-(add-to-list 'default-frame-alist '(alpha . 90))
+(add-to-list 'default-frame-alist '(alpha . 95))
 
 (add-to-list 'exec-path "/usr/local/bin")
