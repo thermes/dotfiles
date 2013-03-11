@@ -6,5 +6,3 @@
 		  'unicode
 		  (font-spec :family "Ricty" :size 14))
 (add-to-list 'default-frame-alist '(font . "fontset-ricty"))
-
-

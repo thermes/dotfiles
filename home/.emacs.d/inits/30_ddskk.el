@@ -18,15 +18,6 @@
 ;; Non-nil であれば、送りありの登録時に、余計な仮名をチェックする。
 (setq skk-check-okurigana-on-touroku 'ask)
 
-;; 状態遷移規則のリストで、ユーザの追加設定用の変数。
-(setq skk-rom-kana-rule-list
-      (append '(("!" nil "！")
-                ("@" nil "＠")
-                ("#" nil "＃")
-                ("<" nil "＜")
-                (">" nil "＞"))
-              skk-rom-kana-rule-list))
-
 ;; Non-nil であれば、括弧と閉括弧をまとめて挿入する。
 ;; 例えば、\"「\" を入力したときに \"」\" を自動的に挿入し、両かぎかっこの間に
 ;; カーソルを移動する。

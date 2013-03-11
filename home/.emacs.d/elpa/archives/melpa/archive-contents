@@ -1076,7 +1076,7 @@
       [(20120507 7)
        nil "Emacs mode for filesystem navigation [source: hg]" tar])
  (namespaces .
-	     [(20130303 1338)
+	     [(20130312 105)
 	      nil "An implementation of namespaces for Elisp, with an emphasis on immutabilty. [source: github]" single])
  (n3-mode .
 	  [(20130115 2145)
@@ -1131,6 +1131,9 @@
  (mode-line-debug .
 		  [(20121207 1644)
 		   nil "show status of `debug-on-error' in the mode-line [source: github]" single])
+ (mo-git-blame .
+	       [(20120917 736)
+		nil "An interactive, iterative 'git blame' mode for Emacs [source: github]" single])
  (mmm-mode .
 	   [(20130303 2324)
 	    nil "Allow Multiple Major Modes in a buffer [source: github]" tar])
@@ -1770,7 +1773,7 @@
 		       (0 1 1)))
 		     "Fringe version of git-gutter.el [source: github]" single])
  (git-gutter .
-	     [(20130311 1052)
+	     [(20130311 1923)
 	      nil "Port of Sublime Text plugin GitGutter [source: github]" single])
  (git-dwim .
 	   [(20130130 2150)
