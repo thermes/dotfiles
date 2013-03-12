@@ -6,3 +6,4 @@
 
 ;; Rinari
 (require 'rinari)
+(global-rinari-mode)
