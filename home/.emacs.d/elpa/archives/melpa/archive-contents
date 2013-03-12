@@ -120,7 +120,7 @@
 	[(20130114 1335)
 	 nil "Writable grep buffer and apply the changes to files [source: github]" single])
  (weechat .
-	  [(20130310 1213)
+	  [(20130311 2319)
 	   nil "No description available. [source: github]" tar])
  (websocket .
 	    [(20130123 2144)
@@ -457,6 +457,9 @@
 		(magit
 		 (0 8 1)))
 	       "Saner defaults and goodies. [source: github]" tar])
+ (stan-mode .
+	    [(20130311 953)
+	     nil "Major mode for editing STAN files [source: github]" tar])
  (ssh-config-mode .
 		  [(20120513 2233)
 		   nil "Mode for fontification of ~/.ssh/config [source: github]" single])
@@ -503,7 +506,7 @@
 	   [(20120905 2101)
 	    nil "Support sequential operation which omitted prefix keys. [source: github]" single])
  (smartparens .
-	      [(20130301 1838)
+	      [(20130312 22)
 	       ((dash
 		 (1 0 2)))
 	       "Smart insertion and wrapping with parens/user defined pairs/tags [source: github]" tar])
@@ -753,7 +756,7 @@
 	  [(20121017 157)
 	   nil "No description available. [source: github]" single])
  (quickrun .
-	   [(20130224 1044)
+	   [(20130311 2031)
 	    nil "Run commands quickly [source: github]" single])
  (quickref .
 	   [(20130113 1700)
@@ -848,7 +851,7 @@
 		  [(20120403 1455)
 		   nil "Interact with Pivotal Tracker through its API [source: github]" single])
  (php-mode .
-	   [(20130215 1721)
+	   [(20130311 1818)
 	    nil "Major mode for editing PHP code [source: github]" tar])
  (php-eldoc .
 	    [(20130131 1429)
@@ -869,7 +872,7 @@
 	      [(20121130 1746)
 	       nil "switch between named \"perspectives\" of the editor [source: github]" single])
  (persp-mode .
-	     [(20130310 3)
+	     [(20130311 1757)
 	      ((workgroups
 		(0 2 0)))
 	      "\"perspectives\" shared between frames. [source: github]" single])
@@ -1511,7 +1514,7 @@
 		[(20130204 1653)
 		 nil "Major mode API client for status.net open microblogging [source: github]" tar])
  (icicles .
-	  [(20130310 1718)
+	  [(20130311 2258)
 	   nil "Minibuffer input completion and cycling. [source: wiki]" tar])
  (ibuffer-vc .
 	     [(20121217 826)
@@ -1644,7 +1647,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [source: github]" single])
  (helm .
-       [(20130308 1034)
+       [(20130311 1239)
 	nil "Helm is an Emacs incremental and narrowing framework [source: github]" tar])
  (header2 .
 	  [(20121228 2051)
@@ -1766,14 +1769,14 @@
 		 [(20130227 1617)
 		  nil "Major mode for editing .gitconfig files [source: github]" single])
  (git-gutter-fringe .
-		    [(20130311 1453)
+		    [(20130311 2057)
 		     ((git-gutter
-		       (0 29))
+		       (0 31))
 		      (fringe-helper
 		       (0 1 1)))
 		     "Fringe version of git-gutter.el [source: github]" single])
  (git-gutter .
-	     [(20130311 1923)
+	     [(20130311 2055)
 	      nil "Port of Sublime Text plugin GitGutter [source: github]" single])
  (git-dwim .
 	   [(20130130 2150)
@@ -1785,7 +1788,7 @@
 	    [(20110509 1226)
 	     nil "Minor mode for incremental blame for Git [source: github]" single])
  (gist .
-       [(20130310 1342)
+       [(20130311 1926)
 	((eieio
 	  (1 3))
 	 (gh
@@ -1835,9 +1838,15 @@
 	   [(20120401 2119)
 	    nil "a front-end for ack [source: github]" tar])
  (fsharp-mode .
-	      [(20130213 1124)
-	       ((pos-tip
-		 (0 4 5)))
+	      [(20130311 2240)
+	       ((popup
+		 (0 5))
+		(pos-tip
+		 (0 4 5))
+		(s
+		 (1 3 1))
+		(dash
+		 (1 1 0)))
 	       "F# mode for Emacs [source: github]" tar])
  (fringe-helper .
 		[(20080604 2339)
@@ -2176,8 +2185,8 @@
 	[(20120118 1537)
 	 nil "running leiningen commands from emacs [source: github]" single])
  (electric-case .
-		[(20130220 4)
-		 nil "Electric case conversion. [source: github]" single])
+		[(20130311 2315)
+		 nil "insert camelCase, snake_case words without \"Shift\"ing [source: github]" single])
  (el-mock .
 	  [(20121004 2057)
 	   nil "Tiny Mock and Stub framework in Emacs Lisp [source: wiki]" single])
@@ -2214,7 +2223,7 @@
       [(20130202 1459)
        nil "a code browser for Emacs [source: github]" tar])
  (ebib .
-       [(20130310 1719)
+       [(20130311 1835)
 	nil "a BibTeX database manager [source: github]" tar])
  (easy-after-load .
 		  [(20121224 2049)
@@ -2346,7 +2355,7 @@
    [(20130210 1619)
     nil "Simple asynchronous functions for emacs lisp [source: github]" single])
  (dash .
-       [(20130309 2202)
+       [(20130311 1525)
 	nil "A modern list library for Emacs [source: github]" single])
  (dart-mode .
 	    [(20121218 1449)
@@ -2621,7 +2630,7 @@
 	       [(20130306 426)
 		nil "Auto install elisp file [source: wiki]" single])
  (auto-indent-mode .
-		   [(20130306 1646)
+		   [(20130309 1314)
 		    nil "Auto indent Minor mode [source: github]" single])
  (auto-complete-clang .
 		      [(20120612 2224)
