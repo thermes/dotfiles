@@ -1,0 +1,7 @@
+(load "elscreen" "ElScreen" t)
+(require 'elscreen-dired)
+(require 'elscreen-dnd)
+(require 'elscreen-server)
+(require 'elscreen-w3m)
+(setq elscreen-tab-display-control nil)
+(setq elscreen-tab-display-kill-screen nil)
