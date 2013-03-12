@@ -1,4 +1,4 @@
 ; -*- mode: emacs-lisp; coding: utf-8 -*-
 
-(require 'browse-kill-ring)
-(browse-kill-ring-default-keybindings)
+(when (require 'browse-kill-ring nil t)
+  (browse-kill-ring-default-keybindings))

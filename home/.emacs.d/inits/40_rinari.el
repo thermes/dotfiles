@@ -5,5 +5,5 @@
 ;(ido-mode t)
 
 ;; Rinari
-(require 'rinari)
-(global-rinari-mode)
+(when (require 'rinari nil t)
+  (global-rinari-mode))

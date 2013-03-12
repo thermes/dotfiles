@@ -15,9 +15,10 @@
 (setq mac-pass-command-to-system nil)
 (setq mac-pass-option-to-system nil)
 
-
-
-
+;; 半透明
 (add-to-list 'default-frame-alist '(alpha . 95))
 
+;; PATH
 (add-to-list 'exec-path "/usr/local/bin")
+(add-to-list 'exec-path "/usr/local/opt/coreutils/libexec/gnubin")
+(add-to-list 'exec-path "/Users/thermes/.rbenv/shims")
