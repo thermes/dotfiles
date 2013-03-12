@@ -10,7 +10,7 @@
 (define-key global-map [ns-drag-file] 'ns-find-file)
 
 ;; システムへ修飾キーを渡さない設定
-;; TODO: this setting obslute?
+;; TODO: this setting obsolete?
 (setq mac-pass-control-to-system nil)
 (setq mac-pass-command-to-system nil)
 (setq mac-pass-option-to-system nil)
