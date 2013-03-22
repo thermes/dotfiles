@@ -36,3 +36,14 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Emacs #
+#########
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
