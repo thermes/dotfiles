@@ -20,5 +20,3 @@
 ;; Toggle display of a menu bar on each frame (Menu Bar mode).
 (unless window-system
   (menu-bar-mode -1))
-
-(setq jaspace-highlight-tabs t)
