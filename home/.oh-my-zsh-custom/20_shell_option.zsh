@@ -29,7 +29,6 @@ setopt NOTIFY
 
 # other
 setopt NUMERIC_GLOB_SORT 
-setopt LIST_ROWS_FIRST
 
 # Emacs shell mode
 [[ $EMACS = t ]] && unsetopt zle
