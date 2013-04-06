@@ -1,8 +1,4 @@
 ; -*- mode: emacs-lisp; coding: utf-8 -*-
 
-(create-fontset-from-ascii-font
- "Ricty-14:weight=normal:slant=normal" nil "ricty")
-(set-fontset-font "fontset-ricty"
-		  'unicode
-		  (font-spec :family "Ricty" :size 14))
-(add-to-list 'default-frame-alist '(font . "fontset-ricty"))
+(set-face-attribute 'default nil :family "Ricty" :height 140)
+(set-fontset-font nil 'japanese-jisx0208 (font-spec :family "Ricty"))
