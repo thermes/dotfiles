@@ -10,3 +10,15 @@
 (autoload 'inf-ruby-setup-keybindings "inf-ruby" "" t)
 (eval-after-load 'ruby-mode
   '(add-hook 'ruby-mode-hook 'inf-ruby-setup-keybindings))
+
+;; ruby-end.el
+(require 'ruby-end)
+(setq ruby-end-insert-newline nil)
+
+(eval-after-load 'ruby-mode
+  '(add-hook 'ruby-mode-hook
+	     '(lambda ()
+		(electric-pair-mode t)
+		(electric-indent-mode nil)
+		;; (electric-layout-mode nil)
+		)))
