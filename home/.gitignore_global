@@ -56,3 +56,6 @@ Session.vim
 *.ipr
 *.iws
 .idea/
+
+# git
+.gitconfig.local
