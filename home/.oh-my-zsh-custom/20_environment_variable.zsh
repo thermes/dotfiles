@@ -1,3 +1,5 @@
+#! /bin/zsh
+
 export BLOCKSIZE=K
 
 # EDITOR

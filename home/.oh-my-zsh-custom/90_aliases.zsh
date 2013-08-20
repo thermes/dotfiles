@@ -1,3 +1,5 @@
+#! /bin/zsh
+
 if [ "$DISABLE_LS_COLORS" != "true" ]
 then
   # Find the option for using colors in ls, depending on the version: Linux or BSD

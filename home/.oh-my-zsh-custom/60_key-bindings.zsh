@@ -1,3 +1,5 @@
+#! /bin/zsh
+
 bindkey -e
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
