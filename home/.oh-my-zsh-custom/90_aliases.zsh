@@ -16,7 +16,13 @@ alias cp='nocorrect cp -i'
 alias mv='nocorrect mv -i'
 alias rm='nocorrect rm'
 alias mkdir='nocorrect mkdir'
+
+alias aptitude='nocorrect aptitude'
+alias gem='nocorrect gem'
 alias git='nocorrect git'
+alias homesick='nocorrect homesick'
+alias rbenv='nocorrect rbenv'
+alias w3m='nocorrect w3m'
 
 alias -g L="|$PAGER"
 alias -g G='|grep'
