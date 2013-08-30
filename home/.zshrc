@@ -19,6 +19,7 @@ path=(
     /usr/local/opt/coreutils/libexec/gnubin(N-/)
     /opt/local/sbin(N-/)
     /opt/local/bin(N-/)
+    /opt/chef/bin(N-/)
     /opt/sbin(N-/)
     /opt/bin(N-/)
     /usr/local/sbin(N-/)
