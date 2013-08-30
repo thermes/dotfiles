@@ -24,10 +24,15 @@ alias gem='nocorrect gem'
 alias git='nocorrect git'
 alias homesick='nocorrect homesick'
 alias rbenv='nocorrect rbenv'
+alias ssh='nocorrect ssh'
+alias vagrant='nocorrect vagrant'
+alias w3m='nocorrect w3m'
 alias w3m='nocorrect w3m'
 
-alias -g L="|$PAGER"
 alias -g G='|grep'
 alias -g H='|head'
-alias -g T='|tail'
+alias -g L="|$PAGER"
 alias -g S='|sort'
+alias -g T='|tail'
+alias -g U='|uniq'
+alias -g X='|xargs'
