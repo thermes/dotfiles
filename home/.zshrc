@@ -4,6 +4,7 @@ case $OSTYPE in
 	;;
     darwin*)					# MacOS X
 	export X11HOME=/usr/X11
+        export RBENV_ROOT=/usr/local/var/rbenv
 	;;
     *)
 	;;
