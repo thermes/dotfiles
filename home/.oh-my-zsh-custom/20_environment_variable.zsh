@@ -22,6 +22,13 @@ case $TERM in
     jfbterm|kon)
 	export LANG=ja_JP.UTF-8
 	;;
+    xterm)
+	if [[ $COLORTERM = "xfce4-terminal" ]]; then
+	    export LANG=ja_JP.UTF-8
+	else
+	    export LANG=C
+	fi
+	;;
     *)
 	export LANG=C
 	;;
