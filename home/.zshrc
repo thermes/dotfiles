@@ -15,9 +15,10 @@ typeset -U path
 typeset -U PATH
 path=(
     $HOME/bin(N-/)
+    $HOME/local/bin(N-/)
     $HOME/.rbenv/shims(N-/)
     $HOME/.rbenv/bin(N-/)
-    $HOME/local/bin(N-/)
+    $HOME/.linuxbrew/bin(N-/)
     /usr/local/opt/coreutils/libexec/gnubin(N-/)
     /opt/local/sbin(N-/)
     /opt/local/bin(N-/)
