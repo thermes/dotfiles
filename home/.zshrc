@@ -1,3 +1,5 @@
+#! /bin/zsh
+
 case $OSTYPE in
     linux*)					# Linux generic
 	export X11HOME=/usr/X11R6
