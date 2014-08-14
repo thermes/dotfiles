@@ -19,6 +19,10 @@
      (eval-print-last-sexp))))
 (el-get 'sync)
 
+;; Cask
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
 ;; local
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
