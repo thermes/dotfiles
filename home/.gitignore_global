@@ -36,13 +36,10 @@ Thumbs.db
 # Emacs
 *~
 \#*\#
+.\#*
+*.elc
 /.emacs.desktop
 /.emacs.desktop.lock
-*.elc
-auto-save-list
-ac-comphist.dat
-tramp
-.\#*
 
 # Vim
 .*.s[a-w][a-z]
