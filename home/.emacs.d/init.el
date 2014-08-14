@@ -24,7 +24,9 @@
 (cask-initialize)
 
 ;; local
-(add-to-list 'load-path "~/.emacs.d/elisp")
+(let ((default-directory "~/.emacs.d/elisp"))
+  (add-to-list 'load-path default-directory)
+  (normal-top-level-add-subdirs-to-load-path))
 
 (require 'info)
 (add-to-list 'Info-additional-directory-list (expand-file-name "~/.emacs.d/info"))
