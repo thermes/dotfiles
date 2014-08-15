@@ -1,0 +1,21 @@
+; -*- mode: emacs-lisp; coding: utf-8 -*-
+
+(source gnu)
+(source melpa)
+(source marmalade)
+
+;; setup
+(depends-on "init-loader")
+
+;; color
+(depends-on "color-theme")
+(depends-on "color-theme-solarized")
+
+;; git
+(depends-on "magit")
+
+;; ruby
+(depends-on "ruby-mode")
+
+(depends-on "auto-complete")
+(depends-on "popwin")
