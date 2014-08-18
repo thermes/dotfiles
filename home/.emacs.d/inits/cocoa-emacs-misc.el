@@ -1,11 +1,5 @@
 ; -*- mode: emacs-lisp; coding: utf-8 -*-
 
-;; This variable describes the behavior of the command key.
-(setq ns-command-modifier (quote meta))
-
-;; This variable describes the behavior of the alternate or option key.
-(setq ns-alternate-modifier (quote super))
-
 ;; バッファにファイルをドラッグドロップした際、新たにファイルを開くように設定
 (define-key global-map [ns-drag-file] 'ns-find-file)
 
