@@ -1,3 +1,6 @@
+## inf-ruby
+Pry.config.pager = false if ENV["EMACS"]
+
 begin
   require 'hirb'
 rescue LoadError
