@@ -10,9 +10,6 @@
   (add-to-list 'load-path default-directory)
   (normal-top-level-add-subdirs-to-load-path))
 
-(require 'info)
-(add-to-list 'Info-additional-directory-list (expand-file-name "~/.emacs.d/info"))
-
 ;; run init-loader
 (require 'init-loader)
 (init-loader-load)
