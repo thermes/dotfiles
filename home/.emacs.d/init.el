@@ -2,7 +2,8 @@
 ;;; ~/.emacs.d/init.el -- Emacsen initialize file
 
 ;; Cask
-(require 'cask "~/.cask/cask.el")
+(unless (require 'cask nil t)
+  (require 'cask "~/.cask/cask.el"))
 (cask-initialize)
 
 ;; local
