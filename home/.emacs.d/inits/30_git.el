@@ -1,5 +1,6 @@
-;;; 30_magit.el
+;;; 30_git.el
 
+;; magit
 (require 'magit)
 
 ;; Local Variables:
@@ -7,4 +8,4 @@
 ;; indent-tabs-mode: nil
 ;; End:
 
-;;; 30_magit.el ends here
+;;; 30_git.el ends here
