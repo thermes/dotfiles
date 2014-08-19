@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; 00_coding.el
 
 (set-language-environment "Japanese")
 (prefer-coding-system 'utf-8)
@@ -11,3 +11,10 @@
 (when (eq system-type 'windows-nt)
   (set-file-name-coding-system 'cp932)
   (setq locale-coding-system 'cp932))
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; 00_coding.el ends here

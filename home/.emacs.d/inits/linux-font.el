@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; linux-font.el
 
 (create-fontset-from-ascii-font
  "Ricty-12:weight=normal:slant=normal" nil "ricty")
@@ -12,3 +12,10 @@
 		    (font-spec :family "Ricty")
 		    nil 'append))
 (add-to-list 'default-frame-alist '(font . "fontset-ricty"))
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; linux-font.el ends here

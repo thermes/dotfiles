@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; windows-coding.el
 
 ;; ------------------------------------------------------------------------
 ;; @ encode
@@ -119,3 +119,10 @@
 (coding-system-put 'cp932-dos :mnemonic ?P)
 (coding-system-put 'cp932-unix :mnemonic ?P)
 (coding-system-put 'cp932-mac :mnemonic ?P)
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; windows-coding.el ends here

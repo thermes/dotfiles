@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; 40_perl.el
 
 (autoload 'perl-mode "cperl-mode" "alternate mode for editing Perl programs" t)
 ;(defalias 'perl-mode 'cperl-mode)
@@ -10,3 +10,10 @@
 (setq cperl-close-paren-offset -4)
 (setq cperl-label-offset -4)
 (setq cperl-highlight-variables-indiscriminately t)
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; 40_perl.el ends here

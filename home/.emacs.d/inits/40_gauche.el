@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; 40_gauche.el
 
 (modify-coding-system-alist 'process "gosh" '(utf-8 . utf-8))
 (setq scheme-program-name "gosh -i")
@@ -13,3 +13,10 @@
   (run-scheme scheme-program-name))
 ;; (define-key global-map
 ;;   "\C-cs" 'scheme-other-window)
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; 40_gauche.el ends here

@@ -1,4 +1,3 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
 ;;; ~/.emacs.d/init.el -- Emacsen initialize file
 
 ;; Cask
@@ -22,3 +21,11 @@
 ;; 40 メジャーモード
 ;; 50 マイナーモード
 ;; 90 起動後実行系
+
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; init.el ends here

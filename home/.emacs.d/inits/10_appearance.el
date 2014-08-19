@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; 10_appearance.el
 
 ;; Load Custom theme named THEME from its file.
 (load-theme 'solarized-dark t)
@@ -20,3 +20,10 @@
 ;; Toggle display of a menu bar on each frame (Menu Bar mode).
 (unless window-system
   (menu-bar-mode -1))
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; 10_appearance.el ends here

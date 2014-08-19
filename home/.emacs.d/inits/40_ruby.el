@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; 40_ruby.el
 
 ;; ruby-mode.el
 (autoload 'ruby-mode "ruby-mode" "Major mode for ruby files" t)
@@ -21,3 +21,10 @@
 		(electric-indent-mode nil)
 		;; (electric-layout-mode nil)
 		)))
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; 40_ruby.el ends here

@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; 30_ddskk.el
 
 (setq skk-user-directory "~/.emacs.d/ddskk/")
 
@@ -33,3 +33,10 @@
 
 ;; Non-nil なら 半角カナと Japanese Roman の入力機能が利用可能になる。
 (setq skk-use-jisx0201-input-method t)
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; 30_ddskk.el ends here

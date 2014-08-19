@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; windows-misc.el
 
 ;; ------------------------------------------------------------------------
 ;; @ setup-cygwin
@@ -14,3 +14,9 @@
 ;; (setq exec-path
 ;; 	(append (list "c:/Program Files/PuTTY") exec-path))
 ;; (setq tramp-default-method "plink")
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; windows-misc.el ends here

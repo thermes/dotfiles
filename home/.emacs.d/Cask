@@ -1,4 +1,4 @@
-; -*- mode: emacs-lisp; coding: utf-8 -*-
+;;; ~/.emacs.d/Cask
 
 (source gnu)
 (source melpa)
@@ -43,3 +43,11 @@
 (depends-on "ruby-end")
 (depends-on "scss-mode")
 (depends-on "yaml-mode")
+
+;; Local Variables:
+;; mode: emacs-lisp
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; Cask ends here

@@ -1,3 +1,5 @@
+;;; 10_misc.el
+
 ;; カーソル位置の桁数をモードラインに表示する。
 (column-number-mode t)
 
@@ -46,3 +48,10 @@
 
 ;; yesで答る部分もyで答えられるように
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; 10_misc.el ends here
