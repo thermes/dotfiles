@@ -13,6 +13,7 @@
 
 ;; git
 (depends-on "magit")
+(depends-on "git-gutter")
 
 ;; wgrep
 (depends-on "wgrep")
