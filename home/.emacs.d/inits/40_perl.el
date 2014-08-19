@@ -1,7 +1,6 @@
 ;;; 40_perl.el
 
 (autoload 'perl-mode "cperl-mode" "alternate mode for editing Perl programs" t)
-;(defalias 'perl-mode 'cperl-mode)
 (setq cperl-indent-level 4)
 (setq cperl-continued-statement-offset 4)
 (setq cperl-comment-column 40)

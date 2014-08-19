@@ -11,8 +11,6 @@
   (switch-to-buffer-other-window
    (get-buffer-create "*scheme*"))
   (run-scheme scheme-program-name))
-;; (define-key global-map
-;;   "\C-cs" 'scheme-other-window)
 
 ;; Local Variables:
 ;; coding: utf-8

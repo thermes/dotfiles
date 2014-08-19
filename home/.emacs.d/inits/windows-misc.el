@@ -10,10 +10,6 @@
 (setq shell-command-switch "-c")
 (setq shell-file-name "zsh.exe")
 
-;; ;; TRAMP
-;; (setq exec-path
-;; 	(append (list "c:/Program Files/PuTTY") exec-path))
-;; (setq tramp-default-method "plink")
 ;; Local Variables:
 ;; coding: utf-8
 ;; indent-tabs-mode: nil
