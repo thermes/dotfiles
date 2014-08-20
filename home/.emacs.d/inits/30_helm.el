@@ -4,6 +4,11 @@
 (require 'helm-config)
 (helm-mode 1)
 
+(set-face-attribute 'helm-selection nil
+                    :background "#fdf6e3")
+(set-face-attribute 'helm-source-header nil
+                    :height 1.0)
+
 (define-key global-map (kbd "M-x") 'helm-M-x)
 (define-key global-map (kbd "M-y") 'helm-show-kill-ring)
 (define-key global-map (kbd "C-x b") 'helm-buffers-list)
