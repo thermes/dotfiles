@@ -1,8 +1,8 @@
 ;;; 40_php.el
 
-(when (require 'php-mode nil t)
-  (add-to-list 'auto-mode-alist
-	       '("\\.php[34]?\\'\\|\\.phtml\\'" . php-mode)))
+(require 'php-mode)
+(add-to-list 'auto-mode-alist
+             '("\\.php[34]?\\'\\|\\.phtml\\'" . php-mode))
 
 ;; Local Variables:
 ;; coding: utf-8

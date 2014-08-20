@@ -1,7 +1,7 @@
 ;;; 30_wdired.el
 
-(when (require 'wdired nil t)
-  (define-key dired-mode-map "r" 'wdired-change-to-wdired-mode))
+(require 'wdired)
+(define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)
 
 ;; Local Variables:
 ;; coding: utf-8

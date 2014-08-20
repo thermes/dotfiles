@@ -1,7 +1,7 @@
 ;;; 30_browse-kill-ring.el
 
-(when (require 'browse-kill-ring nil t)
-  (browse-kill-ring-default-keybindings))
+(require 'browse-kill-ring)
+(browse-kill-ring-default-keybindings)
 
 ;; Local Variables:
 ;; coding: utf-8
