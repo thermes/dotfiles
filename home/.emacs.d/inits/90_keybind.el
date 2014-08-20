@@ -1,7 +1,7 @@
 ;;; 90_keybind.el
 
-(global-set-key (kbd "C-h") 'backward-delete-char)
-(global-set-key (kbd "M-?") 'help)
+(define-key global-map (kbd "C-h") 'backward-delete-char)
+(define-key global-map (kbd "M-?") 'help)
 
 ;; Local Variables:
 ;; coding: utf-8
