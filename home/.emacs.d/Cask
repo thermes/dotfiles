@@ -13,6 +13,7 @@
 
 ;; helm
 (depends-on "helm")
+(depends-on "helm-ag")
 
 ;; git
 (depends-on "magit")

@@ -11,6 +11,9 @@
   (define-key helm-map "[TAB]" 'helm-execute-persistent-action)
   )
 
+;; helm-ag
+(require 'helm-ag)
+
 ;; Local Variables:
 ;; coding: utf-8
 ;; indent-tabs-mode: nil
