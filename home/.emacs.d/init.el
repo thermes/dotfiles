@@ -5,6 +5,9 @@
   (require 'cask "~/.cask/cask.el"))
 (cask-initialize)
 
+(require 'exec-path-from-shell)
+(exec-path-from-shell-initialize)
+
 ;; local
 (let ((default-directory "~/.emacs.d/elisp"))
   (add-to-list 'load-path default-directory)

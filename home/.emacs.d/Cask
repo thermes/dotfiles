@@ -6,6 +6,7 @@
 
 ;; setup
 (depends-on "init-loader")
+(depends-on "exec-path-from-shell")
 
 ;; color
 (depends-on "color-theme")
