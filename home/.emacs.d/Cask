@@ -11,6 +11,9 @@
 (depends-on "color-theme")
 (depends-on "color-theme-solarized")
 
+;; helm
+(depends-on "helm")
+
 ;; git
 (depends-on "magit")
 (depends-on "git-gutter")
