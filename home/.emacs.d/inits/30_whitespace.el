@@ -2,9 +2,15 @@
 
 (require 'whitespace)
 (setq whitespace-style
-      '(face trailing space-after-tab space-before-tab tab-mark))
-(set-face-underline 'whitespace-trailing t)
-(global-whitespace-mode 1))
+      '(face tabs trailing space-before-tab tab-mark))
+(set-face-attribute 'whitespace-tab nil
+                    :foreground "#259185"
+                    :background nil)
+(set-face-attribute 'whitespace-trailing nil
+                    :foreground "#a57705"
+                    :background nil
+                    :underline t)
+(global-whitespace-mode 1)
 
 ;; Local Variables:
 ;; coding: utf-8
