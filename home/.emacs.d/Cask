@@ -9,42 +9,40 @@
 (depends-on "exec-path-from-shell")
 
 ;; color
-(depends-on "color-theme")
 (depends-on "color-theme-solarized")
 
 ;; git
 (depends-on "magit")
+(depends-on "git-commit-mode")
+(depends-on "git-rebase-mode")
 (depends-on "git-gutter")
 
 ;; wgrep
 (depends-on "wgrep")
 
+;; auto-complete
+(depends-on "auto-complete")
+(depends-on "popup")
+
 ;; ruby
 (depends-on "ruby-mode")
-
-(depends-on "auto-complete")
-(depends-on "popwin")
-
-(depends-on "auto-complete")
-(depends-on "browse-kill-ring")
-(depends-on "color-moccur")
-(depends-on "color-theme-solarized")
-(depends-on "findr")
-(depends-on "git-commit-mode")
-(depends-on "git-rebase-mode")
-(depends-on "inf-ruby")
-(depends-on "inflections")
-(depends-on "init-loader")
-(depends-on "jump")
-(depends-on "magit")
-(depends-on "php-mode")
-(depends-on "popup")
-(depends-on "popwin")
 (depends-on "ruby-compilation")
 (depends-on "ruby-electric")
 (depends-on "ruby-end")
+(depends-on "inf-ruby")
+
+;; misc major mode
+(depends-on "php-mode")
 (depends-on "scss-mode")
 (depends-on "yaml-mode")
+
+
+(depends-on "browse-kill-ring")
+(depends-on "color-moccur")
+(depends-on "findr")
+(depends-on "inflections")
+(depends-on "jump")
+(depends-on "popwin")
 
 ;; Local Variables:
 ;; mode: emacs-lisp
