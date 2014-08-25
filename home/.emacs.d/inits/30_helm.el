@@ -9,12 +9,9 @@
 (set-face-attribute 'helm-source-header nil
                     :height 1.0)
 
-(define-key global-map (kbd "M-x") 'helm-M-x)
-(define-key global-map (kbd "M-y") 'helm-show-kill-ring)
-(define-key global-map (kbd "C-x b") 'helm-buffers-list)
+(global-set-key (kbd "C-c h") 'helm-mini)
 
 (define-key helm-map (kbd "C-h") 'delete-backward-char)
-(define-key helm-map "[TAB]" 'helm-execute-persistent-action)
 
 ;; helm-ag
 (require 'helm-ag)
