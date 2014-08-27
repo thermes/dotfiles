@@ -12,11 +12,6 @@
 ;; 半透明
 (add-to-list 'default-frame-alist '(alpha . 95))
 
-;; ;; PATH
-;; (add-to-list 'exec-path "/usr/local/bin")
-;; (add-to-list 'exec-path "/usr/local/opt/coreutils/libexec/gnubin")
-;; (add-to-list 'exec-path "/Users/thermes/.rbenv/shims")
-
 ;; Local Variables:
 ;; coding: utf-8
 ;; indent-tabs-mode: nil
