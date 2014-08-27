@@ -1,11 +1,5 @@
 ;;; 10_misc.el
 
-;; カーソル位置の桁数をモードラインに表示する。
-(column-number-mode t)
-
-;; カーソル位置の行数をモードラインに表示する。
-(line-number-mode t)
-
 ;; unified-diff を用いる
 (setq diff-switches "-u")
 

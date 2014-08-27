@@ -6,6 +6,12 @@
 ;; Toggle line highlighting in all buffers (Global Hl-Line mode).
 (global-hl-line-mode)
 
+;; カーソル位置の桁数をモードラインに表示する。
+(column-number-mode t)
+
+;; カーソル位置の行数をモードラインに表示する。
+(line-number-mode t)
+
 ;; Toggle Linum mode in all buffers.
 (global-linum-mode t)
 (setq linum-format "%4d")
