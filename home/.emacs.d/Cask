@@ -11,6 +11,10 @@
 ;; color
 (depends-on "color-theme-solarized")
 
+;; helm
+(depends-on "helm")
+(depends-on "helm-ag")
+
 ;; git
 (depends-on "magit")
 (depends-on "git-commit-mode")
