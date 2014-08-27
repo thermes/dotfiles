@@ -15,6 +15,7 @@
 
 ;; run init-loader
 (require 'init-loader)
+(custom-set-variables '(init-loader-show-log-after-init 'error-only))
 (init-loader-load)
 
 ;; 00 一般設定
