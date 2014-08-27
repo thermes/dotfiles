@@ -11,6 +11,9 @@
 ;; color
 (depends-on "color-theme-solarized")
 
+;; popwin
+(depends-on "popwin")
+
 ;; helm
 (depends-on "helm")
 (depends-on "helm-ag")
@@ -42,7 +45,6 @@
 
 
 (depends-on "color-moccur")
-(depends-on "popwin")
 
 ;; Local Variables:
 ;; mode: emacs-lisp
