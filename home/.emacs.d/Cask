@@ -41,7 +41,6 @@
 (depends-on "yaml-mode")
 
 
-(depends-on "browse-kill-ring")
 (depends-on "color-moccur")
 (depends-on "findr")
 (depends-on "inflections")
