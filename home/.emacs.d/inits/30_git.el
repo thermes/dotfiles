@@ -4,9 +4,8 @@
 (require 'magit)
 
 ;; git-gutter
-(require 'git-gutter)
+(require 'git-gutter-fringe)
 (global-git-gutter-mode t)
-(git-gutter:linum-setup)
 
 ;; Local Variables:
 ;; coding: utf-8
