@@ -14,6 +14,9 @@
 ;; popwin
 (depends-on "popwin")
 
+;; direx
+(depends-on "direx")
+
 ;; helm
 (depends-on "helm")
 (depends-on "helm-ag")
