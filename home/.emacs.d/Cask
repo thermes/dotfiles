@@ -42,9 +42,6 @@
 
 
 (depends-on "color-moccur")
-(depends-on "findr")
-(depends-on "inflections")
-(depends-on "jump")
 (depends-on "popwin")
 
 ;; Local Variables:
