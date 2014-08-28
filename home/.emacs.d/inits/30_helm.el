@@ -25,6 +25,10 @@
 ;; helm-ag
 (require 'helm-ag)
 
+;; helm-descbinds
+(require 'helm-descbinds)
+(helm-descbinds-mode 1)
+
 ;; Local Variables:
 ;; coding: utf-8
 ;; indent-tabs-mode: nil

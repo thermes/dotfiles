@@ -20,6 +20,7 @@
 ;; helm
 (depends-on "helm")
 (depends-on "helm-ag")
+(depends-on "helm-descbinds")
 
 ;; git
 (depends-on "magit")
