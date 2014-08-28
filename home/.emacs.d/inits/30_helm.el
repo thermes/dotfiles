@@ -1,5 +1,8 @@
 ;;; 30_helm.el
 
+;; I'm DDSKK user.
+(setq dired-bind-jump nil)
+
 ;; helm
 (require 'helm-config)
 (helm-mode 1)
