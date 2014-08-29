@@ -47,6 +47,10 @@
 (depends-on "ruby-end")
 (depends-on "inf-ruby")
 
+;; javascript / coffeescript
+(depends-on "js2-mode")
+(depends-on "coffee-mode")
+
 ;; misc major mode
 (depends-on "php-mode")
 (depends-on "scss-mode")
