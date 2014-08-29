@@ -29,8 +29,12 @@
 (depends-on "git-gutter")
 (depends-on "git-gutter-fringe")
 
+;; ag
+(depends-on "ag")
+
 ;; wgrep
 (depends-on "wgrep")
+(depends-on "wgrep-ag")
 
 ;; auto-complete
 (depends-on "auto-complete")
