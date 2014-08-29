@@ -3,7 +3,7 @@
 (setq skk-user-directory "~/.emacs.d/ddskk/")
 
 (require 'skk-setup)
-(setq default-input-method "japanese-skk")
+(custom-set-variables '(default-input-method "japanese-skk"))
 
 ;; SKK 辞書サーバーを走らせているホスト名。
 (setq skk-server-host "localhost")

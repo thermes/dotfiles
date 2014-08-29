@@ -1,8 +1,8 @@
 ;;; 30_ag.el
 
 (require 'ag)
-(setq ag-highlight-search t)
-(setq ag-reuse-buffers t)
+(custom-set-variables '(ag-highlight-search t)
+                      '(ag-reuse-buffers t))
 
 (autoload 'wgrep-ag-setup "wgrep-ag")
 (add-hook 'ag-mode-hook 'wgrep-ag-setup)

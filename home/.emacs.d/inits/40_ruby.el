@@ -12,15 +12,14 @@
 
 ;; ruby-end.el
 (require 'ruby-end)
-(setq ruby-end-insert-newline nil)
+(custom-set-variables '(ruby-end-insert-newline nil))
 
 (eval-after-load 'ruby-mode
   '(add-hook 'ruby-mode-hook
-	     '(lambda ()
-		(electric-pair-mode t)
-		(electric-indent-mode nil)
-		;; (electric-layout-mode nil)
-		)))
+             '(lambda ()
+                (electric-pair-mode t)
+                (electric-indent-mode nil)
+                )))
 
 ;; Local Variables:
 ;; coding: utf-8

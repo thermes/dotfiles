@@ -1,8 +1,8 @@
 ;;; 30_wgrep.el
 
 (require 'wgrep)
-(setq wgrep-auto-save-buffer t)
-(setq wgrep-enable-key "r")
+(custom-set-variables '(wgrep-auto-save-buffer t)
+                      '(wgrep-enable-key "r"))
 
 ;; Local Variables:
 ;; coding: utf-8

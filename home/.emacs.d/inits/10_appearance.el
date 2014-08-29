@@ -14,7 +14,7 @@
 
 ;; Non-nil if Show-Paren mode is enabled.
 (show-paren-mode t)
-(setq show-paren-style 'mixed)
+(custom-set-variables '(show-paren-style 'mixed))
 
 ;; Toggle the tool bar in all graphical frames (Tool Bar mode).
 (tool-bar-mode -1)

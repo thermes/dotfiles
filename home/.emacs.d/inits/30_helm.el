@@ -1,7 +1,7 @@
 ;;; 30_helm.el
 
 ;; I'm DDSKK user.
-(setq dired-bind-jump nil)
+(custom-set-variables '(dired-bind-jump nil))
 
 ;; helm
 (require 'helm-config)

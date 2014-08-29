@@ -1,6 +1,6 @@
 ;;; 30_cua.el
 
-(setq cua-enable-cua-keys nil)
+(custom-set-variables '(cua-enable-cua-keys nil))
 (cua-mode t)
 
 ;; Local Variables:

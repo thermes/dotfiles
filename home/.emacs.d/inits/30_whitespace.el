@@ -1,8 +1,8 @@
 ;;; 30_whitespace.el
 
 (require 'whitespace)
-(setq whitespace-style
-      '(face tabs trailing space-before-tab tab-mark))
+(custom-set-variables '(whitespace-style '(face tabs trailing space-before-tab tab-mark)))
+
 (set-face-attribute 'whitespace-tab nil
                     :foreground "#259185"
                     :background nil)
