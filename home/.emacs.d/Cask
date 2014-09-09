@@ -36,6 +36,9 @@
 (depends-on "wgrep")
 (depends-on "wgrep-ag")
 
+;; flycheck
+(depends-on "flycheck")
+
 ;; auto-complete
 (depends-on "auto-complete")
 (depends-on "popup")
