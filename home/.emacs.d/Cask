@@ -17,6 +17,9 @@
 ;; direx
 (depends-on "direx")
 
+;; smartparens
+(depends-on "smartparens")
+
 ;; helm
 (depends-on "helm")
 (depends-on "helm-ag")
