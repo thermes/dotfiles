@@ -40,6 +40,9 @@
 (depends-on "auto-complete")
 (depends-on "popup")
 
+;; markdown
+(depends-on "markdown-mode")
+
 ;; ruby
 (depends-on "ruby-mode")
 (depends-on "ruby-compilation")
