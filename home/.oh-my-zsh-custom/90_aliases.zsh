@@ -28,6 +28,10 @@ alias ssh='nocorrect ssh'
 alias vagrant='nocorrect vagrant'
 alias w3m='nocorrect w3m'
 
+if [[ -x `which colordiff` ]]; then
+    alias diff='colordiff'
+fi
+
 alias -g G='|grep'
 alias -g H='|head'
 alias -g L="|$PAGER"
