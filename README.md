@@ -20,11 +20,17 @@ rbenv & ruby-build
 [rbenv](https://github.com/sstephenson/rbenv) & [ruby-build](https://github.com/sstephenson/ruby-build)
 
     $ brew install rbenv ruby-build
+    $ export RBENV_ROOT=/usr/local/var/rbenv
 
 or
 
     $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
     $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+    $ eval "$(rbenv init -)"
+    $ rbenv install ruby-version
+    $ rbenv global ruby-version
+    $ rbenv rehash
 
 oh-my-zsh
 ---------
@@ -39,8 +45,8 @@ homesick
 [homesick](https://github.com/technicalpickles/homesick)
 
     $ gem install homesick
-	$ homesick clone thermes/dotfiles.git
-	$ homesick symlink dotfiles
+    $ homesick clone thermes/dotfiles
+    $ homesick symlink dotfiles
 
 Cask
 ----
