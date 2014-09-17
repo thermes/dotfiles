@@ -27,7 +27,6 @@ alias rbenv='nocorrect rbenv'
 alias ssh='nocorrect ssh'
 alias vagrant='nocorrect vagrant'
 alias w3m='nocorrect w3m'
-alias w3m='nocorrect w3m'
 
 alias -g G='|grep'
 alias -g H='|head'
