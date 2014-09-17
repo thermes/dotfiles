@@ -1,15 +1,15 @@
-[user]
-	name = HORINOUCHI Masato
-	email = thermes@confei.to
 [color]
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore_global
+[include]
+	path = ~/.gitconfig.local
 [merge]
 	ff = false
 [pull]
 	rebase = true
-[include]
-	path = ~/.gitconfig.local
 [push]
 	default = simple
+[user]
+	name = HORINOUCHI Masato
+	email = thermes@confei.to
