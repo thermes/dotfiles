@@ -4,9 +4,8 @@ case $OSTYPE in
     linux*)					# Linux generic
 	export X11HOME=/usr/X11R6
 	;;
-    darwin*)					# MacOS X
+    darwin*)					# OSX
 	export X11HOME=/usr/X11
-        export RBENV_ROOT=/usr/local/var/rbenv
 	;;
     *)
 	;;
