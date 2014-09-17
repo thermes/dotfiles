@@ -32,6 +32,9 @@
 (depends-on "git-gutter")
 (depends-on "git-gutter-fringe")
 
+;; color-moccur
+(depends-on "color-moccur")
+
 ;; ag
 (depends-on "ag")
 
@@ -67,9 +70,6 @@
 (depends-on "php-mode")
 (depends-on "scss-mode")
 (depends-on "yaml-mode")
-
-
-(depends-on "color-moccur")
 
 ;; Local Variables:
 ;; mode: emacs-lisp
