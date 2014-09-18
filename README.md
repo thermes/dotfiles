@@ -17,6 +17,7 @@ OSX
 
 ### Brew-file ###
 
+    $ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
     $ brew tap rcmdnk/file
     $ brew install brew-file
     $ brew file set_repo -r thermes/Brewfile
