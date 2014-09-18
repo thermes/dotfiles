@@ -58,6 +58,7 @@ typeset -U manpath
 typeset -U MANPATH
 manpath=(
     $HOME/local/share/man(N-/)
+    $HOME/.linuxbrew/share/man(N-/)
     /usr/local/opt/coreutils/libexec/gnuman(N-/)
     /opt/local/share/man(N-/)
     /opt/share/man(N-/)
