@@ -1,6 +1,6 @@
 ;;; linux-font.el
 
-(when (window-system)
+(when window-system
   (create-fontset-from-ascii-font "Ricty-12:weight=normal:slant=normal"
                                   nil
                                   "ricty")

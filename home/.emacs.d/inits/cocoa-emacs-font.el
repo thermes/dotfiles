@@ -1,6 +1,6 @@
 ;;; cocoa-emacs-font.el
 
-(when (window-system)
+(when window-system
   (create-fontset-from-ascii-font "Ricty-14:weight=normal:slant=normal"
                                   nil
                                   "ricty")
