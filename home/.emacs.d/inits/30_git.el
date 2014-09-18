@@ -4,7 +4,9 @@
 (require 'magit)
 
 ;; git-gutter
-(require 'git-gutter-fringe)
+(if window-system
+  (require 'git-gutter-fringe)
+  (require 'git-gutter))
 (global-git-gutter-mode t)
 
 ;; Local Variables:
