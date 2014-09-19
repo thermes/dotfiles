@@ -60,6 +60,11 @@ Common
     $ homesick clone thermes/dotfiles
     $ homesick symlink dotfiles
 
+### Cask ###
+
+    $ cd .emacs.d
+    $ cask
+
 ### misc gems ###
 
     $ gem update
