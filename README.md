@@ -17,11 +17,12 @@ OSX
 
 ### Brew-file ###
 
+    $ export HOMEBREW_BREWFILE=~/.brewfile
     $ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
     $ brew tap rcmdnk/file
     $ brew install brew-file
-    $ brew file set_repo -r thermes/Brewfile
-    $ brew file update
+    $ curl -O https://raw.githubusercontent.com/thermes/dotfiles/master/home/.brewfile
+    $ brew file install
 
 ### rbenv & ruby-build ###
 
