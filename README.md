@@ -14,15 +14,11 @@ OSX
 
     $ xcode-select --install
     $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/brew_install.sh | /bin/sh
 
-### Brew-file ###
+### Homebrew-Cask ###
 
-    $ export HOMEBREW_BREWFILE=~/.brewfile
-    $ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-    $ brew tap rcmdnk/file
-    $ brew install brew-file
-    $ curl -O https://raw.githubusercontent.com/thermes/dotfiles/master/home/.brewfile
-    $ brew file install
+    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/brew_cask_install.sh | /bin/sh
 
 ### rbenv & ruby-build ###
 
@@ -78,7 +74,7 @@ Link
 ----
 
 * [Homebrew](http://brew.sh/)
-* [Brew-file](https://github.com/rcmdnk/homebrew-file)
+* [Homebrew-Cask](https://github.com/caskroom/homebrew-cask)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Cask](https://github.com/cask/cask)
 * [rbenv](https://github.com/sstephenson/rbenv)

@@ -4,7 +4,6 @@ case $OSTYPE in
     linux*)					# Linux generic
 	;;
     darwin*)					# OSX
-	export HOMEBREW_BREWFILE=~/.brewfile
 	export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 	export RBENV_ROOT=/usr/local/var/rbenv
 	;;
