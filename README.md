@@ -57,7 +57,7 @@ Common
 
     $ gem install homesick
     $ rbenv rehash
-    $ homesick clone thermes/dotfiles
+    $ homesick clone git@github.com:thermes/dotfiles.git
     $ homesick symlink dotfiles
 
 ### Cask ###
