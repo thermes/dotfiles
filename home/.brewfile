@@ -1,0 +1,69 @@
+# Tap repositories and their packages
+
+## caskroom/cask
+tap caskroom/cask
+install brew-cask
+
+## caskroom/versions
+tap caskroom/versions
+
+# Cask packages
+cask install adobe-reader
+cask install cyberduck
+cask install dash
+cask install dropbox
+cask install evernote
+cask install firefox-ja
+cask install google-chrome
+cask install iterm2
+cask install karabiner
+cask install libreoffice
+cask install onyx
+cask install vagrant
+cask install virtualbox
+cask install vlc
+
+## rcmdnk/file
+tap rcmdnk/file
+install brew-file
+
+# Homebrew packages
+
+# Zsh
+install zsh --disable-etcdir
+
+# tmux
+install tmux
+
+# Emacs
+install imagemagick
+install emacs --cocoa --srgb
+install cask
+
+# Git
+install git
+install tig
+
+# Ruby
+install readline
+install libyaml
+install rbenv
+install ruby-build
+
+# Gauche
+install gauche
+
+# misc
+install colordiff
+install coreutils
+install discount
+install lftp
+install lv
+install mobile-shell
+install nkf
+install the_silver_searcher
+install w3m
+install watch
+install wget
+
+# Other Homebrew packages
