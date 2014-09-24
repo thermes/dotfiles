@@ -33,8 +33,11 @@ brew cask install google-chrome
 brew cask install google-earth
 brew cask install iterm2
 brew cask install libreoffice
+brew cask install limechat
+brew cask install macs-fan-control
 brew cask install magican
 brew cask install onyx
+brew cask install sequel-pro
 brew cask install the-unarchiver
 brew cask install thunderbird-ja
 brew cask install vlc
