@@ -42,3 +42,11 @@ brew cask install the-unarchiver
 brew cask install thunderbird-ja
 brew cask install vlc
 brew cask install xld
+
+## QuickLook
+brew cask install betterzipql
+brew cask install qlcolorcode
+brew cask install qlmarkdown
+brew cask install qlstephen
+brew cask install quicklook-csv
+brew cask install quicklook-json
