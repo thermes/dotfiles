@@ -14,7 +14,7 @@ brew tap caskroom/versions
 ### Cask packages
 
 ## installer
-brew cask install adobe-reader
+brew cask install adobe-reader-ja
 brew cask install karabiner
 brew cask install sdformatter
 brew cask install vagrant
@@ -38,6 +38,7 @@ brew cask install macs-fan-control
 brew cask install magican
 brew cask install onyx
 brew cask install sequel-pro
+brew cask install supaview
 brew cask install the-unarchiver
 brew cask install thunderbird-ja
 brew cask install vlc
