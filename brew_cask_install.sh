@@ -15,6 +15,7 @@ brew tap caskroom/versions
 
 ## installer
 brew cask install adobe-reader-ja
+brew cask install flash
 brew cask install karabiner
 brew cask install sdformatter
 brew cask install vagrant
