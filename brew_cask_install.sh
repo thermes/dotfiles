@@ -18,6 +18,7 @@ brew cask install adobe-reader-ja
 brew cask install chefdk
 brew cask install flash
 brew cask install karabiner
+brew cask install magican
 brew cask install sdformatter
 brew cask install vagrant
 brew cask install virtualbox
@@ -38,7 +39,6 @@ brew cask install kobito
 brew cask install libreoffice
 brew cask install limechat
 brew cask install macs-fan-control
-brew cask install magican
 brew cask install onyx
 brew cask install sequel-pro
 brew cask install supaview
