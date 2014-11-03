@@ -10,7 +10,7 @@ brew install tmux
 
 ## Emacs
 brew install imagemagick
-brew install emacs --cocoa --srgb
+brew install emacs --cocoa --with-imagemagick
 brew install cask
 
 ## Git
