@@ -17,6 +17,7 @@ brew tap caskroom/versions
 brew cask install adobe-reader-ja
 brew cask install chefdk
 brew cask install flash
+brew cask install java
 brew cask install karabiner
 brew cask install magican
 brew cask install sdformatter
