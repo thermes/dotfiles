@@ -10,6 +10,3 @@
 	rebase = true
 [push]
 	default = current
-[user]
-	name = HORINOUCHI Masato
-	email = thermes@confei.to
