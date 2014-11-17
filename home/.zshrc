@@ -21,6 +21,7 @@ path=(
     $HOME/.rbenv/bin(N-/)
     $HOME/.cask/bin(N-/)
     $HOME/.linuxbrew/bin(N-/)
+    /Applications/Mozart2.app/Contents/Resources/bin
     /usr/local/opt/coreutils/libexec/gnubin(N-/)
     /opt/local/sbin(N-/)
     /opt/local/bin(N-/)

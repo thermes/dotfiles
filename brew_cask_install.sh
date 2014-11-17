@@ -40,6 +40,7 @@ brew cask install kobito
 brew cask install libreoffice
 brew cask install limechat
 brew cask install macs-fan-control
+brew cask install mozart2
 brew cask install onyx
 brew cask install sequel-pro
 brew cask install supaview
