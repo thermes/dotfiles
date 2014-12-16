@@ -25,7 +25,6 @@ brew cask install vagrant
 brew cask install virtualbox
 
 ## symbolic link
-brew cask install alfred
 brew cask install appcleaner
 brew cask install caffeine
 brew cask install ccleaner
