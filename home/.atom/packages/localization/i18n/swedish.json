@@ -1,0 +1,178 @@
+{
+  "menu":{
+    "Atom":{
+        "value":"Atom",
+        "submenu":{
+            "About Atom":{"value":"Om Atom"},
+            "View License":{"value":"Visa Licens"},
+            "Preferences...":{"value":"Inställningar..."},
+            "Open Your Config":{"value":"Öppna Din Konfigurationsfil"},
+            "Open Your Init Script":{"value":"Öppna Ditt Init Script"},
+            "Open Your Keymap":{"value":"Öppna Din Keyboardmapping"},
+            "Open Your Snippets":{"value":"Öppna Dina Snippets"},
+            "Open Your Stylesheet":{"value":"Öppna Ditt Stylesheet"},
+            "Install Shell Commands":{"value":"Installera Verktyg för Kommandoraden"},
+            "Hide Atom":{"value":"Dölj Atom"},
+            "Hide Others":{"value":"Dölj Andra"},
+            "Show All":{"value":"Visa Alla"},
+            "Quit":{"value":"Avsluta"},
+            "Check for Update":{"value":"Sök efter Uppdateringar"}
+        }
+    },
+    "File":{
+        "value":"Fil",
+        "submenu":{
+            "New Window":{"value":"Nytt fönster"},
+            "New File":{"value":"Ny Fil"},
+            "Open...":{"value":"Öppna..."},
+            "Reopen Last Item":{"value":"Öppna Senaste Fil"},
+            "Save":{"value":"Spara"},
+            "Save As...":{"value":"Spara Som..."},
+            "Save All":{"value":"Spara Alla"},
+            "Close Tab":{"value":"Stäng Buffer"},
+            "Close Pane":{"value":"Stäng Alla Buffers"},
+            "Close Window":{"value":"Stäng Fönster"}
+        }
+    },
+    "Edit":{
+        "value":"Redigera",
+        "submenu":{
+            "Undo":{"value":"Ångra"},
+            "Redo":{"value":"Annullera Ångring"},
+            "Cut":{"value":"Klipp ut"},
+            "Copy":{"value":"Kopiera"},
+            "Copy Path":{"value":"Kopiera Stig"},
+            "Paste":{"value":"Klistra in"},
+            "Select All":{"value":"Välj Allt"},
+            "Toggle Comments":{"value":"Kommentarer På/Av"},
+            "Lines":{
+                "value":"Rader",
+                "submenu":{
+                    "Indent":{"value":"Öka Intendering"},
+                    "Outdent":{"value":"Minska Intendering"},
+                    "Auto Indent":{"value":"Automatisk Intendering"},
+                    "Move Line Up":{"value":"Flytta Rad Uppåt"},
+                    "Move Line Down":{"value":"Flytta Rad Nedåt"},
+                    "Duplicate Lines":{"value":"Duplicera Rader"},
+                    "Delete Line":{"value":"Ta Bort Rad"},
+                    "Join Lines":{"value":"Kombinera Rader"}
+                }
+            },
+            "Text":{
+                "value":"Text",
+                "submenu":{
+                    "Upper Case":{"value":"Stora Bokstäver"},
+                    "Lower Case":{"value":"Små Bokstäver"},
+                    "Delete to End of Word":{"value":"Ta Bort till Slutet av Ordet"},
+                    "Delete Line":{"value":"Ta Bort Rad"},
+                    "Transpose":{"value":"Transponera"}
+                }
+            },
+            "Folding":{
+                "value":"Vikning",
+                "submenu":{
+                    "Fold":{"value":"Vik"},
+                    "Unfold":{"value":"Vik Ut"},
+                    "Unfold All":{"value":"Vik Ut Allt"},
+                    "Fold All":{"value":"Vik Allt"},
+                    "Fold Level 1":{"value":"Vik Nivå 1"},
+                    "Fold Level 2":{"value":"Vik Nivå 2"},
+                    "Fold Level 3":{"value":"Vik Nivå 3"},
+                    "Fold Level 4":{"value":"Vik Nivå 4"},
+                    "Fold Level 5":{"value":"Vik Nivå 5"},
+                    "Fold Level 6":{"value":"Vik Nivå 6"},
+                    "Fold Level 7":{"value":"Vik Nivå 7"},
+                    "Fold Level 8":{"value":"Vik Nivå 8"},
+                    "Fold Level 9":{"value":"Vik Nivå 9"}
+                }
+            },
+            "Go to Line":{"value":"Gå till Radnummer"},
+            "Reflow Paragraph":{"value":"Radbryt Paragraf"},
+            "Reflow Selection":{"value":"Radbryt Markering"},
+            "Bookmark":{
+                "value":"Bokmärke",
+                "submenu":{
+                    "View All":{"value":"Visa Alla"},
+                    "Toggle Bookmark":{"value":"Bokmärke På/Av"},
+                    "Jump to Next Bookmark":{"value":"Hoppa till Nästa Bokmärke"},
+                    "Jump to Previous Bookmark":{"value":"Hoppa till Föregående Bokmärke"}
+                }
+            },
+            "Select Grammar":{"value":"Välj Grammatik"}
+        }
+    },
+    "Selection":{
+        "value":"Markering",
+        "submenu":{
+            "Add Selection Above":{"value":"Utvidga Markering Uppåt"},
+            "Add Selection Below":{"value":"Utvidga Markering Nedåt"},
+            "Split into Lines":{"value":"Dela upp i Rader"},
+            "Select to Top":{"value":"Markera till Toppen"},
+            "Select to Bottom":{"value":"Markera till Botten"},
+            "Select Line":{"value":"Markera Rad"},
+            "Select Word":{"value":"Markera Ord"},
+            "Select to Beginning of Word":{"value":"Markera till Start på Ordet"},
+            "Select to Beginning of Line":{"value":"Markera till Start på Raden"},
+            "Select to First Character of Line":{"value":"Markera till Första Bokstav på Raden"},
+            "Select to End of Word":{"value":"Markera till Slutet på Ordet"},
+            "Select to End of Line":{"value":"Markera till Slutet på Raden"}
+        }
+    },
+    "Find":{
+        "value":"Sök",
+        "submenu":{
+            "Find in Buffer":{"value":"Sök i Buffer"},
+            "Replace in Buffer":{"value":"Ersätt i Buffer"},
+            "Select Next":{"value":"Välj Nästa"},
+            "Select All":{"value":"Välj Allt"},
+            "Find in Project":{"value":"Sök i Projekt"},
+            "Find Next":{"value":"Sök Nästa"},
+            "Find Previous":{"value":"Sök Föregående"},
+            "Replace Next":{"value":"Ersätt Nästa"},
+            "Replace All":{"value":"Ersätt Alla"},
+            "Find Buffer":{"value":"Sök Buffer"},
+            "Find File":{"value":"Sök Fil"},
+            "Find Modified File":{"value":"Sök Modifierad Fil"}
+        }
+    },
+    "View":{
+        "value":"Visa",
+        "submenu":{
+            "Reload":{"value":"Ladda om"},
+            "Toggle Full Screen":{"value":"Fullskärm Till/Från"},
+            "Developer":{
+                "value":"Utvecklare",
+                "submenu":{
+                    "Open In Dev Mode...":{"value":"Öppna i Utvecklarläge..."},
+                    "Run Atom Specs":{"value":"Kör Atom-test"},
+                    "Run Package Specs":{"value":"Kör Paket-test"},
+                    "Toggle Developer Tools":{"value":"Utvecklarverktyg På/Av"}
+                }
+            },
+            "Toggle Soft Wrap":{"value":"Radbrytning På/Av"},
+            "Toggle Command Palette":{"value":"Kommandopalette På/Av"},
+            "Toggle Tree View":{"value":"Trädvy På/Av"},
+            "Toggle Tree Side":{"value":"Trädsida På/Av"}
+        }
+    },
+    "Packages":{
+        "value":"Paket"
+    },
+    "Window":{
+        "value":"Fönster",
+        "submenu":{
+            "Minimize":{"value":"Minimera"},
+            "Zoom":{"value":"Zoom"},
+            "Bring All to Front":{"value":"För alla Längst Fram"}
+        }
+    },
+    "Help":{
+        "value":"Hjälp",
+        "submenu":{
+            "Documentation":{"value":"Dokumentation"},
+            "Send Feedback":{"value":"Skicka Feedback"},
+            "Release Notes":{"value":"Om Denna Version"}
+        }
+    }
+  }
+}

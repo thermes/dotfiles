@@ -1,0 +1,178 @@
+{
+  "menu":{
+    "Atom":{
+        "value":"Atom",
+        "submenu":{
+            "About Atom":{"value":"Over Atom"},
+            "View License":{"value":"Licentie Bekijken"},
+            "Preferences...":{"value":"Voorkeuren"},
+            "Open Your Config":{"value":"Open Configuratie"},
+            "Open Your Init Script":{"value":"Open Init Script"},
+            "Open Your Keymap":{"value":"Open Keymap"},
+            "Open Your Snippets":{"value":"Open Snippets"},
+            "Open Your Stylesheet":{"value":"Open Stylesheets"},
+            "Install Shell Commands":{"value":"Installeer shell commando's"},
+            "Hide Atom":{"value":"Verberg Atom"},
+            "Hide Others":{"value":"Verberg anderen"},
+            "Show All":{"value":"Laat alles zien"},
+            "Quit":{"value":"Afsluiten"},
+            "Check for Update":{"value":"Controleer op updates"}
+        }
+    },
+    "File":{
+        "value":"Bestand",
+        "submenu":{
+            "New Window":{"value":"Nieuw Venster"},
+            "New File":{"value":"Nieuw Bestand"},
+            "Open...":{"value":"Openen..."},
+            "Reopen Last Item":{"value":"Heropen Vorig Bestand"},
+            "Save":{"value":"Opslaan"},
+            "Save As...":{"value":"Opslaan Als..."},
+            "Save All":{"value":"Alles Opslaan"},
+            "Close Tab":{"value":"Sluit Buffer Af"},
+            "Close Pane":{"value":"Sluit Paneel Af"},
+            "Close Window":{"value":"Sluit Venster Af"}
+        }
+    },
+    "Edit":{
+        "value":"Bewerken",
+        "submenu":{
+            "Undo":{"value":"Ongedaan Maken"},
+            "Redo":{"value":"Herhalen"},
+            "Cut":{"value":"Knippen"},
+            "Copy":{"value":"Kopiëren"},
+            "Copy Path":{"value":"Kopieer Pad"},
+            "Paste":{"value":"Plakken"},
+            "Select All":{"value":"Alles Selecteren"},
+            "Toggle Comments":{"value":"Toggle Commentaar"},
+            "Lines":{
+                "value":"Regels",
+                "submenu":{
+                    "Indent":{"value":"Vergroot Inspringing"},
+                    "Outdent":{"value":"Verklein Inspringing"},
+                    "Auto Indent":{"value":"Automatisch Inspringen"},
+                    "Move Line Up":{"value":"Regel Omhoog Verplaatsen"},
+                    "Move Line Down":{"value":"Regel Omlaag Verplaatsen"},
+                    "Duplicate Lines":{"value":"Regels Dupliceren"},
+                    "Delete Line":{"value":"Regel Verwijderen"},
+                    "Join Lines":{"value":"Regels Samenvoegen"}
+                }
+            },
+            "Text":{
+                "value":"Tekst",
+                "submenu":{
+                    "Upper Case":{"value":"Hoofdletters"},
+                    "Lower Case":{"value":"Kleine Letters"},
+                    "Delete to End of Word":{"value":"Verwijder Tot Einde Woord "},
+                    "Delete Line":{"value":"Verwijder Regel"},
+                    "Transpose":{"value":"Omkeren"}
+                }
+            },
+            "Folding":{
+                "value":"Vouwen",
+                "submenu":{
+                    "Fold":{"value":"Samenvouwen"},
+                    "Unfold":{"value":"Uitvouwen"},
+                    "Unfold All":{"value":"Alles Uitvouwen"},
+                    "Fold All":{"value":"Alles Samenvouwen"},
+                    "Fold Level 1":{"value":"Vouw Sectie 1"},
+                    "Fold Level 2":{"value":"Vouw Sectie 2"},
+                    "Fold Level 3":{"value":"Vouw Sectie 3"},
+                    "Fold Level 4":{"value":"Vouw Sectie 4"},
+                    "Fold Level 5":{"value":"Vouw Sectie 5"},
+                    "Fold Level 6":{"value":"Vouw Sectie 6"},
+                    "Fold Level 7":{"value":"Vouw Sectie 7"},
+                    "Fold Level 8":{"value":"Vouw Sectie 8"},
+                    "Fold Level 9":{"value":"Vouw Sectie 9"}
+                }
+            },
+            "Go to Line":{"value":"Ga naar Regel"},
+            "Reflow Paragraph":{"value":"Alinea Samenvoegen"},
+            "Reflow Selection":{"value":"Selectie Samenvoegen"},
+            "Bookmark":{
+                "value":"Bladwijzer",
+                "submenu":{
+                    "View All":{"value":"Alles Weergeven"},
+                    "Toggle Bookmark":{"value":"Bladwijzer aan-/uitzetten"},
+                    "Jump to Next Bookmark":{"value":"Ga naar Volgende Bladwijzer"},
+                    "Jump to Previous Bookmark":{"value":"Ga naar Vorige Bladwijzer"}
+                }
+            },
+            "Select Grammar":{"value":"Grammatica Selecteren"}
+        }
+    },
+    "Selection":{
+        "value":"Selectie",
+        "submenu":{
+            "Add Selection Above":{"value":"Selectie Hierboven Toevoegen"},
+            "Add Selection Below":{"value":"Selectie Hieronder Toevoegen"},
+            "Split into Lines":{"value":"In Regels Splitsen"},
+            "Select to Top":{"value":"Selecteer tot aan Boven"},
+            "Select to Bottom":{"value":"Selecteer tot aan Beneden"},
+            "Select Line":{"value":"Selecteer Regel"},
+            "Select Word":{"value":"Selecteer Woord"},
+            "Select to Beginning of Word":{"value":"Selecteer tot Begin van Woord"},
+            "Select to Beginning of Line":{"value":"Selecteer tot Begin van Regel"},
+            "Select to First Character of Line":{"value":"Selecteer tot Eerste Karakter van Regel"},
+            "Select to End of Word":{"value":"Selecteer tot Eind van Woord"},
+            "Select to End of Line":{"value":"Selecteer tot Eind van Regel"}
+        }
+    },
+    "Find":{
+        "value":"Zoeken",
+        "submenu":{
+            "Find in Buffer":{"value":"Zoek in Buffer"},
+            "Replace in Buffer":{"value":"Vervang in Buffer"},
+            "Select Next":{"value":"Selecteer Volgende"},
+            "Select All":{"value":"Selecteer Alle"},
+            "Find in Project":{"value":"Zoek in Project"},
+            "Find Next":{"value":"Zoek Volgende"},
+            "Find Previous":{"value":"Zoek Vorige"},
+            "Replace Next":{"value":"Vervang Volgende"},
+            "Replace All":{"value":"Vervang Alle"},
+            "Find Buffer":{"value":"Zoek Buffer"},
+            "Find File":{"value":"Zoek Bestand"},
+            "Find Modified File":{"value":"Zoek Aangepast Bestand"}
+        }
+    },
+    "View":{
+        "value":"Beeld",
+        "submenu":{
+            "Reload":{"value":"Ververs"},
+            "Toggle Full Screen":{"value":"Volledig Scherm aan-/uitzetten"},
+            "Developer":{
+                "value":"Ontwikkelaar",
+                "submenu":{
+                    "Open In Dev Mode...":{"value":"Open in Ontwikkelmodus..."},
+                    "Run Atom Specs":{"value":"Atom Specs Uitvoeren..."},
+                    "Run Package Specs":{"value":"Package Specs Uitvoeren..."},
+                    "Toggle Developer Tools":{"value":"Ontwikkeltools aan-/uitzetten"}
+                }
+            },
+            "Toggle Soft Wrap":{"value":"Softwrap aan-/uitzetten"},
+            "Toggle Command Palette":{"value":"Command Line aan-/uitzettenn"},
+            "Toggle Tree View":{"value":"Structuurweergave aan-/uitzetten"},
+            "Toggle Tree Side":{"value":"Structuurweergave links/rechts aan-/uitzetten"}
+        }
+    },
+    "Packages":{
+        "value":"Packages"
+    },
+    "Window":{
+        "value":"Venster",
+        "submenu":{
+            "Minimize":{"value":"Minimaliseren"},
+            "Zoom":{"value":"Zoom"},
+            "Bring All to Front":{"value":"Alles op Voorgrond"}
+        }
+    },
+    "Help":{
+        "value":"Help",
+        "submenu":{
+            "Documentation":{"value":"Documentatie"},
+            "Send Feedback":{"value":"Feedback Versturen"},
+            "Release Notes":{"value":"Release Notes"}
+        }
+    }
+  }
+}

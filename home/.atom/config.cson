@@ -1,0 +1,16 @@
+"*":
+  editor:
+    invisibles: {}
+    fontFamily: "ricty"
+    fontSize: 14
+  core:
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "dba85874-f646-0e69-2adf-69c9762918b8"
+  welcome:
+    showOnStartup: false
+  localization:
+    CurrentLanguage: "Default"
