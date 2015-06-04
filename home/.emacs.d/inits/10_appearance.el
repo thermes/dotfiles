@@ -1,7 +1,8 @@
 ;;; 10_appearance.el
 
 ;; Load Custom theme named THEME from its file.
-(load-theme 'solarized-dark t)
+(set-frame-parameter nil 'background-mode 'dark)
+(load-theme 'solarized t)
 
 ;; Toggle line highlighting in all buffers (Global Hl-Line mode).
 (global-hl-line-mode)
