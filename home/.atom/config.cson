@@ -2,7 +2,6 @@
   editor:
     invisibles: {}
     fontFamily: "ricty"
-    fontSize: 14
   core:
     themes: [
       "one-dark-ui"
