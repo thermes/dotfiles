@@ -2,6 +2,7 @@
   editor:
     invisibles: {}
     fontFamily: "ricty"
+    lineHeight: 1
   core:
     themes: [
       "one-dark-ui"
