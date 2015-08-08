@@ -3,6 +3,8 @@
     invisibles: {}
     fontFamily: "ricty"
     lineHeight: 1
+    softWrap: true
+    showIndentGuide: true
   core:
     themes: [
       "one-dark-ui"
@@ -14,3 +16,5 @@
     showOnStartup: false
   localization:
     CurrentLanguage: "Default"
+  "japanese-wrap":
+    characterWidth: {}
