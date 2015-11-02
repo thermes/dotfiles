@@ -39,6 +39,13 @@ Other OS
 Common
 ------
 
+### git ###
+
+    $ cat > ~/.gitconfig.local
+    [user]
+        name = (name)
+        email = (mail address)
+
 ### oh-my-zsh ###
 
     $ curl -L http://install.ohmyz.sh | sh
@@ -65,10 +72,7 @@ Common
 ### misc gems ###
 
     $ gem update
-    $ gem install bundler
-    $ gem install pry
-    $ gem install rubocop
-    $ gem install ruby-lint
+    $ gem install bundler pry rubocop ruby-lint
 
 Link
 ----
