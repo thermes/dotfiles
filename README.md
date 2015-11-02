@@ -45,6 +45,7 @@ Common
     [user]
         name = (name)
         email = (mail address)
+    $ git config user.email
 
 ### oh-my-zsh ###
 
@@ -63,6 +64,12 @@ Common
     $ rbenv rehash
     $ homesick clone git@github.com:thermes/dotfiles.git
     $ homesick symlink dotfiles
+    $ cd ~/.homesick/repos/dotfiles
+    $ cat >> .git/config
+    [user]
+        name = (name)
+        email = (mail address)
+    $ git config user.email
 
 ### Cask ###
 
