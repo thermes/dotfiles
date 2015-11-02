@@ -26,6 +26,7 @@ brew cask install virtualbox
 
 ## symbolic link
 brew cask install appcleaner
+brew cask install atom
 brew cask install caffeine
 brew cask install ccleaner
 brew cask install coteditor
