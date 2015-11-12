@@ -18,3 +18,5 @@
     CurrentLanguage: "Default"
   "japanese-wrap":
     characterWidth: {}
+  "git-diff":
+    showIconsInEditorGutter: true
