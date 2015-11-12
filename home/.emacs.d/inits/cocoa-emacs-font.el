@@ -1,19 +1,19 @@
 ;;; cocoa-emacs-font.el
 
 (when window-system
-  (create-fontset-from-ascii-font "Myrica M-14:weight=normal:slant=normal"
+  (create-fontset-from-ascii-font "Ricty-14:weight=normal:slant=normal"
                                   nil
-                                  "myrica")
+                                  "ricty")
   (dolist (target '(japanese-jisx0208
                     japanese-jisx0212
                     japanese-jisx0213.2004-1
                     japanese-jisx0213-2
                     katakana-jisx0201))
-    (set-fontset-font "fontset-myrica"
+    (set-fontset-font "fontset-ricty"
                       target
-                      (font-spec :family "Myrica M")
+                      (font-spec :family "Ricty")
                       nil 'append))
-  (add-to-list 'default-frame-alist '(font . "fontset-myrica")))
+  (add-to-list 'default-frame-alist '(font . "fontset-ricty")))
 
 ;; Local Variables:
 ;; coding: utf-8
