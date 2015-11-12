@@ -15,7 +15,6 @@ brew tap caskroom/versions
 
 ## installer
 brew cask install adobe-reader-ja
-brew cask install chefdk
 brew cask install flash
 brew cask install java
 brew cask install karabiner
@@ -38,9 +37,6 @@ brew cask install google-earth
 brew cask install iterm2-beta
 brew cask install kobito
 brew cask install libreoffice
-brew cask install limechat
-brew cask install macs-fan-control
-brew cask install mozart2
 brew cask install onyx
 brew cask install sequel-pro
 brew cask install supaview
