@@ -17,11 +17,9 @@ brew install cask
 brew install git
 brew install tig
 
-## Ruby
+## rbenv (on anyenv)
 brew install readline
 brew install libyaml
-brew install rbenv
-brew install ruby-build
 
 ## Gauche
 brew install gauche

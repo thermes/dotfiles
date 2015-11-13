@@ -20,21 +20,12 @@ OSX
 
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/brew_cask_install.sh | /bin/sh
 
-### rbenv & ruby-build
-
-    $ export RBENV_ROOT=/usr/local/var/rbenv
-
 Other OS
 --------
 
 ### Cask
 
     $ curl -fsSkL https://raw.github.com/cask/cask/master/go | python
-
-### rbenv & ruby-build
-
-    $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-    $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 Common
 ------
@@ -51,9 +42,16 @@ Common
 
     $ curl -L http://install.ohmyz.sh | sh
 
+### anyenv
+
+    $ git clone https://github.com/riywo/anyenv ~/.anyenv
+    $ export PATH="$HOME/.anyenv/bin:$PATH"
+    $ eval "$(anyenv init -)"
+
 ### rbenv & ruby-build
 
-    $ eval "$(rbenv init -)"
+    $ anyenv install rbenv
+    $ eval "$(anyenv init -)"
     $ rbenv install ruby-version
     $ rbenv global ruby-version
     $ rbenv rehash
@@ -88,6 +86,7 @@ Link
 * [Homebrew-Cask](https://github.com/caskroom/homebrew-cask)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Cask](https://github.com/cask/cask)
+* [anyenv](https://github.com/riywo/anyenv)
 * [rbenv](https://github.com/sstephenson/rbenv)
 * [ruby-build](https://github.com/sstephenson/ruby-build)
 * [homesick](https://github.com/technicalpickles/homesick)

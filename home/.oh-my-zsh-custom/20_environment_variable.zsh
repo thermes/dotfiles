@@ -5,7 +5,6 @@ case $OSTYPE in
 	;;
     darwin*)					# OSX
 	export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-	export RBENV_ROOT=/usr/local/var/rbenv
 	;;
     *)
 	;;
