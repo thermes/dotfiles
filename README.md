@@ -30,14 +30,6 @@ Other OS
 Common
 ------
 
-### git
-
-    $ cat > ~/.gitconfig.local
-    [user]
-        name = (name)
-        email = (mail address)
-    $ git config user.email
-
 ### oh-my-zsh
 
     $ curl -L http://install.ohmyz.sh | sh
@@ -64,6 +56,14 @@ Common
     $ homesick symlink dotfiles
     $ cd ~/.homesick/repos/dotfiles
     $ cat >> .git/config
+    [user]
+        name = (name)
+        email = (mail address)
+    $ git config user.email
+
+### git
+
+    $ cat > ~/.gitconfig.local
     [user]
         name = (name)
         email = (mail address)
