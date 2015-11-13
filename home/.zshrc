@@ -70,6 +70,7 @@ typeset -U PATH
 path=(
     $HOME/bin(N-/)
     $HOME/local/bin(N-/)
+    $HOME/.anyenv/bin(N-/)
     $HOME/.rbenv/shims(N-/)
     $HOME/.rbenv/bin(N-/)
     $HOME/.cask/bin(N-/)
