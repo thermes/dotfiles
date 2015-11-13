@@ -20,6 +20,17 @@ OSX
 
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/brew_cask_install.sh | /bin/sh
 
+Debian / Ubuntu
+---------------
+
+### apt
+
+    $ curl https://github.com/thermes/dotfiles/raw/master/deb_install.sh | sudo /bin/sh
+
+### Cask
+
+    ↓
+
 Other OS
 --------
 
