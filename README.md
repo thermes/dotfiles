@@ -90,6 +90,14 @@ Common
     $ gem update
     $ gem install bundler pry rubocop ruby-lint
 
+### crenv
+
+    $ anyenv install crenv
+    $ eval "$(anyenv init -)"
+    $ crenv install crystal-version
+    $ crenv global crystal-version
+    $ crenv rehash
+
 Link
 ----
 
