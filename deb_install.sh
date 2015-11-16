@@ -2,9 +2,6 @@
 
 ### Debian/Ubuntu packages
 
-## update
-apt-get update
-
 ## aptitude
 apt-get -y install aptitude
 
