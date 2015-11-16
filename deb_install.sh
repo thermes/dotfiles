@@ -12,7 +12,7 @@ apt-get -y install zsh
 apt-get -y install tmux
 
 ## Emacs
-apt-get -y install emacs
+apt-get -y install emacs-nox
 
 ## Git
 apt-get -y install git
