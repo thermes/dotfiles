@@ -25,7 +25,7 @@ Debian / Ubuntu
 
 ### apt
 
-    $ curl https://github.com/thermes/dotfiles/raw/master/deb_install.sh | sudo /bin/sh
+    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/deb_install.sh | sudo /bin/sh
 
 ### Cask
 
