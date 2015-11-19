@@ -2,6 +2,9 @@
 
 case $OSTYPE in
     linux*)					# Linux generic
+	if [[ -x `whence -p brew` ]]; then
+	    export LD_LIBRARY_PATH=$HOME/.linuxbrew/lib:/usr/local/lib:/usr/lib:/lib
+	fi
 	;;
     darwin*)					# OSX
 	export HOMEBREW_CASK_OPTS="--appdir=/Applications"
