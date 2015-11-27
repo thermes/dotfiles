@@ -34,6 +34,7 @@ brew cask install dropbox
 brew cask install firefox-ja
 brew cask install google-chrome
 brew cask install google-earth
+brew cask install hipchat
 brew cask install iterm2-beta
 brew cask install kobito
 brew cask install libreoffice
