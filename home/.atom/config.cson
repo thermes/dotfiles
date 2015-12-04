@@ -20,3 +20,6 @@
     characterWidth: {}
   "git-diff":
     showIconsInEditorGutter: true
+  "atom-fuzzy-grep":
+    grepCommandString: "/usr/local/bin/hw -i"
+    detectGitProjectAndUseGitGrep: false
