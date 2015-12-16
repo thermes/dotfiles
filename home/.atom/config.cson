@@ -1,7 +1,7 @@
 "*":
   editor:
     invisibles: {}
-    fontFamily: "ricty"
+    fontFamily: "Ricty"
     lineHeight: 1
     softWrap: true
     showIndentGuide: true
@@ -14,12 +14,9 @@
     userId: "dba85874-f646-0e69-2adf-69c9762918b8"
   welcome:
     showOnStartup: false
-  localization:
-    CurrentLanguage: "Default"
-  "japanese-wrap":
-    characterWidth: {}
   "git-diff":
     showIconsInEditorGutter: true
   "atom-fuzzy-grep":
-    grepCommandString: "/usr/local/bin/hw -i"
     detectGitProjectAndUseGitGrep: false
+    grepCommandString: "/usr/local/bin/ag -i --nocolor --nogroup --column"
+  minimap: {}
