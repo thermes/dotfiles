@@ -18,6 +18,15 @@ apt-get -y install emacs-nox
 apt-get -y install git
 apt-get -y install tig
 
+## rbenv (on anyenv)
+apt-get -y install build-essential
+apt-get -y install libreadline6-dev
+apt-get -y install zlib1g-dev
+apt-get -y install libsqlite3-dev
+apt-get -y install libssl-dev
+apt-get -y install libxml2-dev
+apt-get -y install libxslt-dev
+
 ## misc
 apt-get -y install colordiff
 apt-get -y install discount
