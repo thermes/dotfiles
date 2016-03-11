@@ -20,6 +20,10 @@
     showIconsInEditorGutter: true
   "highlight-selected":
     lightTheme: true
+  "local-config":
+    configFilePaths: [
+      "local.config.cson"
+    ]
   minimap:
     plugins:
       "find-and-replace": true

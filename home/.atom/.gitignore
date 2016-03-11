@@ -6,3 +6,5 @@ storage
 .apm
 .node-gyp
 .npm
+
+config.cson.bck
