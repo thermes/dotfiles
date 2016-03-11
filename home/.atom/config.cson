@@ -1,7 +1,6 @@
 "*":
   "atom-fuzzy-grep":
     detectGitProjectAndUseGitGrep: false
-    grepCommandString: "/usr/local/bin/ag -i --nocolor --nogroup --column"
   core:
     themes: [
       "one-dark-ui"
@@ -21,8 +20,6 @@
     showIconsInEditorGutter: true
   "highlight-selected":
     lightTheme: true
-  "linter-rubocop":
-    command: "/Users/thermes/.anyenv/envs/rbenv/versions/2.3.0/bin/rubocop"
   minimap:
     plugins:
       "find-and-replace": true
