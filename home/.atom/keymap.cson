@@ -31,5 +31,6 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
-'atom-text-editor':
+'atom-text-editor:not([mini])':
   'ctrl-m': 'editor:newline'
+  'ctrl-i': 'editor:indent'
