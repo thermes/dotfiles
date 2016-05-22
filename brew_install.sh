@@ -3,14 +3,14 @@
 ### Homebrew packages
 
 ## Zsh
-brew install zsh --disable-etcdir
+brew install zsh --without-etcdir
 
 ## tmux
 brew install tmux
 
 ## Emacs
 brew install imagemagick
-brew install emacs --cocoa --with-imagemagick
+brew install emacs --with-cocoa --with-imagemagick
 brew install cask
 
 ## Git
