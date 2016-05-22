@@ -13,7 +13,7 @@ OSX
 ### Homebrew
 
     $ xcode-select --install
-    $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/brew_install.sh | /bin/sh
 
 ### Homebrew-Cask
