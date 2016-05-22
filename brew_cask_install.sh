@@ -28,15 +28,12 @@ brew cask install appcleaner
 brew cask install atom
 brew cask install caffeine
 brew cask install ccleaner
-brew cask install coteditor
 brew cask install cyberduck
 brew cask install dropbox
 brew cask install firefox-ja
 brew cask install google-chrome
 brew cask install google-earth
-brew cask install hipchat
 brew cask install iterm2-beta
-brew cask install kobito
 brew cask install libreoffice
 brew cask install onyx
 brew cask install sequel-pro
