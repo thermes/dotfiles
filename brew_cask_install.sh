@@ -5,7 +5,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 ### Tap repositories and their packages
 
 ## caskroom/cask
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 
 ## caskroom/versions
 brew tap caskroom/versions
