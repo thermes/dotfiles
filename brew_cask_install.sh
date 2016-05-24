@@ -14,7 +14,7 @@ brew tap caskroom/versions
 ### Cask packages
 
 ## installer
-brew cask install adobe-reader-ja
+brew cask install adobe-reader
 brew cask install flash
 brew cask install java
 brew cask install karabiner
