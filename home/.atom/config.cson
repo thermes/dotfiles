@@ -9,7 +9,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Ricty"
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     lineHeight: 1
     showIndentGuide: true
