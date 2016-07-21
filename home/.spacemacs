@@ -105,7 +105,7 @@ values."
                                :size 16
                                :weight normal
                                :width normal
-                               :powerline-scale 1.1)
+                               :powerline-scale 1.0)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The leader key accessible in `emacs state' and `insert state'
@@ -244,6 +244,9 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (setq dotspacemacs-mode-line-unicode-symbols nil)
+  (setq powerline-default-separator nil)
+  (spaceline-compile)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
