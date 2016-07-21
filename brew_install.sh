@@ -9,9 +9,8 @@ brew install zsh --without-etcdir
 brew install tmux
 
 ## Emacs
-brew install imagemagick
-brew install emacs --with-cocoa --with-imagemagick
-brew install cask
+brew tap d12frosted/emacs-plus
+brew install emacs-plus --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
 
 ## Git
 brew install git
@@ -28,6 +27,7 @@ brew install gauche
 brew install colordiff
 brew install coreutils
 brew install discount
+brew install imagemagick
 brew install lftp
 brew install lv
 brew install mobile-shell
