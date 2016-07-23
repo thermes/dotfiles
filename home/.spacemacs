@@ -258,6 +258,9 @@ you should place your code here."
   (setq dotspacemacs-mode-line-unicode-symbols nil)
   (setq powerline-default-separator nil)
   (spaceline-compile)
+
+  ;; C-h
+  (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
