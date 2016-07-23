@@ -244,6 +244,17 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (custom-set-variables
+   ;; カーソルが行頭にあるとき、C-k 1回でその行全体を削除する。
+   '(kill-whole-line t)
+
+   ;; ファイル末の改行がなければ追加
+   '(require-final-newline t)
+
+   ;; Non-nil means try to flash the frame to represent a bell.
+   '(visible-bell t)
+   )
+
   (setq dotspacemacs-mode-line-unicode-symbols nil)
   (setq powerline-default-separator nil)
   (spaceline-compile)
