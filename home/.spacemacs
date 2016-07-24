@@ -260,6 +260,10 @@ you should place your code here."
    '(visible-bell t)
    )
 
+  ;; shebangが付いているファイルのパーミッションを保存時に +x にしてくれる
+  (add-hook 'after-save-hook
+            'executable-make-buffer-file-executable-if-script-p)
+
   (setq powerline-default-separator nil)
   (spaceline-compile)
 
