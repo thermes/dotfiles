@@ -196,7 +196,7 @@ values."
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
    dotspacemacs-inactive-transparency 90
    ;; If non nil unicode symbols are displayed in the mode line. (default t)
-   dotspacemacs-mode-line-unicode-symbols t
+   dotspacemacs-mode-line-unicode-symbols nil
    ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters the
    ;; point when it reaches the top or bottom of the screen. (default t)
@@ -260,7 +260,6 @@ you should place your code here."
    '(visible-bell t)
    )
 
-  (setq dotspacemacs-mode-line-unicode-symbols nil)
   (setq powerline-default-separator nil)
   (spaceline-compile)
 
