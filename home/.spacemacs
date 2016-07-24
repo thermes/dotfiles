@@ -34,7 +34,8 @@ values."
      ;;        shell-default-position 'bottom)
      ;; spell-checking
      ;; syntax-checking
-     ;; version-control
+     (version-control :variables
+                      version-control-diff-tool 'diff-hl)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -263,6 +264,9 @@ you should place your code here."
   ;; shebangが付いているファイルのパーミッションを保存時に +x にしてくれる
   (add-hook 'after-save-hook
             'executable-make-buffer-file-executable-if-script-p)
+
+  ;; Which side to use for indicators.
+  (setq diff-hl-side 'left)
 
   (setq powerline-default-separator nil)
   (spaceline-compile)
