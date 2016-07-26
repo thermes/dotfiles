@@ -43,6 +43,7 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages
    '(
+     init-loader
      ddskk
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
@@ -250,6 +251,20 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (use-package init-loader
+    :init
+    (custom-set-variables '(init-loader-show-log-after-init 'error-only))
+    (init-loader-load "~/.spacemacs.d/inits")
+    )
+
+  ;; 00 一般設定
+  ;; 10 起動前実行系
+  ;; 20 関数定義
+  ;; 30 追加機能系
+  ;; 40 メジャーモード
+  ;; 50 マイナーモード
+  ;; 90 起動後実行系
+
   (custom-set-variables
    ;; カーソルが行頭にあるとき、C-k 1回でその行全体を削除する。
    '(kill-whole-line t)
