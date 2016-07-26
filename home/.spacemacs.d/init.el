@@ -267,9 +267,6 @@ you should place your code here."
 
   ;; Which side to use for indicators.
   (setq diff-hl-side 'left)
-
-  ;; C-h
-  (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
