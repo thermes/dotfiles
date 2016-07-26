@@ -265,9 +265,6 @@ you should place your code here."
   ;; 50 メジャーモード
   ;; 60 マイナーモード
   ;; 90 起動後実行系
-
-  ;; Which side to use for indicators.
-  (setq diff-hl-side 'left)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
