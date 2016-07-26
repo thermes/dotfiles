@@ -1,4 +1,4 @@
-;;; 30_powerline.el
+;;; 40_powerline.el
 
 (setq powerline-default-separator nil)
 (spaceline-compile)
@@ -8,4 +8,4 @@
 ;; indent-tabs-mode: nil
 ;; End:
 
-;;; 30_powerline.el ends here
+;;; 40_powerline.el ends here

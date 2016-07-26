@@ -1,4 +1,4 @@
-;;; 30_ddskk.el
+;;; 40_ddskk.el
 
 (setq skk-user-directory "~/.ddskk")
 
@@ -40,4 +40,4 @@
 ;; indent-tabs-mode: nil
 ;; End:
 
-;;; 30_ddskk.el ends here
+;;; 40_ddskk.el ends here

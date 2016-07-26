@@ -260,9 +260,10 @@ you should place your code here."
   ;; 00 一般設定
   ;; 10 起動前実行系
   ;; 20 関数定義
-  ;; 30 追加機能系
-  ;; 40 メジャーモード
-  ;; 50 マイナーモード
+  ;; 30 Layer系
+  ;; 40 追加機能系
+  ;; 50 メジャーモード
+  ;; 60 マイナーモード
   ;; 90 起動後実行系
 
   ;; Which side to use for indicators.
