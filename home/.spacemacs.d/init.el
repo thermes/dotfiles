@@ -268,9 +268,6 @@ you should place your code here."
   ;; Which side to use for indicators.
   (setq diff-hl-side 'left)
 
-  (setq powerline-default-separator nil)
-  (spaceline-compile)
-
   ;; C-h
   (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
   )
