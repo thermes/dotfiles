@@ -265,21 +265,6 @@ you should place your code here."
   ;; 50 マイナーモード
   ;; 90 起動後実行系
 
-  (custom-set-variables
-   ;; カーソルが行頭にあるとき、C-k 1回でその行全体を削除する。
-   '(kill-whole-line t)
-
-   ;; ファイル末の改行がなければ追加
-   '(require-final-newline t)
-
-   ;; Non-nil means try to flash the frame to represent a bell.
-   '(visible-bell t)
-   )
-
-  ;; shebangが付いているファイルのパーミッションを保存時に +x にしてくれる
-  (add-hook 'after-save-hook
-            'executable-make-buffer-file-executable-if-script-p)
-
   ;; Which side to use for indicators.
   (setq diff-hl-side 'left)
 
