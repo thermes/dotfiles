@@ -88,7 +88,7 @@ Common
 ### misc gems
 
     $ gem update
-    $ gem install bundler pry rubocop ruby-lint
+    $ gem install bundler pry pry-doc rubocop ruby-lint ruby_parser
 
 ### crenv
 
