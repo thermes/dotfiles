@@ -29,6 +29,7 @@ values."
      dash
      emacs-lisp
      git
+     github
      markdown
      osx
      ;; org
