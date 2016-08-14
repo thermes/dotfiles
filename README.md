@@ -27,17 +27,6 @@ Debian / Ubuntu
 
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/deb_install.sh | sudo /bin/sh
 
-### Cask
-
-    ↓
-
-Other OS
---------
-
-### Cask
-
-    $ curl -fsSkL https://raw.github.com/cask/cask/master/go | python
-
 Common
 ------
 
@@ -78,17 +67,15 @@ Common
     [user]
         name = (name)
         email = (mail address)
+    [github]
+	    user = (user)
+	    oauth-token = (token)
     $ git config user.email
-
-### Cask
-
-    $ cd .emacs.d
-    $ cask
 
 ### misc gems
 
     $ gem update
-    $ gem install bundler pry rubocop ruby-lint
+    $ gem install bundler pry pry-doc rubocop ruby-lint ruby_parser
 
 ### crenv
 
@@ -104,7 +91,6 @@ Link
 * [Homebrew](http://brew.sh/)
 * [Homebrew-Cask](https://github.com/caskroom/homebrew-cask)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-* [Cask](https://github.com/cask/cask)
 * [anyenv](https://github.com/riywo/anyenv)
 * [rbenv](https://github.com/sstephenson/rbenv)
 * [ruby-build](https://github.com/sstephenson/ruby-build)
