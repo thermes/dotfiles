@@ -67,6 +67,9 @@ Common
     [user]
         name = (name)
         email = (mail address)
+    [github]
+	    user = (user)
+	    oauth-token = (token)
     $ git config user.email
 
 ### misc gems
