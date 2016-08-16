@@ -22,6 +22,7 @@ brew cask install magican
 brew cask install sdformatter
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install zoomus
 
 ## symbolic link
 brew cask install appcleaner
