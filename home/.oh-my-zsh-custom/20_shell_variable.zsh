@@ -1,6 +1,0 @@
-#! /bin/zsh
-
-LISTMAX=0
-READNULLCMD=$PAGER
-REPORTTIME=1
-watch=(notme)
