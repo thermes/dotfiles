@@ -30,9 +30,9 @@ Debian / Ubuntu
 Common
 ------
 
-### oh-my-zsh
+### zplug
 
-    $ curl -L http://install.ohmyz.sh | sh
+    $ curl -sL zplug.sh/installer | zsh
 
 ### Spacemacs
 
