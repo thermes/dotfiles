@@ -11,6 +11,7 @@ brew install tmux
 ## Emacs
 brew tap d12frosted/emacs-plus
 brew install emacs-plus --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
+brew link emacs-plus
 
 ## Git
 brew install git
