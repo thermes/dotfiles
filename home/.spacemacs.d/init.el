@@ -30,6 +30,8 @@ values."
      emacs-lisp
      git
      github
+     html
+     javascript
      markdown
      osx
      ;; org
