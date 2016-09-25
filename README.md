@@ -34,6 +34,10 @@ Common
 
     $ curl -L http://install.ohmyz.sh | sh
 
+### Spacemacs
+
+    $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
 ### anyenv
 
     $ git clone https://github.com/riywo/anyenv ~/.anyenv
@@ -91,6 +95,7 @@ Link
 * [Homebrew](http://brew.sh/)
 * [Homebrew-Cask](https://github.com/caskroom/homebrew-cask)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+* [Spacemacs](https://github.com/syl20bnr/spacemacs)
 * [anyenv](https://github.com/riywo/anyenv)
 * [rbenv](https://github.com/sstephenson/rbenv)
 * [ruby-build](https://github.com/sstephenson/ruby-build)
