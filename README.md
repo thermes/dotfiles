@@ -94,6 +94,7 @@ Link
 
 * [Homebrew](http://brew.sh/)
 * [Homebrew-Cask](https://github.com/caskroom/homebrew-cask)
+* [zplug](https://github.com/zplug/zplug)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Spacemacs](https://github.com/syl20bnr/spacemacs)
 * [anyenv](https://github.com/riywo/anyenv)
