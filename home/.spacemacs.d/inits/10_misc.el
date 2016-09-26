@@ -1,8 +1,5 @@
 ;;; 10_misc.el
 
-;; Avoid to write `package-selected-packages` in init.el
-(load (setq custom-file (expand-file-name "custom.el" user-emacs-directory)))
-
 (custom-set-variables
  ;; カーソルが行頭にあるとき、C-k 1回でその行全体を削除する。
  '(kill-whole-line t)
