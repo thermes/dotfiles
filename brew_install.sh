@@ -9,9 +9,8 @@ brew install zsh --without-etcdir
 brew install tmux
 
 ## Emacs
-brew tap d12frosted/emacs-plus
-brew install emacs-plus --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
-brew link emacs-plus
+brew install emacs --with-cocoa --with-gnutls --with-librsvg --with-imagemagick
+brew link emacs
 
 ## Git
 brew install git
