@@ -15,7 +15,7 @@ brew tap caskroom/versions
 
 ## installer
 brew cask install adobe-reader
-brew cask install flash
+brew cask install flash-npapi
 brew cask install java
 brew cask install karabiner
 brew cask install magican
@@ -24,14 +24,14 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install zoomus
 
-## symbolic link
+## copy to /Applications
 brew cask install appcleaner
 brew cask install atom
 brew cask install caffeine
 brew cask install ccleaner
 brew cask install cyberduck
 brew cask install dropbox
-brew cask install firefox-ja
+brew cask install firefox --language=ja
 brew cask install google-chrome
 brew cask install google-earth
 brew cask install iterm2-beta
