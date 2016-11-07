@@ -70,13 +70,5 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "~/.zsh", from:local, nice:10
 zplug "~/.zsh/thermes.zsh-theme", from:local, nice:10
 
-# Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
-
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load

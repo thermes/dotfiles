@@ -30,10 +30,6 @@ Debian / Ubuntu
 Common
 ------
 
-### zplug
-
-    $ curl -sL zplug.sh/installer | zsh
-
 ### Spacemacs
 
     $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
@@ -64,6 +60,14 @@ Common
         name = (name)
         email = (mail address)
     $ git config user.email
+
+### zplug
+
+    $ curl -sL zplug.sh/installer | zsh
+    $ source ~/.zplug/init.zsh
+    $ source .zshrc
+    $ zplug install
+    $ zplug clear
 
 ### git
 
