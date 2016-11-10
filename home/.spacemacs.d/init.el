@@ -69,6 +69,9 @@ This function is called at the very startup of Spacemacs initialization
 before layers configuration.
 You should not put any user code in there besides modifying the variable
 values."
+  ;; Avoid to write `package-selected-packages` in init.el
+  (load (setq custom-file "~/.spacemacs.d/custom.el"))
+
   ;; This setq-default sexp is an exhaustive list of all the supported
   ;; spacemacs settings.
   (setq-default
