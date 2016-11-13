@@ -30,10 +30,6 @@ Debian / Ubuntu
 Common
 ------
 
-### oh-my-zsh
-
-    $ curl -L http://install.ohmyz.sh | sh
-
 ### Spacemacs
 
     $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
@@ -65,6 +61,14 @@ Common
         email = (mail address)
     $ git config user.email
 
+### zplug
+
+    $ curl -sL zplug.sh/installer | zsh
+    $ source ~/.zplug/init.zsh
+    $ source .zshrc
+    $ zplug install
+    $ zplug clear
+
 ### git
 
     $ cat > ~/.gitconfig.local
@@ -94,6 +98,7 @@ Link
 
 * [Homebrew](http://brew.sh/)
 * [Homebrew-Cask](https://github.com/caskroom/homebrew-cask)
+* [zplug](https://github.com/zplug/zplug)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Spacemacs](https://github.com/syl20bnr/spacemacs)
 * [anyenv](https://github.com/riywo/anyenv)
