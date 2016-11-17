@@ -1,9 +1,8 @@
 #! /bin/zsh
 
-if [ "$DISABLE_LS_COLORS" != "true" ]
-then
-  # Find the option for using colors in ls, depending on the version: Linux or BSD
-  ls --color -d . &>/dev/null 2>&1 && alias ls='ls -F --color=auto' || alias ls='ls -F -G'
+if [ "$DISABLE_LS_COLORS" != "true" ]; then
+    # Find the option for using colors in ls, depending on the version: Linux or BSD
+    ls --color -d . &>/dev/null 2>&1 && alias ls='ls -F --color=auto' || alias ls='ls -F -G'
 fi
 
 alias la='ls -A'

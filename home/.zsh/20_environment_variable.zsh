@@ -1,16 +1,16 @@
 #! /bin/zsh
 
 case $OSTYPE in
-    linux*)					# Linux generic
-	if [[ -x `whence -p brew` ]]; then
-	    export LD_LIBRARY_PATH=$HOME/.linuxbrew/lib:/usr/local/lib:/usr/lib:/lib
-	fi
-	;;
-    darwin*)					# OSX
-	export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-	;;
+    linux*)                     # Linux generic
+	      if [[ -x `whence -p brew` ]]; then
+	          export LD_LIBRARY_PATH=$HOME/.linuxbrew/lib:/usr/local/lib:/usr/lib:/lib
+	      fi
+	      ;;
+    darwin*)                    # OSX
+	      export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+	      ;;
     *)
-	;;
+	      ;;
 esac
 
 export BLOCKSIZE=K
@@ -29,32 +29,31 @@ fi
 # LANG
 case $TERM in
     screen*)
-	export LANG=ja_JP.UTF-8
-	;;
+	      export LANG=ja_JP.UTF-8
+	      ;;
     rxvt|kterm|xterm-256color|xterm-color|mlterm)
-	export LANG=ja_JP.UTF-8
-	;;
+	      export LANG=ja_JP.UTF-8
+	      ;;
     jfbterm|kon)
-	export LANG=ja_JP.UTF-8
-	;;
+	      export LANG=ja_JP.UTF-8
+	      ;;
     xterm)
-	if [[ $COLORTERM = "xfce4-terminal" ]]; then
-	    export LANG=ja_JP.UTF-8
-	else
-	    export LANG=C
-	fi
-	;;
+	      if [[ $COLORTERM = "xfce4-terminal" ]]; then
+	          export LANG=ja_JP.UTF-8
+	      else
+	          export LANG=C
+	      fi
+	      ;;
     *)
-	export LANG=C
-	;;
+	      export LANG=C
+	      ;;
 esac
 unset LC_CTYPE
 
 # LS_COLOR
-if [ "$DISABLE_LS_COLORS" != "true" ]
-then
-  # Find the option for using colors in ls, depending on the version: Linux or BSD
-  ls --color -d . >/dev/null 2>&1 && eval `dircolors`
+if [ "$DISABLE_LS_COLORS" != "true" ]; then
+    # Find the option for using colors in ls, depending on the version: Linux or BSD
+    ls --color -d . >/dev/null 2>&1 && eval `dircolors`
 fi
 
 # MANPATH

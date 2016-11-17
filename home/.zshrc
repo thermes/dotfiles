@@ -2,17 +2,17 @@
 source ~/.zplug/init.zsh
 
 case $OSTYPE in
-    linux*)					# Linux generic
+    linux*)                     # Linux generic
  	      export X11HOME=/usr/X11R6
  	      ;;
-    darwin*)					# OSX
+    darwin*)                    # OSX
  	      export X11HOME=/usr/X11
  	      ;;
     *)
  	      ;;
 esac
 
-## set path
+# set path
 typeset -U path
 typeset -U PATH
 path=(
@@ -44,6 +44,7 @@ path=(
 # Let zplug manage zplug
 zplug "zplug/zplug"
 
+# Supports oh-my-zsh plugins and the like
 zplug "lib/clipboard", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
 zplug "lib/directories", from:oh-my-zsh
@@ -53,8 +54,6 @@ zplug "lib/history", from:oh-my-zsh
 zplug "lib/key-bindings", from:oh-my-zsh
 zplug "lib/misc", from:oh-my-zsh
 zplug "lib/theme-and-appearance", from:oh-my-zsh
-
-# Supports oh-my-zsh plugins and the like
 zplug "plugins/git", from:oh-my-zsh
 
 # Can manage local plugins
