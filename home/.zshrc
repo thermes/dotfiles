@@ -14,17 +14,13 @@ esac
 
 # set path
 typeset -U path
-typeset -U PATH
 path=(
     $HOME/bin(N-/)
-    $HOME/local/bin(N-/)
     $ZPLUG_HOME/bin(N-/)
     $HOME/.anyenv/bin(N-/)
     $HOME/.rbenv/bin(N-/)
-    $HOME/.cask/bin(N-/)
     $HOME/.linuxbrew/bin(N-/)
     /usr/local/opt/coreutils/libexec/gnubin(N-/)
-    /opt/chef/bin(N-/)
     /opt/local/sbin(N-/)
     /opt/local/bin(N-/)
     /opt/sbin(N-/)
