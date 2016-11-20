@@ -13,8 +13,6 @@ case $OSTYPE in
 	      ;;
 esac
 
-export BLOCKSIZE=K
-
 # EDITOR
 if [[ -x `whence -p emacsclient` ]]; then
     export EDITOR=emacsclient
@@ -63,3 +61,6 @@ elif [[ -x `whence -p  less` ]]; then
 else
     export PAGER=more
 fi
+
+# misc
+export BLOCKSIZE=K
