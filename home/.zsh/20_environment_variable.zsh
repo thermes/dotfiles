@@ -16,9 +16,7 @@ esac
 export BLOCKSIZE=K
 
 # EDITOR
-if [[ -x `whence -p atom` ]]; then
-    export EDITOR='atom -nw'
-elif [[ -x `whence -p emacsclient` ]]; then
+if [[ -x `whence -p emacsclient` ]]; then
     export EDITOR=emacsclient
 elif [[ -x `whence -p emacs` ]]; then
     export EDITOR=emacs
