@@ -41,6 +41,21 @@ path=(
     $path
 )
 
+# set manpath
+typeset -U manpath
+manpath=(
+    $HOME/.linuxbrew/share/man(N-/)
+    /usr/local/opt/coreutils/libexec/gnuman(N-/)
+    /Library/Developer/CommandLineTools/usr/share/man(N-/)
+    /opt/local/share/man(N-/)
+    /opt/share/man(N-/)
+    /usr/local/share/man(N-/)
+    /usr/share/man(N-/)
+    $X11HOME/share/man(N-/)
+    $manpath
+)
+export MANPATH
+
 # Let zplug manage zplug
 zplug "zplug/zplug"
 

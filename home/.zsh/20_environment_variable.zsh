@@ -53,22 +53,6 @@ unset LC_CTYPE
 # LS_COLOR
 [[ -f "$HOME/.dircolors" ]] && ls --color -d . &>/dev/null && eval `dircolors .dircolors`
 
-# MANPATH
-typeset -U manpath
-typeset -U MANPATH
-manpath=(
-    $HOME/local/share/man(N-/)
-    $HOME/.linuxbrew/share/man(N-/)
-    /usr/local/opt/coreutils/libexec/gnuman(N-/)
-    /opt/local/share/man(N-/)
-    /opt/share/man(N-/)
-    /usr/local/share/man(N-/)
-    /usr/share/man(N-/)
-    $X11HOME/share/man(N-/)
-    $manpath
-)
-export MANPATH
-
 # PAGER
 if [[ -x `whence -p lv` ]]; then
     export PAGER=lv
