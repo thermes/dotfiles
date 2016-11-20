@@ -51,10 +51,7 @@ esac
 unset LC_CTYPE
 
 # LS_COLOR
-if [ "$DISABLE_LS_COLORS" != "true" ]; then
-    # Find the option for using colors in ls, depending on the version: Linux or BSD
-    ls --color -d . >/dev/null 2>&1 && eval `dircolors`
-fi
+[[ -f "$HOME/.dircolors" ]] && ls --color -d . &>/dev/null && eval `dircolors .dircolors`
 
 # MANPATH
 typeset -U manpath
