@@ -34,9 +34,7 @@ case $TERM in
         export LANG=ja_JP.UTF-8
         ;;
     xterm)
-        if [[ $COLORTERM = "xfce4-terminal" ]]; then
-            export LANG=ja_JP.UTF-8
-        else
+        if [[ $LANG != "ja_JP.UTF-8" && -z $COLORTERM ]]; then
             export LANG=C
         fi
         ;;
