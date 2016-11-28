@@ -45,7 +45,7 @@ esac
 unset LC_CTYPE
 
 # LS_COLOR
-[[ -f "$HOME/.dircolors" ]] && ls --color -d . &>/dev/null && eval `dircolors .dircolors`
+ls --color -d . &>/dev/null && eval `dircolors`
 
 # PAGER
 if [[ -x `whence -p lv` ]]; then
