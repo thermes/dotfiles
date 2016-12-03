@@ -2,6 +2,7 @@
   "atom-fuzzy-grep":
     detectGitProjectAndUseGitGrep: false
   core:
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
