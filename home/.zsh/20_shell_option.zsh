@@ -21,7 +21,7 @@ setopt EXTENDED_GLOB
 # directory
 setopt AUTO_CD
 setopt AUTO_PUSHD
-setopt PUSHD_IGNORE_DUPS 
+setopt PUSHD_IGNORE_DUPS
 setopt PUSHD_SILENT
 
 # job
@@ -30,7 +30,7 @@ setopt LONG_LIST_JOBS
 setopt NOTIFY
 
 # other
-setopt NUMERIC_GLOB_SORT 
+setopt NUMERIC_GLOB_SORT
 
 # Emacs shell mode
 [[ $EMACS = t ]] && unsetopt zle
