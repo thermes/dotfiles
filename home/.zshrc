@@ -69,7 +69,9 @@ zplug "plugins/git", from:oh-my-zsh
 
 # Can manage local plugins
 zplug "~/.zsh", from:local, nice:10
-zplug "~/.zsh/thermes.zsh-theme", from:local, nice:10
+
+# Load theme file
+zplug 'thermes/thermes.zsh-theme', as:theme
 
 # Then, source plugins and add commands to $PATH
 zplug load
