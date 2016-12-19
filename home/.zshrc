@@ -68,7 +68,7 @@ zplug "lib/misc", from:oh-my-zsh
 zplug "lib/theme-and-appearance", from:oh-my-zsh
 
 # Can manage local plugins
-zplug "~/.zsh", from:local, nice:10
+zplug "~/.zsh", from:local, defer:2
 
 # Load theme file
 zplug 'thermes/thermes.zsh-theme', as:theme
