@@ -52,9 +52,6 @@ manpath=(
 )
 export MANPATH
 
-# Let zplug manage zplug
-zplug "zplug/zplug"
-
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git", from:oh-my-zsh
 zplug "lib/clipboard", from:oh-my-zsh
