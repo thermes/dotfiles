@@ -56,6 +56,7 @@ export MANPATH
 zplug "zplug/zplug"
 
 # Supports oh-my-zsh plugins and the like
+zplug "plugins/git", from:oh-my-zsh
 zplug "lib/clipboard", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
 zplug "lib/directories", from:oh-my-zsh
@@ -65,7 +66,6 @@ zplug "lib/history", from:oh-my-zsh
 zplug "lib/key-bindings", from:oh-my-zsh
 zplug "lib/misc", from:oh-my-zsh
 zplug "lib/theme-and-appearance", from:oh-my-zsh
-zplug "plugins/git", from:oh-my-zsh
 
 # Can manage local plugins
 zplug "~/.zsh", from:local, nice:10
