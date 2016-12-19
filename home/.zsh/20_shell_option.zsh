@@ -33,4 +33,6 @@ setopt NOTIFY
 setopt NUMERIC_GLOB_SORT
 
 # Emacs shell mode
-[[ $EMACS = t ]] && unsetopt zle
+if [[ $EMACS = t ]]; then
+    unsetopt zle
+fi
