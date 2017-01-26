@@ -41,7 +41,7 @@ brew cask install sequel-pro
 brew cask install slack
 brew cask install supaview
 brew cask install the-unarchiver
-brew cask install thunderbird-ja
+brew cask install thunderbird --language=ja
 brew cask install vlc
 brew cask install xld
 
