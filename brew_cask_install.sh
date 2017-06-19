@@ -31,7 +31,7 @@ brew cask install caffeine
 brew cask install ccleaner
 brew cask install cyberduck
 brew cask install dropbox
-brew cask install firefox --language=ja
+brew cask install firefox
 brew cask install google-chrome
 brew cask install google-earth
 brew cask install iterm2-beta
@@ -41,7 +41,7 @@ brew cask install sequel-pro
 brew cask install slack
 brew cask install supaview
 brew cask install the-unarchiver
-brew cask install thunderbird --language=ja
+brew cask install thunderbird
 brew cask install vlc
 brew cask install xld
 
