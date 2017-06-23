@@ -26,6 +26,7 @@ brew cask install zoomus
 
 ## copy to /Applications
 brew cask install 1password
+brew cask install amazon-chime
 brew cask install appcleaner
 brew cask install atom
 brew cask install caffeine
