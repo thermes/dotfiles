@@ -63,7 +63,7 @@ Common
 
 ### zplug
 
-    $ curl -sL zplug.sh/installer | zsh
+    $ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
     $ source ~/.zplug/init.zsh
     $ source .zshrc
     $ zplug install
