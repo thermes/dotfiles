@@ -15,6 +15,9 @@
 (add-hook 'after-save-hook
           'executable-make-buffer-file-executable-if-script-p)
 
+;; fixed-pitch face に "Ricty" を使う
+(set-face-attribute 'fixed-pitch nil :family "Ricty")
+
 ;; Local Variables:
 ;; coding: utf-8
 ;; indent-tabs-mode: nil
