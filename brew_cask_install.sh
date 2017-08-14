@@ -16,18 +16,15 @@ brew tap caskroom/versions
 ## installer
 brew cask install adobe-acrobat-reader
 brew cask install flash-npapi
-brew cask install java
 brew cask install karabiner
 brew cask install magican
 brew cask install sdformatter
-brew cask install vagrant
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install zoomus
 
 ## copy to /Applications
 brew cask install 1password
-brew cask install amazon-chime
 brew cask install appcleaner
 brew cask install atom
 brew cask install caffeine
