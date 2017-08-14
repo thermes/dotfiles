@@ -16,6 +16,7 @@ brew tap caskroom/versions
 ## installer
 brew cask install adobe-acrobat-reader
 brew cask install flash-npapi
+brew cask install google-earth-pro
 brew cask install karabiner
 brew cask install magican
 brew cask install sdformatter
@@ -33,7 +34,6 @@ brew cask install cyberduck
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
-brew cask install google-earth
 brew cask install iterm2-beta
 brew cask install libreoffice
 brew cask install onyx
