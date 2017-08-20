@@ -44,6 +44,7 @@ values."
      emacs-lisp
      git
      github
+     haskell
      html
      javascript
      markdown
