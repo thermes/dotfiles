@@ -9,7 +9,7 @@ brew install zsh --without-etcdir
 brew install tmux
 
 ## Emacs
-brew install emacs --with-cocoa --with-gnutls --with-librsvg --with-imagemagick
+brew install emacs --with-cocoa --with-gnutls --with-librsvg
 brew link emacs
 
 ## Git
