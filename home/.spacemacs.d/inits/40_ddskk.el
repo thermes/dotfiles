@@ -10,6 +10,9 @@
 (setq skk-server-host "localhost")
 (setq skk-server-portnum 1178)
 
+;; 個人辞書の文字コードを指定する
+(setq skk-jisyo-code 'utf-8)
+
 ;; Non-nil であれば、見出し語と送り仮名が一致した候補を優先して表示する。
 (setq skk-henkan-strict-okuri-precedence t)
 
