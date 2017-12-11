@@ -37,6 +37,7 @@ apt-get -y install nkf
 apt-get -y install silversearcher-ag
 apt-get -y install w3m
 apt-get -y install whois
+apt-get -y install zip unzip
 
 ## debian
 apt-get -y install manpages-ja
