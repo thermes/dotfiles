@@ -21,6 +21,7 @@ alias git='nocorrect git'
 alias homesick='nocorrect homesick'
 alias rbenv='nocorrect rbenv'
 alias ssh='nocorrect ssh'
+alias sudo='nocorrect sudo'
 alias vagrant='nocorrect vagrant'
 alias w3m='nocorrect w3m'
 
