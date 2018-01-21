@@ -22,7 +22,6 @@ brew cask install magican
 brew cask install sdformatter
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
-brew cask install zoomus
 
 ## copy to /Applications
 brew cask install 1password
