@@ -16,9 +16,6 @@ brew install tig
 brew install readline
 brew install libyaml
 
-## Gauche
-brew install gauche
-
 ## misc
 brew install colordiff
 brew install coreutils
