@@ -8,10 +8,6 @@ brew install zsh --without-etcdir
 ## tmux
 brew install tmux
 
-## Emacs
-brew install emacs --with-cocoa --with-gnutls --with-librsvg
-brew link emacs
-
 ## Git
 brew install git
 brew install tig

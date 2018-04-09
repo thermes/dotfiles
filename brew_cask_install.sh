@@ -30,6 +30,7 @@ brew cask install caffeine
 brew cask install ccleaner
 brew cask install cyberduck
 brew cask install dropbox
+brew cask install emacs
 brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2-beta
