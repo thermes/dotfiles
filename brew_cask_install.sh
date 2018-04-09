@@ -17,7 +17,6 @@ brew tap caskroom/versions
 brew cask install adobe-acrobat-reader
 brew cask install flash-npapi
 brew cask install google-earth-pro
-brew cask install karabiner
 brew cask install magican
 brew cask install sdformatter
 brew cask install virtualbox
