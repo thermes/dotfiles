@@ -46,7 +46,6 @@ brew cask install vlc
 brew cask install xld
 
 ## QuickLook
-brew cask install betterzipql
 brew cask install qlcolorcode
 brew cask install qlmarkdown
 brew cask install qlstephen
