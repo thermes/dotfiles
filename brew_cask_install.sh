@@ -27,6 +27,7 @@ brew cask install appcleaner
 brew cask install caffeine
 brew cask install ccleaner
 brew cask install cyberduck
+brew cask install dash
 brew cask install deckset
 brew cask install dropbox
 brew cask install emacs
