@@ -24,6 +24,7 @@ brew install colordiff
 brew install coreutils
 brew install discount
 brew install imagemagick
+brew install jq
 brew install lftp
 brew install lv
 brew install mobile-shell
