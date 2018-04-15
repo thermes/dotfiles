@@ -15,6 +15,7 @@ brew tap caskroom/versions
 
 ## installer
 brew cask install adobe-acrobat-reader
+brew cask install aquaskk
 brew cask install flash-npapi
 brew cask install google-earth-pro
 brew cask install sdformatter
