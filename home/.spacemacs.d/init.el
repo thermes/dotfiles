@@ -58,6 +58,7 @@ values."
            ruby-enable-enh-ruby-mode t
            ruby-version-manager 'rbenv
            ruby-test-runner 'rspec)
+     scala
      syntax-checking
      (version-control :variables
                       version-control-diff-tool 'diff-hl)
