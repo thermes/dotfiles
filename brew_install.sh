@@ -16,6 +16,9 @@ brew install tig
 brew install readline
 brew install libyaml
 
+## sbt
+brew install sbt
+
 ## misc
 brew install colordiff
 brew install coreutils
