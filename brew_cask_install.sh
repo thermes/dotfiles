@@ -35,7 +35,7 @@ brew cask install emacs
 brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2-beta
-brew cask install java
+brew cask install java8
 brew cask install kindle
 brew cask install libreoffice
 brew cask install onyx
