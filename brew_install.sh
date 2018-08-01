@@ -28,7 +28,7 @@ brew install imagemagick
 brew install jq
 brew install lftp
 brew install lv
-brew install mobile-shell
+brew install mosh
 brew install netcat
 brew install nkf
 brew install telnet
