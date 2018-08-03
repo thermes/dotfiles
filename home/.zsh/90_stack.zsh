@@ -1,7 +1,9 @@
 #! /bin/zsh
 
 if [[ -x `whence -p stack` ]]; then
-    alias ghci='stack ghci'
-    alias ghc='stack ghc --'
-    alias runghc='stack runghc --'
+    path=(
+        $HOME/.local/bin(N-/)
+        $HOME/.stack/programs/x86_64-osx/ghc-8.4.3/bin(N-/)
+        $path
+    )
 fi
