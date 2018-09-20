@@ -6,7 +6,7 @@ case $OSTYPE in
             export LD_LIBRARY_PATH=$HOME/.linuxbrew/lib:/usr/local/lib:/usr/lib:/lib
         fi
         ;;
-    darwin*)                    # OSX
+    darwin*)                    # macOS
         export HOMEBREW_CASK_OPTS="--appdir=/Applications"
         ;;
     *)
@@ -45,7 +45,9 @@ esac
 unset LC_CTYPE
 
 # LS_COLOR
-ls --color -d . &>/dev/null && eval `dircolors`
+if [[ -z $LS_COLORS ]]; then
+    ls --color -d . &>/dev/null && eval `dircolors`
+fi
 
 # PAGER
 if [[ -x `whence -p lv` ]]; then
