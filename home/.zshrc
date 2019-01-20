@@ -64,6 +64,9 @@ zplug "lib/key-bindings", from:oh-my-zsh
 zplug "lib/misc", from:oh-my-zsh
 zplug "lib/theme-and-appearance", from:oh-my-zsh
 
+# Fish shell like syntax highlighting for Zsh.
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+
 # Can manage local plugins
 zplug "~/.zsh", from:local, defer:2
 
