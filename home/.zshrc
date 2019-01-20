@@ -64,6 +64,9 @@ zplug "lib/key-bindings", from:oh-my-zsh
 zplug "lib/misc", from:oh-my-zsh
 zplug "lib/theme-and-appearance", from:oh-my-zsh
 
+# A next-generation cd command with an interactive filter
+zplug "b4b4r07/enhancd", use:init.sh
+
 # Fish shell like syntax highlighting for Zsh.
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
