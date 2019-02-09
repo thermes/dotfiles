@@ -12,9 +12,10 @@ brew install tmux
 brew install git
 brew install tig
 
-## rbenv (on anyenv)
+## rbenv
 brew install readline
 brew install libyaml
+brew install rbenv
 
 ## sbt
 brew install sbt

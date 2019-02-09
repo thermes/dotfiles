@@ -27,6 +27,14 @@ Debian / Ubuntu
 
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/deb_install.sh | sudo /bin/sh
 
+### rbenv & ruby-build
+
+    $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+    $ export PATH="$HOME/.rbenv/bin:$PATH"
+    $ eval "$(rbenv init -)"
+    $ mkdir -p "$(rbenv root)"/plugins
+    $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
 Common
 ------
 
@@ -34,16 +42,8 @@ Common
 
     $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-### anyenv
-
-    $ git clone https://github.com/riywo/anyenv ~/.anyenv
-    $ export PATH="$HOME/.anyenv/bin:$PATH"
-    $ eval "$(anyenv init -)"
-
 ### rbenv & ruby-build
 
-    $ anyenv install rbenv
-    $ eval "$(anyenv init -)"
     $ rbenv install ruby-version
     $ rbenv global ruby-version
     $ rbenv rehash
