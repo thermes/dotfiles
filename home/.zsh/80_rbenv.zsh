@@ -1,5 +1,5 @@
 #! /bin/zsh
 
 if [[ -x `whence -p rbenv` ]]; then
-    eval "$(rbenv init -)"
+    eval "$(rbenv init - --no-rehash)"
 fi
