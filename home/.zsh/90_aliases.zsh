@@ -1,6 +1,10 @@
 #! /bin/zsh
 
-alias "`alias ls | sed -e \"s/'//g\" -e 's/$/ -F/'`"
+if [[ -z $LS_COLORS ]]; then
+    alias ls='ls -F'
+else
+    ls --color -d . &>/dev/null && alias ls='ls -F --color=auto'
+fi
 
 alias la='ls -A'
 alias lsa='ls -A'
