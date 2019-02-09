@@ -1,7 +1,7 @@
 #! /bin/zsh
 
 # clobber
-setopt NO_CLOBBER
+unsetopt CLOBBER
 
 # correct
 setopt CORRECT_ALL
@@ -32,6 +32,7 @@ setopt EXTENDED_GLOB
 setopt AUTO_CD
 setopt AUTO_PUSHD
 setopt PUSHD_IGNORE_DUPS
+setopt PUSHD_MINUS
 setopt PUSHD_SILENT
 
 # job

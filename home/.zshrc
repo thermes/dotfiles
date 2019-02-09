@@ -55,7 +55,6 @@ export MANPATH
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git", from:oh-my-zsh
 zplug "lib/clipboard", from:oh-my-zsh
-zplug "lib/directories", from:oh-my-zsh
 zplug "lib/functions", from:oh-my-zsh
 zplug "lib/git", from:oh-my-zsh
 zplug "lib/key-bindings", from:oh-my-zsh
