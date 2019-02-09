@@ -7,6 +7,13 @@ setopt NO_CLOBBER
 setopt CORRECT_ALL
 setopt LIST_PACKED
 
+# completion
+unsetopt MENU_COMPLETE
+unsetopt FLOW_CONTROL
+setopt AUTO_MENU
+setopt COMPLETE_IN_WORD
+setopt ALWAYS_TO_END
+
 # history
 setopt EXTENDED_HISTORY
 setopt SHARE_HISTORY
