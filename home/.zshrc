@@ -1,3 +1,4 @@
+#! /bin/zsh
 
 source ~/.zplug/init.zsh
 
@@ -54,12 +55,7 @@ export MANPATH
 
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git", from:oh-my-zsh
-zplug "lib/clipboard", from:oh-my-zsh
-zplug "lib/functions", from:oh-my-zsh
 zplug "lib/git", from:oh-my-zsh
-zplug "lib/key-bindings", from:oh-my-zsh
-zplug "lib/misc", from:oh-my-zsh
-zplug "lib/theme-and-appearance", from:oh-my-zsh
 
 # A command-line fuzzy finder
 zplug "junegunn/fzf-bin", from:gh-r, as:command, rename-to:fzf
