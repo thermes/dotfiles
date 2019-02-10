@@ -7,7 +7,6 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 watch=(notme)
 
 ## History file configuration
-[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
-HISTFILE=/Users/thermes/.zsh_history
+HISTFILE="$HOME/.zsh_history"
 HISTSIZE=50000
 SAVEHIST=10000
