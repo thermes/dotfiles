@@ -64,6 +64,9 @@ zplug "junegunn/fzf", as:command, use:bin/fzf-tmux
 # A next-generation cd command with an interactive filter
 zplug "b4b4r07/enhancd", use:init.sh
 
+# Fish-like fast/unobtrusive autosuggestions for zsh.
+zplug "zsh-users/zsh-autosuggestions"
+
 # Additional completion definitions for Zsh.
 zplug "zsh-users/zsh-completions"
 
