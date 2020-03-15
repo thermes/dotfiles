@@ -29,6 +29,7 @@ apt-get -y install libxslt-dev
 
 ## misc
 apt-get -y install colordiff
+apt-get -y install curl
 apt-get -y install discount
 apt-get -y install lftp
 apt-get -y install lv
