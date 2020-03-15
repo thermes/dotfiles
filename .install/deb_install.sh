@@ -15,7 +15,7 @@ apt-get -y install zsh
 apt-get -y install tmux
 
 ## Emacs
-apt-get -y install emacs-nox
+apt-get -y install emacs-nox emacs-common-non-dfsg
 
 ## Git
 apt-get -y install git
@@ -43,6 +43,7 @@ apt-get -y install lftp
 apt-get -y install lv
 apt-get -y install mosh
 apt-get -y install nkf
+apt-get -y install ripgrep
 apt-get -y install silversearcher-ag
 apt-get -y install unar
 apt-get -y install whois
