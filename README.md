@@ -46,6 +46,8 @@ Common
 ### rcm
 
     $ git clone git@github.com:thermes/dotfiles.git ~/.dotfiles
+    $ mkdir ~/.dotfiles-ssh
+    $ mkdir ~/.dotfiles-local
     $ env RCRC=$HOME/.dotfiles/rcrc rcup -v
 
 ### zplug
@@ -59,17 +61,6 @@ Common
 ### Spacemacs
 
     $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-
-### git
-
-    $ cat > ~/.gitconfig.local
-    [user]
-        name = (name)
-        email = (mail address)
-    [github]
-	    user = (user)
-	    oauth-token = (token)
-    $ git config user.email
 
 ### rbenv & ruby-build
 
