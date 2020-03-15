@@ -30,16 +30,21 @@ apt-get -y install libssl-dev
 apt-get -y install libxml2-dev
 apt-get -y install libxslt-dev
 
+## ranger
+apt-get -y install ranger highlight mediainfo poppler-utils w3m
+
 ## misc
+apt-get -y install autossh
 apt-get -y install colordiff
 apt-get -y install curl
 apt-get -y install discount
+apt-get -y install jq
 apt-get -y install lftp
 apt-get -y install lv
 apt-get -y install mosh
 apt-get -y install nkf
 apt-get -y install silversearcher-ag
-apt-get -y install w3m
+apt-get -y install unar
 apt-get -y install whois
 apt-get -y install zip unzip
 
