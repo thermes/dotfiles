@@ -80,18 +80,16 @@ Common
 	    oauth-token = (token)
     $ git config user.email
 
+### rbenv & ruby-build
+
+    $ rbenv install ruby-version
+    $ rbenv global ruby-version
+    $ rbenv rehash
+
 ### misc gems
 
     $ gem update
     $ gem install bundler pry pry-doc rubocop ruby-lint ruby_parser
-
-### crenv
-
-    $ anyenv install crenv
-    $ eval "$(anyenv init -)"
-    $ crenv install crystal-version
-    $ crenv global crystal-version
-    $ crenv rehash
 
 After Setting
 =============
