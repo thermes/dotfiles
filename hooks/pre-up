@@ -1,0 +1,10 @@
+#! /bin/bash
+
+case $OSTYPE in
+    linux*)                     # Linux generic
+        ;;
+    darwin*)                    # macOS
+        ;;
+    *)
+        ;;
+esac
