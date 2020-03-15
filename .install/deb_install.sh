@@ -5,6 +5,9 @@
 ## aptitude
 apt-get -y install aptitude
 
+## rcm
+apt-get -y install rcm
+
 ## Zsh
 apt-get -y install zsh
 

@@ -48,18 +48,11 @@ Common
     $ rbenv global ruby-version
     $ rbenv rehash
 
-### homesick
 
-    $ gem install homesick
-    $ rbenv rehash
-    $ homesick clone git@github.com:thermes/dotfiles.git
-    $ homesick symlink dotfiles
-    $ cd ~/.homesick/repos/dotfiles
-    $ cat >> .git/config
-    [user]
-        name = (name)
-        email = (mail address)
-    $ git config user.email
+### rcm
+
+    $ git clone git@github.com:thermes/dotfiles.git ~/.dotfiles
+    $ env RCRC=$HOME/.dotfiles/rcrc rcup -v
 
 ### zplug
 
