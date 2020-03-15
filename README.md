@@ -7,25 +7,13 @@ dotfiles
 * Git
 * Ruby
 
-OSX
----
-
-### Homebrew
-
-    $ xcode-select --install
-    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/brew_install.sh | /bin/sh
-
-### Homebrew-Cask
-
-    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/brew_cask_install.sh | /bin/sh
-
 Debian / Ubuntu
 ---------------
 
 ### apt
 
-    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/deb_install.sh | sudo /bin/sh
+    $ sudo apt install curl
+    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/deb_install.sh | sudo /bin/sh
 
 ### rbenv & ruby-build
 
@@ -35,19 +23,25 @@ Debian / Ubuntu
     $ mkdir -p "$(rbenv root)"/plugins
     $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
+macOS
+-----
+
+### Homebrew
+
+    $ xcode-select --install
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/brew_install.sh | /bin/sh
+
+### Homebrew-Cask
+
+    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/brew_cask_install.sh | /bin/sh
+
 Common
 ------
 
-### Spacemacs
+### chsh
 
-    $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-
-### rbenv & ruby-build
-
-    $ rbenv install ruby-version
-    $ rbenv global ruby-version
-    $ rbenv rehash
-
+    $ chsh -s /bin/zsh
 
 ### rcm
 
@@ -61,6 +55,10 @@ Common
     $ source .zshrc
     $ zplug install
     $ zplug clear
+
+### Spacemacs
+
+    $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 ### git
 

@@ -21,7 +21,7 @@ apt-get -y install emacs-nox
 apt-get -y install git
 apt-get -y install tig
 
-## rbenv (on anyenv)
+## rbenv
 apt-get -y install build-essential
 apt-get -y install libreadline6-dev
 apt-get -y install zlib1g-dev
