@@ -57,10 +57,6 @@ export MANPATH
 zplug "plugins/git", from:oh-my-zsh
 zplug "lib/git", from:oh-my-zsh
 
-# A command-line fuzzy finder
-zplug "junegunn/fzf-bin", from:gh-r, as:command, rename-to:fzf
-zplug "junegunn/fzf", as:command, use:bin/fzf-tmux
-
 # A next-generation cd command with an interactive filter
 zplug "b4b4r07/enhancd", use:init.sh
 

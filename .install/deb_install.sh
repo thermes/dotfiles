@@ -10,6 +10,7 @@ apt-get -y install rcm
 
 ## Zsh
 apt-get -y install zsh
+apt-get -y install fzf
 
 ## tmux
 apt-get -y install tmux
