@@ -57,9 +57,6 @@ export MANPATH
 zplug "plugins/git", from:oh-my-zsh
 zplug "lib/git", from:oh-my-zsh
 
-# A next-generation cd command with an interactive filter
-zplug "b4b4r07/enhancd", use:init.sh
-
 # Fish-like fast/unobtrusive autosuggestions for zsh.
 zplug "zsh-users/zsh-autosuggestions"
 

@@ -64,4 +64,3 @@ fi
 
 # misc
 export BLOCKSIZE=K
-export ENHANCD_DOT_SHOW_FULLPATH=1
