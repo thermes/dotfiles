@@ -325,17 +325,6 @@ before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   ;; See http://openlab.ring.gr.jp/skk/skk-manual-git/Q3_002d7-C_002dx-C_002dj-de-dired-gaQi-Dong-sitesimaimasu_002e-.html
   (setq dired-bind-jump nil)
-
-  ;; WhichKeyの古い関数をSpacemacsで使っている
-  (defalias 'which-key-declare-prefixes 'which-key-add-key-based-replacements)
-  (make-obsolete 'which-key-declare-prefixes
-                 'which-key-add-key-based-replacements
-                 "2016-10-05")
-  (defalias 'which-key-declare-prefixes-for-mode
-    'which-key-add-major-mode-key-based-replacements)
-  (make-obsolete 'which-key-declare-prefixes-for-mode
-                 'which-key-add-major-mode-key-based-replacements
-                 "2016-10-05")
   )
 
 (defun dotspacemacs/user-config ()
