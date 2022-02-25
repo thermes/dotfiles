@@ -1,14 +1,12 @@
-dotfiles
-========
+# dotfiles
 
-* zsh
-* tmux
-* Emacs
-* Git
-* Ruby
+- zsh
+- tmux
+- Emacs
+- Git
+- Ruby
 
-Debian / Ubuntu
----------------
+## Debian / Ubuntu
 
 ### apt
 
@@ -23,8 +21,7 @@ Debian / Ubuntu
     $ mkdir -p "$(rbenv root)"/plugins
     $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
-macOS
------
+## macOS
 
 ### Homebrew
 
@@ -36,8 +33,7 @@ macOS
 
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/brew_cask_install.sh | /bin/sh
 
-Common
-------
+## Common
 
 ### chsh
 
@@ -56,13 +52,14 @@ Common
     $ source ~/.zplug/init.zsh
     $ source .zshrc
     $ zplug install
+    $ zplug clean
     $ zplug clear
 
 ### Spacemacs
 
     $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-### rbenv & ruby-build
+### rbenv
 
     $ rbenv install ruby-version
     $ rbenv global ruby-version
@@ -73,8 +70,7 @@ Common
     $ gem update
     $ gem install bundler pry pry-doc rubocop ruby-lint ruby_parser
 
-After Setting
-=============
+# After Setting
 
 ## macOS
 
@@ -82,14 +78,13 @@ After Setting
     # echo "[default]" >> /etc/nsmb.conf
     # echo "signing_required=no" >> /etc/nsmb.conf
 
-Link
-----
+# Link
 
-* [Homebrew](http://brew.sh/)
-* [Homebrew Cask](https://caskroom.github.io/)
-* [rcm](https://github.com/thoughtbot/rcm)
-* [zplug](https://github.com/zplug/zplug)
-* [oh-my-zsh](http://ohmyz.sh/)
-* [Spacemacs](http://spacemacs.org/)
-* [rbenv](https://github.com/rbenv/rbenv)
-* [ruby-build](https://github.com/rbenv/ruby-build)
+- [Homebrew](http://brew.sh/)
+- [Homebrew Cask](https://caskroom.github.io/)
+- [rcm](https://github.com/thoughtbot/rcm)
+- [zplug](https://github.com/zplug/zplug)
+- [oh-my-zsh](http://ohmyz.sh/)
+- [Spacemacs](http://spacemacs.org/)
+- [rbenv](https://github.com/rbenv/rbenv)
+- [ruby-build](https://github.com/rbenv/ruby-build)
