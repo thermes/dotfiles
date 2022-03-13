@@ -40,6 +40,7 @@ values."
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t)
      ;; better-defaults
+     compleseus
      dash
      emacs-lisp
      git
