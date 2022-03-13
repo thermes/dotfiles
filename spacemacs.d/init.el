@@ -48,7 +48,6 @@ values."
      html
      javascript
      markdown
-     osx
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
