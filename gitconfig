@@ -2,6 +2,7 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore_global
+	autocrlf = input
 [include]
 	path = ~/.gitconfig.local
 [merge]
