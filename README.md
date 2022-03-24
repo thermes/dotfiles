@@ -68,7 +68,7 @@
 ### misc gems
 
     $ gem update
-    $ gem install bundler pry pry-doc rubocop ruby-lint ruby_parser
+    $ gem install bundler debug rubocop reek
 
 # After Setting
 
