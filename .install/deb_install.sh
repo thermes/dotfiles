@@ -40,6 +40,7 @@ apt -y install autossh
 apt -y install colordiff
 apt -y install curl
 apt -y install discount
+apt -y install fd-find
 apt -y install htop
 apt -y install jq
 apt -y install lftp
