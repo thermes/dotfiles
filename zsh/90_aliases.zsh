@@ -33,6 +33,10 @@ if [[ -x `whence -p colordiff` ]]; then
     alias diff='colordiff'
 fi
 
+if [[ $TERM == tmux* ]]; then
+    alias emacs='TERM=tmux-direct emacs'
+fi
+
 alias -g G='|grep'
 alias -g H='|head'
 alias -g L="|$PAGER"
