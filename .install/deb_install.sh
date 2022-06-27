@@ -49,6 +49,7 @@ apt -y install mosh
 apt -y install nkf
 apt -y install ripgrep
 apt -y install silversearcher-ag
+apt -y install socat
 apt -y install sysstat
 apt -y install unar
 apt -y install whois
