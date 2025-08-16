@@ -16,9 +16,6 @@ apt -y install fasd
 ## tmux
 apt -y install tmux
 
-## Emacs
-apt -y install emacs-nox emacs-common-non-dfsg
-
 ## Git
 apt -y install git
 apt -y install tig

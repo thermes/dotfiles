@@ -2,7 +2,6 @@
 
 - zsh
 - tmux
-- Emacs
 - Git
 - Ruby
 
