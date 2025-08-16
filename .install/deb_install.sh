@@ -20,6 +20,17 @@ apt -y install tmux
 apt -y install git
 apt -y install tig
 
+## Ruby
+apt -y install build-essential
+apt -y install libffi-dev
+apt -y install libreadline6-dev
+apt -y install libsqlite3-dev
+apt -y install libssl-dev
+apt -y install libxml2-dev
+apt -y install libxslt-dev
+apt -y install libyaml-dev
+apt -y install zlib1g-dev
+
 ## ranger
 apt -y install ranger highlight mediainfo poppler-utils w3m
 

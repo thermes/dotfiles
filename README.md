@@ -50,8 +50,9 @@
     $ zplug clean
     $ zplug clear
 
-### misc gems
+### Ruby
 
+    $ mise use -g ruby
     $ gem update
     $ gem install bundler debug rubocop reek
 
