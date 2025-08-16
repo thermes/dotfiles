@@ -12,6 +12,10 @@
     $ sudo apt install curl
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/deb_install.sh | sudo /bin/sh
 
+### mise
+
+    $ curl https://mise.run | sh
+
 ## macOS
 
 ### Homebrew
@@ -66,3 +70,4 @@
 - [rcm](https://github.com/thoughtbot/rcm)
 - [zplug](https://github.com/zplug/zplug)
 - [oh-my-zsh](http://ohmyz.sh/)
+- [mise-en-place](https://mise.jdx.dev/)
