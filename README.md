@@ -12,14 +12,6 @@
     $ sudo apt install curl
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/deb_install.sh | sudo /bin/sh
 
-### rbenv & ruby-build
-
-    $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-    $ export PATH="$HOME/.rbenv/bin:$PATH"
-    $ eval "$(rbenv init -)"
-    $ mkdir -p "$(rbenv root)"/plugins
-    $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-
 ## macOS
 
 ### Homebrew
@@ -54,12 +46,6 @@
     $ zplug clean
     $ zplug clear
 
-### rbenv
-
-    $ rbenv install ruby-version
-    $ rbenv global ruby-version
-    $ rbenv rehash
-
 ### misc gems
 
     $ gem update
@@ -80,5 +66,3 @@
 - [rcm](https://github.com/thoughtbot/rcm)
 - [zplug](https://github.com/zplug/zplug)
 - [oh-my-zsh](http://ohmyz.sh/)
-- [rbenv](https://github.com/rbenv/rbenv)
-- [ruby-build](https://github.com/rbenv/ruby-build)

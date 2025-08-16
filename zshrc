@@ -19,7 +19,6 @@ path=(
     $HOME/bin(N-/)
     $ZPLUG_HOME/bin(N-/)
     $HOME/.anyenv/bin(N-/)
-    $HOME/.rbenv/bin(N-/)
     $HOME/.nodenv/bin(N-/)
     $HOME/.linuxbrew/bin(N-/)
     /usr/local/opt/coreutils/libexec/gnubin(N-/)
