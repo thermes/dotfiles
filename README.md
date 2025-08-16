@@ -55,10 +55,6 @@
     $ zplug clean
     $ zplug clear
 
-### Spacemacs
-
-    $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-
 ### rbenv
 
     $ rbenv install ruby-version
@@ -85,6 +81,5 @@
 - [rcm](https://github.com/thoughtbot/rcm)
 - [zplug](https://github.com/zplug/zplug)
 - [oh-my-zsh](http://ohmyz.sh/)
-- [Spacemacs](http://spacemacs.org/)
 - [rbenv](https://github.com/rbenv/rbenv)
 - [ruby-build](https://github.com/rbenv/ruby-build)
