@@ -29,6 +29,11 @@ alias sudo='nocorrect sudo'
 alias vagrant='nocorrect vagrant'
 alias w3m='nocorrect w3m'
 
+if grep -q "microsoft" /proc/version; then
+    alias ssh='ssh.exe'
+    alias ssh-add='ssh-add.exe'
+fi
+
 if [[ -x `whence -p colordiff` ]]; then
     alias diff='colordiff'
 fi
