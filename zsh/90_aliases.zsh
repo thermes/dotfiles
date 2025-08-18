@@ -30,6 +30,7 @@ alias w3m='nocorrect w3m'
 
 if grep -q "microsoft" /proc/version; then
     alias ssh='ssh.exe'
+    alias scp='scp.exe'
     alias ssh-add='ssh-add.exe'
 fi
 
