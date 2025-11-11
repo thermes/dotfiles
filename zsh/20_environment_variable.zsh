@@ -21,6 +21,7 @@ elif [[ -x `whence -p emacs` ]]; then
 else
     export EDITOR=vi
 fi
+export VISUAL=$EDITOR
 
 # LANG
 case $TERM in
