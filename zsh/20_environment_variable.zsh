@@ -52,14 +52,20 @@ fi
 
 # PAGER
 if [[ -x `whence -p lv` ]]; then
-    export PAGER=lv
     export LV='-Au8 -Ia -c'
-elif [[ -x `whence -p  less` ]]; then
-    export PAGER=less
-    export LESS=-Mci
-    export LESSOPEN="|lesspipe %s"
+    export PAGER=lv
+fi
+
+if [[ -x `whence -p less` ]]; then
+    export LESS='-Mci -R -x4'
     export JLESSCHARSET=utf-8
-else
+    if [[ -x /usr/share/source-highlight/src-hilite-lesspipe.sh ]]; then
+        export LESSOPEN='| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'                                                       
+    fi
+    export PAGER=less
+fi
+
+if [[ -z $PAGER ]]; then
     export PAGER=more
 fi
 
