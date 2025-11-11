@@ -10,10 +10,7 @@ Status:children_add(
             symlink = ""
         end
         return ui.Line {
-            ui.Span(symlink):fg("#af87ff"),
-            " [",
-            ui.Span(os.date("%Y-%m-%d %H:%M", tostring(h.cha.mtime):sub(1, 10))):fg("#af87ff"),
-            "] "
+            ui.Span(symlink):fg("#af87ff")
         }
     end,
     3300,
@@ -28,11 +25,11 @@ Status:children_add(
         end
 
         return ui.Line {
-            "[",
-            ui.Span(ya.user_name(h.cha.uid) or tostring(h.cha.uid)):fg("#af87ff"),
+            ui.Span(ya.user_name(h.cha.uid) or tostring(h.cha.uid)):fg("#94e2d5"),
             ":",
-            ui.Span(ya.group_name(h.cha.gid) or tostring(h.cha.gid)):fg("#af87ff"),
-            "]",
+            ui.Span(ya.group_name(h.cha.gid) or tostring(h.cha.gid)):fg("#94e2d5"),
+            " ",
+            ui.Span(os.date("%Y-%m-%d %H:%M", tostring(h.cha.mtime):sub(1, 10))):fg("#94e2d5"),
             " "
         }
     end,
