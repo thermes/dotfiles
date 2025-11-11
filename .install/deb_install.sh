@@ -35,6 +35,7 @@ apt -y install zlib1g-dev
 apt -y install ranger highlight mediainfo poppler-utils w3m
 
 ## misc
+apt -y install 7zip
 apt -y install autossh
 apt -y install colordiff
 apt -y install curl

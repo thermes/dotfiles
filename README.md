@@ -50,6 +50,12 @@
     $ zplug clean
     $ zplug clear
 
+### yazi
+
+    $ ya pkg add yazi-rs/flavors:catppuccin-mocha
+    $ ya pkg add yazi-rs/plugins:chmod
+    $ ya pkg add yazi-rs/plugins:git
+
 ### Ruby
 
     $ mise use -g ruby
