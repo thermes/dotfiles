@@ -5,9 +5,6 @@
 ## aptitude
 apt -y install aptitude
 
-## rcm
-apt -y install rcm
-
 ## Zsh
 apt -y install zsh
 apt -y install fzf
