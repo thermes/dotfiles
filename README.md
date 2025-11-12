@@ -9,6 +9,7 @@
 
 ### apt
 
+    $ sudo apt update
     $ sudo apt install curl
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/deb_install.sh | sudo /bin/sh
 
