@@ -28,9 +28,6 @@ apt -y install libxslt-dev
 apt -y install libyaml-dev
 apt -y install zlib1g-dev
 
-## ranger
-apt -y install ranger highlight mediainfo poppler-utils w3m
-
 ## misc
 apt -y install 7zip
 apt -y install autossh
