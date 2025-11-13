@@ -13,6 +13,11 @@
     $ sudo apt install curl
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/deb_install.sh | sudo /bin/sh
 
+### chezmoi
+
+Download and Install deb package.
+https://github.com/twpayne/chezmoi/releases/latest
+
 ### mise
 
     $ curl https://mise.run | sh
@@ -35,12 +40,12 @@
 
     $ chsh -s /bin/zsh
 
-### rcm
+### chezmoi
 
-    $ git clone git@github.com:thermes/dotfiles.git ~/.dotfiles
-    $ mkdir ~/.dotfiles-ssh
-    $ mkdir ~/.dotfiles-local
-    $ env RCRC=$HOME/.dotfiles/rcrc rcup -v
+    $ chezmoi init thermes
+    $ chezmoi apply
+    $ chezmoi cd
+    $ git remote set-url origin git@github.com:thermes/dotfiles.git
 
 ### zplug
 
@@ -75,7 +80,7 @@
 
 - [Homebrew](http://brew.sh/)
 - [Homebrew Cask](https://caskroom.github.io/)
-- [rcm](https://github.com/thoughtbot/rcm)
+- [chezmoi](https://www.chezmoi.io/)
 - [zplug](https://github.com/zplug/zplug)
 - [oh-my-zsh](http://ohmyz.sh/)
 - [mise-en-place](https://mise.jdx.dev/)
