@@ -57,9 +57,6 @@ zplug "plugins/fasd", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "lib/git", from:oh-my-zsh
 
-# Fish-like fast/unobtrusive autosuggestions for zsh.
-zplug "zsh-users/zsh-autosuggestions"
-
 # Additional completion definitions for Zsh.
 zplug "zsh-users/zsh-completions"
 
