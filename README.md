@@ -18,6 +18,10 @@
 Download and Install deb package.
 https://github.com/twpayne/chezmoi/releases/latest
 
+### Sheldon
+
+    $ curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
+
 ### mise
 
     $ curl https://mise.run | sh
@@ -47,15 +51,6 @@ https://github.com/twpayne/chezmoi/releases/latest
     $ chezmoi cd
     $ git remote set-url origin git@github.com:thermes/dotfiles.git
 
-### zplug
-
-    $ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
-    $ source ~/.zplug/init.zsh
-    $ source .zshrc
-    $ zplug install
-    $ zplug clean
-    $ zplug clear
-
 ### yazi
 
     $ ya pkg add yazi-rs/flavors:catppuccin-mocha
@@ -81,6 +76,5 @@ https://github.com/twpayne/chezmoi/releases/latest
 - [Homebrew](http://brew.sh/)
 - [Homebrew Cask](https://caskroom.github.io/)
 - [chezmoi](https://www.chezmoi.io/)
-- [zplug](https://github.com/zplug/zplug)
-- [oh-my-zsh](http://ohmyz.sh/)
+- [Sheldon](https://sheldon.cli.rs/)
 - [mise-en-place](https://mise.jdx.dev/)

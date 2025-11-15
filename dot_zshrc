@@ -1,7 +1,5 @@
 #! /bin/zsh
 
-source ~/.zplug/init.zsh
-
 case $OSTYPE in
     linux*)                     # Linux generic
  	      export X11HOME=/usr/X11R6
@@ -53,9 +51,3 @@ manpath=(
 export MANPATH
 
 eval "$(sheldon source)"
-
-# Load theme file
-zplug 'thermes/thermes.zsh-theme', as:theme
-
-# Then, source plugins and add commands to $PATH
-zplug load
