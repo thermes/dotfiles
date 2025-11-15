@@ -17,7 +17,7 @@ shell = "zsh"
 [plugins.ohmyzsh]
 github = "ohmyzsh/ohmyzsh"
 dir = "plugins"
-use = ["{fasd,git}/*.plugin.zsh"]
+use = ["{git}/*.plugin.zsh"]
 
 [plugins.ohmyzsh-lib]
 github = "ohmyzsh/ohmyzsh"

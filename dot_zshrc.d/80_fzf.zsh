@@ -6,9 +6,9 @@ fi
 
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 
-unalias zz
-zz() {
-    local dir
-    dir="$(fasd -Rds "$@" | fzf -e -1 -0 --no-sort +m | awk '{print $2;}')"
-    [[ -d $dir ]] && cd "${dir}" || return 1
-}
+#unalias zz
+#zz() {
+#    local dir
+#    dir="$(fasd -Rds "$@" | fzf -e -1 -0 --no-sort +m | awk '{print $2;}')"
+#    [[ -d $dir ]] && cd "${dir}" || return 1
+#}
