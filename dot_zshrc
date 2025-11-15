@@ -54,9 +54,6 @@ export MANPATH
 
 eval "$(sheldon source)"
 
-# Can manage local plugins
-zplug "~/.zsh", from:local, defer:2
-
 # Load theme file
 zplug 'thermes/thermes.zsh-theme', as:theme
 

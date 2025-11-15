@@ -30,6 +30,9 @@ github = "zsh-users/zsh-autosuggestions"
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
 
+[plugins.local]
+local = "~/.zshrc.d"
+
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
 
