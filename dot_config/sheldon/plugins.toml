@@ -13,6 +13,17 @@
 shell = "zsh"
 
 [plugins]
+
+[plugins.ohmyzsh]
+github = "ohmyzsh/ohmyzsh"
+dir = "plugins"
+use = ["{fasd,git}/*.plugin.zsh"]
+
+[plugins.ohmyzsh-lib]
+github = "ohmyzsh/ohmyzsh"
+dir = "lib"
+use = ["git.zsh"]
+
 [plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
 

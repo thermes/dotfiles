@@ -52,10 +52,7 @@ manpath=(
 )
 export MANPATH
 
-# Supports oh-my-zsh plugins and the like
-zplug "plugins/fasd", from:oh-my-zsh
-zplug "plugins/git", from:oh-my-zsh
-zplug "lib/git", from:oh-my-zsh
+eval "$(sheldon source)"
 
 # Can manage local plugins
 zplug "~/.zsh", from:local, defer:2
