@@ -22,6 +22,10 @@ https://github.com/twpayne/chezmoi/releases/latest
 
     $ curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
 
+### Starship
+
+    $ curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin -y -V
+
 ### mise
 
     $ curl https://mise.run | sh
@@ -77,4 +81,5 @@ https://github.com/twpayne/chezmoi/releases/latest
 - [Homebrew Cask](https://caskroom.github.io/)
 - [chezmoi](https://www.chezmoi.io/)
 - [Sheldon](https://sheldon.cli.rs/)
+- [Starship](https://starship.rs/ja-JP/)
 - [mise-en-place](https://mise.jdx.dev/)
