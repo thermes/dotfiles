@@ -57,7 +57,7 @@ https://github.com/twpayne/chezmoi/releases/latest
 
 ### yazi
 
-    $ ya pkg add yazi-rs/flavors:catppuccin-mocha
+    $ ya pkg add yazi-rs/flavors:catppuccin-macchiato
     $ ya pkg add yazi-rs/plugins:chmod
     $ ya pkg add yazi-rs/plugins:git
 
