@@ -43,8 +43,8 @@ apply = ["defer"]
 [plugins.local]
 local = "~/.zshrc.d"
 
-[plugins.zsh-syntax-highlighting]
-github = "zsh-users/zsh-syntax-highlighting"
+[plugins.fast-syntax-highlighting]
+github = "zdharma-continuum/fast-syntax-highlighting"
 apply = ["defer"]
 
 # For example:
