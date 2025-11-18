@@ -2,177 +2,552 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](peach)\
 $directory\
-[](fg:peach bg:yellow)\
-$git_branch\
-$git_status\
-[ ](fg:yellow)\
 $fill\
-[](green)\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
 $c\
+$cpp\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$fortran\
+$gleam\
 $golang\
+$guix_shell\
 $haskell\
+$haxe\
+$helm\
 $java\
+$julia\
 $kotlin\
+$gradle\
+$lua\
+$nim\
 $nodejs\
+$ocaml\
+$opa\
+$perl\
 $php\
+$pulumi\
+$purescript\
 $python\
+$quarto\
+$raku\
+$rlang\
+$red\
 $ruby\
 $rust\
-[](fg:green bg:sapphire)\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$docker_context\
 $conda\
-[](fg:sapphire bg:blue)\
+$package\
+$os\
+$container\
 $username\
 $hostname\
-[](fg:blue bg:lavender)\
-$time\
-[ ](fg:lavender)\
 $line_break\
 $character"""
 
 right_format = """
-$cmd_duration"""
+$cmd_duration\
+$status\
+$jobs\
+$shlvl\
+$time"""
 
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Sets which color palette from palettes to use
 palette = 'catppuccin_macchiato'
+
+
+## Left Prompt
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vimcmd_symbol = "[<](bold green)"
+vimcmd_visual_symbol = "[<](bold yellow)"
+vimcmd_replace_symbol = "[<](bold lavender)"
+vimcmd_replace_one_symbol = "[<](bold lavender)"
 
 [fill]
 disabled = false
 symbol = ' '
 
-[username]
-show_always = true
-style_user = "bg:blue fg:crust"
-style_root = "bg:blue fg:crust"
-format = '[ $user]($style)'
-
-[hostname]
-disabled = false
-ssh_only = false
-style = "bg:blue fg:crust"
-format = '[@$hostname ]($style)'
-
 [directory]
-style = "bg:peach fg:crust"
-format = "[$read_only]($read_only_style)[ $path ]($style)"
-truncation_length = 7
-truncation_symbol = "…/"
-home_symbol = '  ~'
-read_only = ' 󰌾 '
-read_only_style = 'bg:peach fg:crust'
-
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
-"Developer" = "󰲋 "
+style = "peach"
+truncation_length = 0
+truncate_to_repo = false
+read_only = ' ro'
+read_only_style = 'red'
+truncation_symbol = ".../"
+repo_root_style = "bold peach"
 
 [git_branch]
-symbol = ""
-style = "bg:yellow"
-format = '[[ $symbol $branch ](fg:crust bg:yellow)]($style)'
+symbol = "git "
+style = "yellow"
+format = '[$symbol$branch(:$remote_branch)]($style) '
+truncation_symbol = "..."
 
 [git_status]
-style = "bg:yellow"
-format = '[[($all_status$ahead_behind )](fg:crust bg:yellow)]($style)'
-conflicted = '='
-ahead = '⇡${count}'
-behind = '⇣${count}'
-diverged = '⇕'
-up_to_date = '✓'
-untracked = '?'
-stashed = '$'
-modified = '!${count}'
-renamed = '»'
-deleted = '✘'
-
-[nodejs]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+style = "yellow"
+ahead = ">${count}"
+behind = "<${count}"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
 
 [c]
-symbol = " "
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = "C "
+style = "green"
+format = '[$symbol($version )]($style)'
 
-[rust]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+[cpp]
+symbol = "C++ "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[cmake]
+symbol = "cmake "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[cobol]
+symbol = "cobol "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[crystal]
+symbol = "cr "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[daml]
+symbol = "daml "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[dart]
+symbol = "dart "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[deno]
+symbol = "deno "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[dotnet]
+symbol = ".NET "
+style = "green"
+format = '[$symbol($version )(target $tfm )]($style)'
+
+[elixir]
+symbol = "exs "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[elm]
+symbol = "elm "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[erlang]
+symbol = "erl "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[fennel]
+symbol = "fnl "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[fortran]
+symbol = "fortran "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[gleam]
+symbol = "gleam "
+style = "green"
+format = '[$symbol($version )]($style)'
 
 [golang]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = "go "
+style = "green"
+format = '[$symbol($version )]($style)'
 
-[php]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
-
-[java]
-symbol = " "
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
-
-[kotlin]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+[guix_shell]
+symbol = "guix "
+style = "green"
+format = '[$symbol($version )]($style)'
 
 [haskell]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = "haskell "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[haxe]
+symbol = "hx "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[helm]
+symbol = "helm "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[java]
+symbol = "java "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[julia]
+symbol = "jl "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[kotlin]
+symbol = "kt "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[gradle]
+symbol = "gradle "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[lua]
+symbol = "lua "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[nim]
+symbol = "nim "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[nodejs]
+symbol = "nodejs "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[ocaml]
+symbol = "ml "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[opa]
+symbol = "opa "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[perl]
+symbol = "pl "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[php]
+symbol = "php "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[pulumi]
+symbol = "pulumi "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[purescript]
+symbol = "purs "
+style = "green"
+format = '[$symbol($version )]($style)'
 
 [python]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:crust bg:green)]($style)'
+symbol = "py "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[quarto]
+symbol = "quarto "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[raku]
+symbol = "raku "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[rlang]
+symbol = "r "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[red]
+symbol = "red "
+style = "green"
+format = '[$symbol($version )]($style)'
 
 [ruby]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = "rb "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[rust]
+symbol = "rs "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[scala]
+symbol = "scala "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[solidity]
+symbol = "solidity "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[swift]
+symbol = "swift "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[terraform]
+symbol = "terraform "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[typst]
+symbol = "typst "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[vagrant]
+symbol = "vagrant "
+style = "green"
+format = '[$symbol($version )]($style)'
+
+[zig]
+symbol = "zig "
+style = "green"
+format = '[$symbol($version )]($style)'
 
 [docker_context]
-symbol = ""
-style = "bg:sapphire"
-format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
+symbol = "docker "
+style = "sapphire"
+format = '[$symbol$context]($style) '
 
 [conda]
-symbol = "  "
-style = "fg:crust bg:sapphire"
-format = '[$symbol$environment ]($style)'
+symbol = "conda "
+style = "sapphire"
+format = '[$symbol$environment]($style) '
 ignore_base = false
 
-[time]
+[package]
+symbol = "pkg "
+style = "sapphire"
+format = '[$symbol$version]($style) '
+
+[os]
 disabled = false
-time_format = "%R"
-style = "bg:lavender"
-format = '[[  $time ](fg:crust bg:lavender)]($style)'
+style = "sapphire"
+
+[os.symbols]
+AIX = "aix "
+Alpaquita = "alq "
+AlmaLinux = "alma "
+Alpine = "alp "
+Amazon = "amz "
+Android = "andr "
+AOSC = "aosc "
+Arch = "rch "
+Artix = "atx "
+Bluefin = "blfn "
+CachyOS = "cach "
+CentOS = "cent "
+Debian = "deb "
+DragonFly = "dfbsd "
+Emscripten = "emsc "
+EndeavourOS = "ndev "
+Fedora = "fed "
+FreeBSD = "fbsd "
+Garuda = "garu "
+Gentoo = "gent "
+HardenedBSD = "hbsd "
+Illumos = "lum "
+Kali = "kali "
+Linux = "lnx "
+Mabox = "mbox "
+Macos = "mac "
+Manjaro = "mjo "
+Mariner = "mrn "
+MidnightBSD = "mid "
+Mint = "mint "
+NetBSD = "nbsd "
+NixOS = "nix "
+Nobara = "nbra "
+OpenBSD = "obsd "
+OpenCloudOS = "ocos "
+openEuler = "oeul "
+openSUSE = "osuse "
+OracleLinux = "orac "
+Pop = "pop "
+Raspbian = "rasp "
+Redhat = "rhl "
+RedHatEnterprise = "rhel "
+RockyLinux = "rky "
+Redox = "redox "
+Solus = "sol "
+SUSE = "suse "
+Ubuntu = "ubnt "
+Ultramarine = "ultm "
+Unknown = "unk "
+Uos = "uos "
+Void = "void "
+Windows = "win "
+
+[container]
+symbol = "container "
+style = "sapphire"
+
+[username]
+style_root = "red"
+style_user = "lavender"
+format = '[$user]($style)'
+show_always = true
+
+[hostname]
+style = "lavender"
+format = '[@$hostname ]($style)'
+ssh_only = false
 
 [line_break]
 disabled = false
 
-[character]
-disabled = false
-success_symbol = '[❯](bold fg:green)'
-error_symbol = '[❯](bold fg:red)'
-vimcmd_symbol = '[❮](bold fg:green)'
-vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
-vimcmd_replace_symbol = '[❮](bold fg:lavender)'
-vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+
+## Right Prompt
 
 [cmd_duration]
+style = "lavender"
+format = "in $duration "
 show_milliseconds = true
-format = " in $duration "
-style = "bg:lavender"
+
+[status]
 disabled = false
-show_notifications = true
-min_time_to_notify = 45000
+symbol = "x"
+not_executable_symbol = "noexec"
+not_found_symbol = "notfound"
+sigint_symbol = "sigint"
+signal_symbol = "sig"
+format = '[$symbol $status $common_meaning$signal_name$maybe_int]($style) '
+
+[jobs]
+symbol = "jobs "
+number_threshold = 1
+
+[shlvl]
+disabled = false
+symbol = "shlvl "
+threshold = 3
+
+[time]
+disabled = false
+style = "lavender"
+format = '[\[$time\]]($style)'
+time_format = "%T"
+
+
+## unuse
+
+[buf]
+symbol = "buf "
+
+[nix_shell]
+symbol = "nix "
+
+[meson]
+symbol = "meson "
+truncation_symbol = "..."
+
+[spack]
+symbol = "spack "
+
+[aws]
+symbol = "aws "
+
+[azure]
+symbol = "az "
+
+[bun]
+symbol = "bun "
+
+[fossil_branch]
+symbol = "fossil "
+truncation_symbol = "..."
+
+[gcloud]
+symbol = "gcp "
+
+[hg_branch]
+symbol = "hg "
+truncation_symbol = "..."
+
+[kubernetes]
+symbol = "kubernetes "
+
+[memory_usage]
+symbol = "memory "
+
+[mojo]
+symbol = "mojo "
+
+[nats]
+symbol = "nats "
+
+[netns]
+symbol = "netns "
+
+[odin]
+symbol = "odin "
+
+[openstack]
+symbol = "openstack "
+
+[pijul_channel]
+symbol = "pijul "
+truncation_symbol = "..."
+
+[pixi]
+symbol = "pixi "
+
+[sudo]
+symbol = "sudo "
+
+[xmake]
+symbol = "xmake "
+
+
+## Palettes
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
