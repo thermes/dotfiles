@@ -45,7 +45,6 @@ apt -y install autossh
 apt -y install curl
 apt -y install htop
 apt -y install lftp
-apt -y install lv
 apt -y install mosh
 apt -y install nkf
 apt -y install silversearcher-ag

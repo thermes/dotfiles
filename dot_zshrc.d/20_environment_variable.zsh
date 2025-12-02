@@ -51,20 +51,13 @@ if [[ -z $LS_COLORS ]]; then
 fi
 
 # PAGER
-if [[ -x `whence -p lv` ]]; then
-    export LV='-Au8 -Ia -c'
-    export PAGER=lv
-fi
-
 if [[ -x `whence -p less` ]]; then
     export LESS='-Mci -R -x4'
     if [[ -x `whence -p lesspipe.sh` ]]; then
         export LESSOPEN='| lesspipe.sh %s'
     fi
     export PAGER=less
-fi
-
-if [[ -z $PAGER ]]; then
+else
     export PAGER=more
 fi
 
