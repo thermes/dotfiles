@@ -36,17 +36,19 @@ apt -y install pandoc
 apt -y install poppler-utils
 apt -y install zip unzip
 
+## yazi
+apt -y install fd-find
+apt -y install ripgrep
+
 ## misc
 apt -y install autossh
 apt -y install curl
 apt -y install discount
-apt -y install fd-find
 apt -y install htop
 apt -y install lftp
 apt -y install lv
 apt -y install mosh
 apt -y install nkf
-apt -y install ripgrep
 apt -y install silversearcher-ag
 apt -y install socat
 apt -y install sysstat
