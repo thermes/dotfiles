@@ -14,6 +14,7 @@ alias lla='ls -lAh'
 alias l=$PAGER
 
 alias diff='diff --color=auto'
+alias grep='grep --color=auto'
 
 alias man='nocorrect man'
 alias cp='nocorrect cp -i'
