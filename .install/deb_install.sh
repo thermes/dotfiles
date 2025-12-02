@@ -48,7 +48,6 @@ apt -y install lftp
 apt -y install mosh
 apt -y install nkf
 apt -y install sysstat
-apt -y install unar
 apt -y install whois
 
 ## debian
