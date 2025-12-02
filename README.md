@@ -58,6 +58,7 @@ https://github.com/twpayne/chezmoi/releases/latest
 ### yazi
 
     $ ya pkg add yazi-rs/flavors:catppuccin-macchiato
+    $ ya pkg add yazi-rs/plugins:smart-enter
     $ ya pkg add yazi-rs/plugins:chmod
     $ ya pkg add yazi-rs/plugins:git
 
@@ -83,3 +84,4 @@ https://github.com/twpayne/chezmoi/releases/latest
 - [Sheldon](https://sheldon.cli.rs/)
 - [Starship](https://starship.rs/ja-JP/)
 - [mise-en-place](https://mise.jdx.dev/)
+- [yazi](https://yazi-rs.github.io/)
