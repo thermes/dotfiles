@@ -22,7 +22,6 @@ brew install sbt
 
 ## misc
 brew install autossh
-brew install colordiff
 brew install coreutils
 brew install discount
 brew install imagemagick

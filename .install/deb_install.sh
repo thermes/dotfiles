@@ -31,7 +31,6 @@ apt -y install zlib1g-dev
 ## misc
 apt -y install 7zip
 apt -y install autossh
-apt -y install colordiff
 apt -y install curl
 apt -y install discount
 apt -y install fd-find

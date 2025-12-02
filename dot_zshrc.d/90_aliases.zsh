@@ -13,6 +13,8 @@ alias lla='ls -lAh'
 
 alias l=$PAGER
 
+alias diff='diff --color=auto'
+
 alias man='nocorrect man'
 alias cp='nocorrect cp -i'
 alias mv='nocorrect mv -i'
@@ -27,10 +29,6 @@ alias ssh='nocorrect ssh'
 alias sudo='nocorrect sudo'
 alias vagrant='nocorrect vagrant'
 alias w3m='nocorrect w3m'
-
-if [[ -x `whence -p colordiff` ]]; then
-    alias diff='colordiff'
-fi
 
 if [[ $TERM == tmux* ]]; then
     alias emacs='TERM=tmux-direct emacs'
