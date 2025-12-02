@@ -43,7 +43,6 @@ apt -y install ripgrep
 ## misc
 apt -y install autossh
 apt -y install curl
-apt -y install discount
 apt -y install htop
 apt -y install lftp
 apt -y install lv
