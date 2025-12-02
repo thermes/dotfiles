@@ -20,3 +20,19 @@
     url = "https://github.com/sxyazi/yazi/releases/download/v{{ $yaziVersion }}/yazi-x86_64-unknown-{{ .chezmoi.os }}-gnu.zip"
     stripComponents = 1
     path = "completions/_ya"
+
+# lesspipe.sh
+[".local/bin/lesspipe.sh"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/wofr06/lesspipe/refs/heads/lesspipe/lesspipe.sh"
+    refreshPeriod = "168h"
+    executable = true
+[".local/bin/lesscomplete"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/wofr06/lesspipe/refs/heads/lesspipe/lesscomplete"
+    refreshPeriod = "168h"
+    executable = true
+[".local/share/zsh/completions/_less"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/wofr06/lesspipe/refs/heads/lesspipe/zsh_completion"
+    refreshPeriod = "168h"

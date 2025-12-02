@@ -28,14 +28,20 @@ apt -y install libxslt-dev
 apt -y install libyaml-dev
 apt -y install zlib1g-dev
 
-## misc
+## lesspipe.sh
 apt -y install 7zip
+apt -y install jq
+apt -y install mediainfo
+apt -y install pandoc
+apt -y install poppler-utils
+apt -y install zip unzip
+
+## misc
 apt -y install autossh
 apt -y install curl
 apt -y install discount
 apt -y install fd-find
 apt -y install htop
-apt -y install jq
 apt -y install lftp
 apt -y install lv
 apt -y install mosh
@@ -46,7 +52,6 @@ apt -y install socat
 apt -y install sysstat
 apt -y install unar
 apt -y install whois
-apt -y install zip unzip
 
 ## debian
 apt -y install manpages-ja

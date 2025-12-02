@@ -58,9 +58,8 @@ fi
 
 if [[ -x `whence -p less` ]]; then
     export LESS='-Mci -R -x4'
-    export JLESSCHARSET=utf-8
-    if [[ -x /usr/share/source-highlight/src-hilite-lesspipe.sh ]]; then
-        export LESSOPEN='| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'                                                       
+    if [[ -x `whence -p lesspipe.sh` ]]; then
+        export LESSOPEN='| lesspipe.sh %s'
     fi
     export PAGER=less
 fi
