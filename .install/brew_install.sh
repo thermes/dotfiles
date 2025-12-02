@@ -31,7 +31,6 @@ brew install mosh
 brew install netcat
 brew install nkf
 brew install telnet
-brew install the_silver_searcher
 brew install w3m
 brew install watch
 brew install wget
