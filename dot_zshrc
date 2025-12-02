@@ -50,6 +50,15 @@ manpath=(
 )
 export MANPATH
 
+# set fpath
+typeset -U fpath
+fpath=(
+    $fpath
+    $HOME/.local/share/zsh/functions(N-/)
+    $HOME/.local/share/zsh/completions(N-/)
+)
+export FPATH
+
 eval "$(sheldon source)"
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
