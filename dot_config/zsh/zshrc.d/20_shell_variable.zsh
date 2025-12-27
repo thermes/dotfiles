@@ -8,6 +8,6 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 watch=(notme)
 
 ## History file configuration
-HISTFILE="$HOME/.zsh_history"
+HISTFILE="$XDG_STATE_HOME/zsh/history"
 HISTSIZE=50000
 SAVEHIST=10000

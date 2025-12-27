@@ -41,7 +41,7 @@ github = "zsh-users/zsh-completions"
 apply = ["defer"]
 
 [plugins.local]
-local = "~/.zshrc.d"
+local = "~/.config/zsh/zshrc.d"
 
 [plugins.fast-syntax-highlighting]
 github = "zdharma-continuum/fast-syntax-highlighting"

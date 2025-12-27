@@ -1,5 +1,11 @@
 #! /bin/zsh
 
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
+
+# Use caching so that commands like apt and dpkg complete are useable
+zstyle ':completion:*' use-cache 1
+zstyle ':completion:*' cache-path $XDG_CACHE_HOME/zsh/zcompcache
+
 if [[ -n "$LS_COLORS" ]]; then
     zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 fi
@@ -16,10 +22,6 @@ zstyle ':completion:*:*:*:*:processes' command "ps -u $USER -o pid,user,comm -w 
 
 # disable named-directories autocompletion
 zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-directories
-
-# Use caching so that commands like apt and dpkg complete are useable
-zstyle ':completion::complete:*' use-cache 1
-zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR
 
 # Don't complete uninteresting users
 zstyle ':completion:*:*:*:users' ignored-patterns \
