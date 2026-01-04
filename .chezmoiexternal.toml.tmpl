@@ -1,3 +1,4 @@
+{{- if ne .chezmoi.os "windows" }}
 # yazi
 {{ $yaziVersion := "25.5.31" -}}
 [".local/bin/yazi"]
@@ -36,3 +37,4 @@
     type = "file"
     url = "https://raw.githubusercontent.com/wofr06/lesspipe/refs/heads/lesspipe/zsh_completion"
     refreshPeriod = "168h"
+{{- end }}

@@ -2,6 +2,9 @@
 	ui = auto
 [core]
 	autocrlf = input
+{{- if eq .chezmoi.os "windows" }}
+	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+{{- end }}
 [include]
 	path = config.local
 [merge]
