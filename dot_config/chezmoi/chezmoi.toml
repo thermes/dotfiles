@@ -1,0 +1,4 @@
+encryption = "age"
+[age]
+    identity = "~/.config/chezmoi/key.txt"
+    recipient = "age190rk0y4p2lf6njjmgc3dn7yppzvtqw65auxj9wvsk5g3x5lehegs5tgttq"
