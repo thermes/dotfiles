@@ -50,9 +50,11 @@ https://github.com/twpayne/chezmoi/releases/latest
 
 ### chezmoi
 
+    $ touch ~/.config/chezmoi/key.txt
     $ chezmoi init thermes
     $ chezmoi apply
     $ chezmoi cd
+    $ touch ~/.config/git/config.local
     $ git remote set-url origin git@github.com:thermes/dotfiles.git
 
 ### yazi
