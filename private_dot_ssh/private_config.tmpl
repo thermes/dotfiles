@@ -17,9 +17,3 @@ ForwardAgent no
 HashKnownHosts yes
 UpdateHostKeys yes
 VisualHostKey yes
-{{- if ne .chezmoi.os "windows" }}
-
-ControlMaster auto
-ControlPersist 10m
-ControlPath ~/.ssh/mux/%C
-{{- end }}
