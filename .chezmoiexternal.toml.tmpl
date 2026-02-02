@@ -1,6 +1,6 @@
 {{- if ne .chezmoi.os "windows" }}
 # yazi
-{{ $yaziVersion := "26.1.4" -}}
+{{ $yaziVersion := "26.1.22" -}}
 [".local/bin/yazi"]
     type = "archive-file"
     url = "https://github.com/sxyazi/yazi/releases/download/v{{ $yaziVersion }}/yazi-x86_64-unknown-{{ .chezmoi.os }}-gnu.zip"
