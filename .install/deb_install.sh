@@ -30,6 +30,7 @@ apt -y install zlib1g-dev
 
 ## lesspipe.sh
 apt -y install 7zip
+apt -y install bat
 apt -y install jq
 apt -y install mediainfo
 apt -y install pandoc
