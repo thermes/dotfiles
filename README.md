@@ -13,21 +13,22 @@
     $ sudo apt install curl
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/deb_install.sh | sudo /bin/sh
 
-### chezmoi
-
-    $ sudo snap install chezmoi --classic
-
 ### Homebrew on Linux
 
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-### Sheldon
+### mise
 
-    $ brew install sheldon
+    $ curl -fSs https://mise.en.dev/gpg-key.pub | sudo tee /etc/apt/keyrings/mise-archive-keyring.asc 1> /dev/null
 
-### Starship
-
-    $ brew install starship
+```
+> cat /etc/apt/sources.list.d/mise.sources
+Types: deb
+URIs: https://mise.en.dev/deb
+Suites: stable
+Components: main
+Signed-By: /etc/apt/keyrings/mise-archive-keyring.asc
+```
 
 ### yazi
 
@@ -42,18 +43,17 @@ Components: main
 Signed-By: /etc/apt/keyrings/debian.griffo.io.gpg
 ```
 
-### mise
+### Sheldon
 
-    $ curl -fSs https://mise.en.dev/gpg-key.pub | sudo tee /etc/apt/keyrings/mise-archive-keyring.asc 1> /dev/null
+    $ brew install sheldon
 
-```
-> cat /etc/apt/sources.list.d/mise.sources
-Types: deb
-URIs: https://mise.en.dev/deb
-Suites: stable
-Components: main
-Signed-By: /etc/apt/keyrings/mise-archive-keyring.asc
-```
+### Starship
+
+    $ brew install starship
+
+### chezmoi
+
+    $ sudo snap install chezmoi --classic
 
 ## macOS
 
