@@ -15,8 +15,8 @@
 
 ### chezmoi
 
-Download and Install deb package.
-https://github.com/twpayne/chezmoi/releases/latest
+    $ sudo snap install chezmoi --classic
+
 
 ### Sheldon
 
