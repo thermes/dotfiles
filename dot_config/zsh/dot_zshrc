@@ -17,7 +17,6 @@ path=(
     $HOME/bin(N-/)
     $ZPLUG_HOME/bin(N-/)
     $HOME/.local/bin(N-/)
-    $HOME/.linuxbrew/bin(N-/)
     /usr/local/opt/coreutils/libexec/gnubin(N-/)
     /opt/local/sbin(N-/)
     /opt/local/bin(N-/)
@@ -33,12 +32,13 @@ path=(
     /usr/games(N-/)
     $X11HOME/bin(N-/)
     $path
+    /home/linuxbrew/.linuxbrew/sbin(N-/)
+    /home/linuxbrew/.linuxbrew/bin(N-/)
 )
 
 # set manpath
 typeset -U manpath
 manpath=(
-    $HOME/.linuxbrew/share/man(N-/)
     /usr/local/opt/coreutils/libexec/gnuman(N-/)
     /Library/Developer/CommandLineTools/usr/share/man(N-/)
     /opt/local/share/man(N-/)
@@ -47,6 +47,7 @@ manpath=(
     /usr/share/man(N-/)
     $X11HOME/share/man(N-/)
     $manpath
+    /home/linuxbrew/.linuxbrew/share/man(N-/)
 )
 export MANPATH
 
@@ -56,6 +57,7 @@ fpath=(
     $fpath
     $HOME/.local/share/zsh/functions(N-/)
     $HOME/.local/share/zsh/completions(N-/)
+    /home/linuxbrew/.linuxbrew/share/zsh/site-functions(N-/)
 )
 export FPATH
 
