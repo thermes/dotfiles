@@ -27,7 +27,7 @@
 
 ### Starship
 
-    $ curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin -y -V
+    $ brew install starship
 
 ### mise
 
