@@ -15,7 +15,6 @@ esac
 typeset -U path
 path=(
     $HOME/bin(N-/)
-    $ZPLUG_HOME/bin(N-/)
     $HOME/.local/bin(N-/)
     /usr/local/opt/coreutils/libexec/gnubin(N-/)
     /opt/local/sbin(N-/)
