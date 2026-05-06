@@ -31,7 +31,16 @@
 
 ### mise
 
-    $ curl https://mise.run | sh
+    $ curl -fSs https://mise.en.dev/gpg-key.pub | sudo tee /etc/apt/keyrings/mise-archive-keyring.asc 1> /dev/null
+
+```
+> cat /etc/apt/sources.list.d/mise.sources
+Types: deb
+URIs: https://mise.en.dev/deb
+Suites: stable
+Components: main
+Signed-By: /etc/apt/keyrings/mise-archive-keyring.asc
+```
 
 ## macOS
 
