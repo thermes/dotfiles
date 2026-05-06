@@ -1,27 +1,4 @@
 {{- if ne .chezmoi.os "windows" }}
-# yazi
-{{ $yaziVersion := "26.1.22" -}}
-[".local/bin/yazi"]
-    type = "archive-file"
-    url = "https://github.com/sxyazi/yazi/releases/download/v{{ $yaziVersion }}/yazi-x86_64-unknown-{{ .chezmoi.os }}-gnu.zip"
-    stripComponents = 1
-    path = "yazi"
-[".local/bin/ya"]
-    type = "archive-file"
-    url = "https://github.com/sxyazi/yazi/releases/download/v{{ $yaziVersion }}/yazi-x86_64-unknown-{{ .chezmoi.os }}-gnu.zip"
-    stripComponents = 1
-    path = "ya"
-[".local/share/zsh/completions/_yazi"]
-    type = "archive-file"
-    url = "https://github.com/sxyazi/yazi/releases/download/v{{ $yaziVersion }}/yazi-x86_64-unknown-{{ .chezmoi.os }}-gnu.zip"
-    stripComponents = 1
-    path = "completions/_yazi"
-[".local/share/zsh/completions/_ya"]
-    type = "archive-file"
-    url = "https://github.com/sxyazi/yazi/releases/download/v{{ $yaziVersion }}/yazi-x86_64-unknown-{{ .chezmoi.os }}-gnu.zip"
-    stripComponents = 1
-    path = "completions/_ya"
-
 # lesspipe.sh
 [".local/bin/lesspipe.sh"]
     type = "file"

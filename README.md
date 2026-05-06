@@ -29,6 +29,19 @@
 
     $ brew install starship
 
+### yazi
+
+    $ curl -sS https://debian.griffo.io/EA0F721D231FDD3A0A17B9AC7808B4DD62C41256.asc | sudo gpg --dearmor --yes -o /etc/apt/keyrings/debian.griffo.io.gpg
+
+```
+$ cat /etc/apt/sources.list.d/yazi.sources
+Types: deb
+URIs: https://debian.griffo.io/apt
+Suites: resolute
+Components: main
+Signed-By: /etc/apt/keyrings/debian.griffo.io.gpg
+```
+
 ### mise
 
     $ curl -fSs https://mise.en.dev/gpg-key.pub | sudo tee /etc/apt/keyrings/mise-archive-keyring.asc 1> /dev/null
