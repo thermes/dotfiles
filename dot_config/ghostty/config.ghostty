@@ -1,0 +1,9 @@
+font-family = "HackGen Console NF"
+font-size = 12
+theme = light:"Catppuccin Frappe",dark:"Catppuccin Macchiato"
+background-opacity = 0.9
+scrollbar = "never"
+window-theme = "ghostty"
+
+keybind = ctrl+i=text:\t
+keybind = ctrl+m=text:\n

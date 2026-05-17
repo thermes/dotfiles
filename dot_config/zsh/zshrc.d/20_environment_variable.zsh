@@ -28,7 +28,7 @@ case $TERM in
     tmux*|screen*)
         export LANG=ja_JP.UTF-8
         ;;
-    rxvt|kterm|xterm-256color|xterm-color|mlterm)
+    rxvt|kterm|xterm-256color|xterm-color|xterm-ghostty|mlterm)
         export LANG=ja_JP.UTF-8
         ;;
     jfbterm|kon)
