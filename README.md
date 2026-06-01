@@ -79,8 +79,11 @@ Signed-By: /etc/apt/keyrings/debian.griffo.io.gpg
     $ chezmoi init thermes
     $ chezmoi apply
     $ chezmoi cd
-    $ touch ~/.config/git/config.local
     $ git remote set-url origin git@github.com:thermes/dotfiles.git
+
+### git
+
+    $ touch ~/.config/git/config.local
 
 ### yazi
 
