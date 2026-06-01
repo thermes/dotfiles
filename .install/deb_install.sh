@@ -17,6 +17,9 @@ apt -y install tmux
 apt -y install git
 apt -y install tig
 
+## chezmoi
+apt -y install age
+
 ## Ruby
 apt -y install build-essential
 apt -y install libffi-dev
