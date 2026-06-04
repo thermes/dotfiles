@@ -61,5 +61,15 @@ else
     export PAGER=more
 fi
 
+if [[ -z "${SSH_CONNECTION}" ]]; then
+    if [[ -n "$WSL_DISTRO_NAME" ]]; then
+        eval $($HOME/.local/bin/wsl2-ssh-agent)
+    else
+        op_sock="$HOME/.1password/agent.sock"
+        [[ -S "$op_sock" ]] && export SSH_AUTH_SOCK="$op_sock"
+        unset op_sock
+    fi
+fi
+
 # misc
 export BLOCKSIZE=K
