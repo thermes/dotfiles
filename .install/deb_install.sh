@@ -15,6 +15,7 @@ apt -y install tmux
 
 ## Git
 apt -y install git
+apt -y install lazygit
 apt -y install tig
 
 ## chezmoi
