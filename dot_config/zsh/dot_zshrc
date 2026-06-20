@@ -16,7 +16,6 @@ typeset -U path
 path=(
     $HOME/bin(N-/)
     $HOME/.local/bin(N-/)
-    /usr/local/opt/coreutils/libexec/gnubin(N-/)
     /opt/local/sbin(N-/)
     /opt/local/bin(N-/)
     /opt/sbin(N-/)
@@ -38,8 +37,6 @@ path=(
 # set manpath
 typeset -U manpath
 manpath=(
-    /usr/local/opt/coreutils/libexec/gnuman(N-/)
-    /Library/Developer/CommandLineTools/usr/share/man(N-/)
     /opt/local/share/man(N-/)
     /opt/share/man(N-/)
     /usr/local/share/man(N-/)

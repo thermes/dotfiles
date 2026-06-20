@@ -55,18 +55,6 @@ Signed-By: /etc/apt/keyrings/debian.griffo.io.gpg
 
     $ sudo snap install chezmoi --classic
 
-## macOS
-
-### Homebrew
-
-    $ xcode-select --install
-    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/brew_install.sh | /bin/sh
-
-### Homebrew-Cask
-
-    $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/brew_cask_install.sh | /bin/sh
-
 ## Common
 
 ### chsh
@@ -97,14 +85,6 @@ Signed-By: /etc/apt/keyrings/debian.griffo.io.gpg
     $ mise use -g ruby
     $ gem update
     $ gem install bundler debug rubocop reek
-
-# After Setting
-
-## macOS
-
-    # touch /etc/nsmb.conf
-    # echo "[default]" >> /etc/nsmb.conf
-    # echo "signing_required=no" >> /etc/nsmb.conf
 
 # Link
 

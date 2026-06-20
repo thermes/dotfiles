@@ -7,7 +7,6 @@ case $OSTYPE in
         fi
         ;;
     darwin*)                    # macOS
-        export HOMEBREW_CASK_OPTS="--appdir=/Applications"
         ;;
     *)
         ;;
