@@ -30,8 +30,6 @@ path=(
     /usr/games(N-/)
     $X11HOME/bin(N-/)
     $path
-    /home/linuxbrew/.linuxbrew/sbin(N-/)
-    /home/linuxbrew/.linuxbrew/bin(N-/)
 )
 
 # set manpath
@@ -43,17 +41,15 @@ manpath=(
     /usr/share/man(N-/)
     $X11HOME/share/man(N-/)
     $manpath
-    /home/linuxbrew/.linuxbrew/share/man(N-/)
 )
 export MANPATH
 
 # set fpath
 typeset -U fpath
 fpath=(
-    $fpath
     $HOME/.local/share/zsh/functions(N-/)
     $HOME/.local/share/zsh/completions(N-/)
-    /home/linuxbrew/.linuxbrew/share/zsh/site-functions(N-/)
+    $fpath
 )
 export FPATH
 

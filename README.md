@@ -13,10 +13,6 @@
     $ sudo apt install curl
     $ curl https://raw.githubusercontent.com/thermes/dotfiles/master/.install/deb_install.sh | sudo /bin/sh
 
-### Homebrew on Linux
-
-    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 ### mise
 
     $ curl -fSs https://mise.en.dev/gpg-key.pub | sudo tee /etc/apt/keyrings/mise-archive-keyring.asc 1> /dev/null
@@ -88,8 +84,6 @@ Signed-By: /etc/apt/keyrings/debian.griffo.io.gpg
 
 # Link
 
-- [Homebrew](http://brew.sh/)
-- [Homebrew Cask](https://caskroom.github.io/)
 - [chezmoi](https://www.chezmoi.io/)
 - [Sheldon](https://sheldon.cli.rs/)
 - [Starship](https://starship.rs/ja-JP/)
