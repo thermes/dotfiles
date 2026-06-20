@@ -41,11 +41,11 @@ Signed-By: /etc/apt/keyrings/debian.griffo.io.gpg
 
 ### Sheldon
 
-    $ brew install sheldon
+    $ mise use -g sheldon
 
 ### Starship
 
-    $ brew install starship
+    $ mise use -g starship
 
 ### chezmoi
 

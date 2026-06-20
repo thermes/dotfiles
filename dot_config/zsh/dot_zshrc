@@ -16,6 +16,7 @@ typeset -U path
 path=(
     $HOME/bin(N-/)
     $HOME/.local/bin(N-/)
+    $HOME/.local/share/mise/shims(N-/)
     /opt/local/sbin(N-/)
     /opt/local/bin(N-/)
     /opt/sbin(N-/)
