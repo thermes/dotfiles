@@ -1,4 +1,31 @@
 {{ if eq .chezmoi.os "linux" }}
+# lesspipe.sh
+{{ $lesspipeRelease := gitHubLatestRelease "wofr06/lesspipe" -}}
+{{ $lesspipeTagName := toString $lesspipeRelease.TagName -}}
+{{ $tarball := printf "https://github.com/wofr06/lesspipe/archive/refs/tags/%s.tar.gz" $lesspipeTagName -}}
+[".local/bin/lesspipe.sh"]
+    type = "archive-file"
+    url = {{ $tarball | quote }}
+    path = "lesspipe.sh"
+    stripComponents = 1
+    executable = true
+    refreshPeriod = "168h"
+
+[".local/bin/archive_color"]
+    type = "archive-file"
+    url = {{ $tarball | quote }}
+    path = "archive_color"
+    stripComponents = 1
+    executable = true
+    refreshPeriod = "168h"
+
+[".local/share/man/man1/lesspipe.1"]
+    type = "archive-file"
+    url = {{ $tarball | quote }}
+    path = "lesspipe.1"
+    stripComponents = 1
+    refreshPeriod = "168h"
+
 {{   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
 # wsl2-ssh-agent
 [".local/bin/wsl2-ssh-agent"]
