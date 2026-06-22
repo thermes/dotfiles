@@ -36,6 +36,7 @@ path=(
 # set manpath
 typeset -U manpath
 manpath=(
+    $HOME/.local/share/man(N-/)
     /opt/local/share/man(N-/)
     /opt/share/man(N-/)
     /usr/local/share/man(N-/)
