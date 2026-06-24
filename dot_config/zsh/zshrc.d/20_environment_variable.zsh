@@ -10,9 +10,9 @@ case $OSTYPE in
 esac
 
 # EDITOR
-if [[ -x `whence -p emacsclient` ]]; then
+if (( $+commands[emacsclient] )); then
     export EDITOR=emacsclient
-elif [[ -x `whence -p emacs` ]]; then
+elif (( $+commands[emacs] )); then
     export EDITOR=emacs
 else
     export EDITOR=vi
@@ -47,9 +47,9 @@ if [[ -z $LS_COLORS ]]; then
 fi
 
 # PAGER
-if [[ -x `whence -p less` ]]; then
+if (( $+commands[less] )); then
     export LESS='-Mci -R -x4'
-    if [[ -x `whence -p lesspipe.sh` ]]; then
+    if (( $+commands[lesspipe] )); then
         export LESSOPEN='| lesspipe.sh %s'
     fi
     export PAGER=less
